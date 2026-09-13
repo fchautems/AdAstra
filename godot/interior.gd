@@ -38,6 +38,10 @@ func setup(data: Dictionary, ship: Node3D) -> void:
 	surface_material.set_shader_parameter("hangar_x",params.cylinder_end)
 	coat(ship)
 	for p in params.lights:
+		# Corridor lighting is now supplied exclusively by the validated pilot kit.
+		# Keep the original sources in the cockpit and hangar unchanged.
+		if p[0] >= 10.0 and p[0] <= 47.0 and absf(p[2]) <= 10.0:
+			continue
 		var at := Vector3(p[0],p[1]+.23,p[2])
 		# Actual imported luminaire; flattened body and elongated diffuser.
 		asset("furniture/lampSquareCeiling",at-Vector3(0,.08,0),Vector3(1.8,.12,.3),0,false)
@@ -149,8 +153,8 @@ func dress_cabin(cabin: Dictionary) -> void:
 	var opening: Array = cabin.opening
 	var center: float = (opening[0]+opening[1])/2
 	var width: float = opening[1]-opening[0]
-	frame(center,sign_z*9.99,width)
-	asset("station/wall-switch",Vector3(opening[1]+.36,.12,sign_z*9.94),Vector3(.13,.28,.04),0,false)
+	# Access frames and switches were legacy corridor-facing props.  The pilot
+	# kit now supplies the only frame around each existing opening.
 	asset("station/display-wall",Vector3(hi-.8,.4,sign_z*15.91),Vector3(.65,.48,.10),PI if sign_z>0 else 0,false)
 	# Keep the existing entry-to-centre test path and a generous central aisle clear.
 	asset("furniture/bedDouble",Vector3(hi-1.4,floor_y,sign_z*14.55),Vector3(1.65,.75,2.15),0)

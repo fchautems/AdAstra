@@ -41,6 +41,10 @@ func _ready() -> void:
 	sun.shadow_enabled = true
 	add_child(sun)
 	for p in params.lights:
+		# The corridor kit owns its lighting layer; retaining these legacy omni
+		# lights there exceeded the practical overlap budget in Compatibility.
+		if p[0] >= 10.0 and p[0] <= 47.0 and absf(p[2]) <= 10.0:
+			continue
 		var light := OmniLight3D.new()
 		light.position = Vector3(p[0],p[1],p[2])
 		light.omni_range = 5.4
