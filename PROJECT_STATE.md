@@ -48,3 +48,24 @@ test-results.json, performance.json et dressing-manifest.json contiennent les r�
 ## Provisoire
 
 Salles de bain non cloisonnées ; mobilier encore simple et stylisé, non interactif ; détails du cockpit et portes arrière non travaillés ; extérieur non finalisé. L’éclairage de remplissage est simulé, sans illumination globale calculée. Aucun achat ni publication GitHub.
+
+## Passe coque du 13 septembre 2026 — locale, non validée pour publication
+- Suppression de l'override métallique intérieur/extérieur ; matériaux par surface dans le GLB.
+- Proue : peau de 0,35 m, vitrages de 0,025 m en retrait, normales corrigées et premières surfaces de raccord.
+- Cylindre : tessellation accrue et lissage. Parois diagonales existantes prolongées au toit du hangar.
+- Godot lancé réellement : aucune erreur dans les journaux, 56 maillages de collision ; contrôle ponctuel des six ouvertures de cabines libre (rayons, pas parcours FPS complet).
+- Plans, paramètres dimensionnels, cabines et script du joueur inchangés. Les collisions structurelles sont régénérées avec la géométrie corrigée.
+- Deux générations/lancements : le second corrige des normales inversées observées sur les premières captures. Trois fichiers finaux : exterior_metal.png, cockpit.png, hangar.png.
+- Résultat intérieur amélioré ; extérieur encore trop segmenté, raccords et liserés clairs insuffisamment intégrés. Critère global de coque cohérente NON atteint. Aucun commit/push pour ne pas publier comme validé.
+- Portes arrière et finitions restent provisoires.
+
+## Coque intégrée — première référence artistique
+
+- Enveloppe extérieure continue générée par sections paramétriques : raccords courbes proue/cylindre, cylindre/bande et bande/hangar. Pas de nouvel espace intérieur.
+- Les anciennes faces extérieures sont masquées par surface dans Godot ; les parois intérieures et les collisions structurelles restent présentes. La nouvelle peau extérieure ne crée pas de collisions dans les circulations.
+- Le panneau vertical au-dessus de l'entrée du hangar est remplacé par le raccord de plafond progressif convenu ; seule sa géométrie et sa collision haute évoluent.
+- Plans sources, blockout.json, paramètres des six cabines, fenêtres, mobilier, pilote FPS et UI inchangés par cette passe. Longueur nominale 62 m conservée.
+- Validation Godot 4.5.2 Compatibility : import et lancement sans erreur, 56 maillages structurels de collision, six ouvertures libres au contrôle par rayons. Pas de parcours FPS complet ni campagne de performances.
+- Deux générations Blender (correction d'un chevauchement au hangar), puis réglage des ombres extérieures et cadrage final sans régénération supplémentaire. Trois captures finales : exterior_metal.png, cockpit.png, hangar.png.
+- L'enveloppe extérieure ne reçoit pas les ombres des anciens volumes : compromis de blockout pour éviter leur silhouette sur les raccords nouveaux. L'éclairage intérieur est conservé.
+- Résultat retenu pour cette passe : continuité de la coque et fenêtres conservées ; rendu métallique, petits raccords, panneaux détaillés et portes arrière restent provisoires. La référence artistique reste une direction, pas un rendu final reproduit à l'identique.

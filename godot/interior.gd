@@ -8,7 +8,6 @@ var ivory: StandardMaterial3D
 var warm: StandardMaterial3D
 var dark: StandardMaterial3D
 var accent: StandardMaterial3D
-var hull_shell: StandardMaterial3D
 
 func simple(color: String, roughness: float = .7, metallic: float = 0.0) -> StandardMaterial3D:
 	var m := StandardMaterial3D.new()
@@ -22,11 +21,6 @@ func setup(data: Dictionary, ship: Node3D) -> void:
 	name = "InteriorDressing"
 	metal = simple("b4bab9",.48,.25)
 	metal.roughness_texture = load("res://assets/textures/Metal032/Metal032_1K-JPG_Roughness.jpg")
-	hull_shell = simple("7b878b",.42,.62)
-	hull_shell.roughness_texture = load("res://assets/textures/Metal032/Metal032_1K-JPG_Roughness.jpg")
-	hull_shell.emission_enabled = true
-	hull_shell.emission = Color("172024")
-	hull_shell.emission_energy_multiplier = .35
 	ivory = simple("e8e4da")
 	dark = simple("45494b",.8)
 	accent = simple("a65e4d",.9)
@@ -67,8 +61,27 @@ func coat(node: Node) -> void:
 		var title := str(node.name)
 		if title.begins_with("Guide_Light"):
 			node.visible = false
-		elif title.begins_with("Hull_") or title.begins_with("Cylinder_") or title.begins_with("Cockpit_skin_") or title == "Cockpit_bottom" or title == "Living_roof" or title == "Hangar_roof" or title == "Continuous_deck" or title.ends_with("_upper_seal"):
-			node.material_override = hull_shell
+		elif title.begins_with("Guide_Exterior"):
+			# Legacy collision/lining meshes must not stamp their old silhouette
+			# onto the new exterior through the coarse directional shadow map.
+			var finish := StandardMaterial3D.new()
+			finish.albedo_color = Color(.68,.73,.75)
+			finish.metallic = .35
+			finish.roughness = .48
+			finish.disable_receive_shadows = true
+			node.material_override = finish
+		elif title.begins_with("Cockpit_transition"):
+			node.visible = false
+		elif title.begins_with("Hull_") or title.begins_with("Cockpit_") or title == "Cylinder_upper" or title == "Cylinder_lower" or title == "Living_roof" or title == "Hangar_roof" or title == "Continuous_deck" or title.ends_with("_upper_seal"):
+			# The generator assigns exterior and interior materials per surface.
+			if not title.begins_with("Cockpit_"):
+				for i in node.mesh.get_surface_count():
+					var source = node.mesh.surface_get_material(i)
+					if source != null and source.resource_name == "Exterior_Satin":
+						var hidden := StandardMaterial3D.new()
+						hidden.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+						hidden.albedo_color = Color(0,0,0,0)
+						node.set_surface_override_material(i,hidden)
 		elif not title.begins_with("Glass_"):
 			var mat = surface_material.duplicate()
 			mat.set_shader_parameter("threshold",title.begins_with("Guide_Threshold"))

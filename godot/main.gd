@@ -108,7 +108,7 @@ func add_collisions(node: Node) -> void:
 	if node is MeshInstance3D and str(node.name).begins_with("Glass_"):
 		var glass := StandardMaterial3D.new()
 		glass.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-		glass.albedo_color = Color(.2,.4,.5,.08)
+		glass.albedo_color = Color(.46,.64,.70,.24)
 		glass.cull_mode = BaseMaterial3D.CULL_DISABLED
 		glass.roughness = .15
 		node.material_override = glass
@@ -433,6 +433,21 @@ func capture_exterior() -> void:
 	overview.look_at(Vector3(params.length/2,0,0))
 	await RenderingServer.frame_post_draw
 	get_viewport().get_texture().get_image().save_png("res://../exterior_metal.png")
+	player.camera.current = true
+	for data in [["cockpit",Vector3(8,params.floor,0),Vector3(2,.5,1.5)],["hangar",Vector3(params.cylinder_end+3,params.floor,0),Vector3(params.length-1,1.8,5)]]:
+		player.position = data[1]
+		player.camera.look_at(data[2])
+		await frame_wait(15)
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("res://../"+data[0]+".png")
+	# Small migration-free geometry check: original cabin openings remain clear.
+	var blocked := 0
+	for cabin in params.cabins:
+		var z := 1.0 if str(cabin.id).begins_with("U") else -1.0
+		var x: float = (cabin.opening[0]+cabin.opening[1])/2.0
+		var query := PhysicsRayQueryParameters3D.create(Vector3(x,.5,z*9.5),Vector3(x,.5,z*10.6))
+		if not get_world_3d().direct_space_state.intersect_ray(query).is_empty(): blocked += 1
+	print("CABIN_OPENINGS_BLOCKED=",blocked)
 	get_tree().quit()
 
 func capture_ui() -> void:

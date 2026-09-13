@@ -39,6 +39,11 @@ def material(name,c):
     bs.inputs['Roughness'].default_value=.86
     return m
 hull=material('Hull',(.27,.33,.37))
+exterior=material('Exterior_Satin',(.42,.49,.53))
+exterior.node_tree.nodes.get('Principled BSDF').inputs['Metallic'].default_value=.35
+exterior.node_tree.nodes.get('Principled BSDF').inputs['Roughness'].default_value=.48
+inner=material('Interior_Ivory',(.78,.76,.70))
+ceiling=material('Interior_Ceiling',(.38,.42,.44))
 deck=material('Deck',(.105,.135,.15))
 wallmat=material('Partitions',(.61,.60,.55))
 frame=material('Frame',(.13,.20,.23))
@@ -68,13 +73,32 @@ def box(name,x0,x1,y0,y1,z0,z1,mat=wallmat):
 def wall(name,p,q,z0,z1,mat=wallmat,thickness=t):
     dx,dy=q[0]-p[0],q[1]-p[1]; le=math.hypot(dx,dy)
     ox,oy=dy*thickness/le,-dx*thickness/le
-    return slab(name,[p,(p[0]+ox,p[1]+oy),(q[0]+ox,q[1]+oy),q],z0,z1,mat)
+    ob=slab(name,[p,(p[0]+ox,p[1]+oy),(q[0]+ox,q[1]+oy),q],z0,z1,mat)
+    ob['interior_line']=[X(p[0]),p[1],X(q[0]),q[1]]
+    return ob
 def beam(name,p,q,r=.055,mat=frame):
     p=(X(p[0]),p[1],p[2]); q=(X(q[0]),q[1],q[2])
     delta=Vector(q)-Vector(p)
     bpy.ops.mesh.primitive_cylinder_add(vertices=8,radius=r,depth=delta.length,location=(Vector(p)+Vector(q))/2)
     ob=bpy.context.object; ob.name=name
     ob.rotation_euler=delta.to_track_quat('Z','Y').to_euler(); ob.data.materials.append(mat)
+
+def shell(ob, thickness=t, outward=None):
+    # Weld patch boundaries before solidifying: a real continuous inner skin
+    # and window reveals, rather than independently thickened triangles.
+    bm=bmesh.new(); bm.from_mesh(ob.data)
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=.0001)
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    if outward is not None:
+        for face in bm.faces:
+            if face.normal.dot(Vector(outward))<0: face.normal_flip()
+    bm.to_mesh(ob.data); bm.free()
+    ob.data.materials.clear(); ob.data.materials.append(exterior); ob.data.materials.append(inner)
+    mod=ob.modifiers.new('Structural thickness','SOLIDIFY')
+    mod.thickness=thickness; mod.offset=-1; mod.material_offset=1; mod.material_offset_rim=1
+    bpy.context.view_layer.objects.active=ob
+    bpy.ops.object.modifier_apply(modifier=mod.name)
+    return ob
 lights=[]; labels=[]; routes=[]; audit={}; reference=[]
 def lamp(x,y,length=2,z=None):
     z=roof if z is None else z
@@ -94,14 +118,28 @@ slab('Hangar_roof',hang,hangar_roof,hangar_roof+t,hull)
 for i in range(len(hang)-1): wall('Hull_hangar',hang[i],hang[i+1],floor,hangar_roof)
 # Close the height transition above every passage into the hangar.
 # The detached lower slab is removed: the continuous deck is the lower skin.
-box('Hangar_front_upper_seal',43-.05,43+t,-10,10,roof,hangar_roof,hull)
-box('Cockpit_rear_upper_seal',9.98,10,-10,10,roof,4,hull)
+# Replace the blunt hanging header by a ceiling transition above the passage.
+v=[]
+for i in range(25):
+    u=i/24
+    z=roof+(hangar_roof-roof)*(u*u*(3-2*u))
+    v.extend([(43+6*u,-10,z),(43+6*u,10,z)])
+header=mesh('Hangar_front_upper_seal',v,[(2*i,2*i+1,2*i+3,2*i+2) for i in range(24)],inner)
+mod=header.modifiers.new('Ceiling thickness','SOLIDIFY'); mod.thickness=.15
+bpy.context.view_layer.objects.active=header; bpy.ops.object.modifier_apply(modifier=mod.name)
+# Only seal the exposed wings; the cylinder already closes the central area.
+for side in [-1,1]:
+    for upper in [True,False]:
+        z0=4 if upper else -4
+        z1=roof+t if upper else floor-ft
+        shell(mesh('Cockpit_transition',[(10,side*6.8,z0),(10,side*10,z0),(12,side*12,z1),(12,side*6.8,z1)],[(0,1,2,3)],hull),outward=(0,0,1 if upper else -1))
+        shell(mesh('Cockpit_transition_edge',[(10,side*10,z0),(12,side*12,z1),(10,side*10,z1)],[(0,1,2)],hull),outward=(-1,side,0))
 # Smaller windows are cut into the actual sloping prow facets. Opaque borders,
 # opaque nose tip and separate aft windows retain a pointed structural shell.
 nose=(0,0,0)
 def ring(x): return [(x,-x,-.4*x),(x,x,-.4*x),(x,x,.4*x),(x,-x,.4*x)]
 back=ring(a)
-mesh('Cockpit_bottom',[nose,back[0],back[1]],[(0,1,2)],hull)
+shell(mesh('Cockpit_bottom',[nose,back[0],back[1]],[(0,1,2)],hull),outward=(-.4,0,-1))
 def prow_point(face,x,u):
     return (x,(-1+2*u)*x,.4*x) if face==2 else (x,x if face==1 else -x,(-.4+.8*u)*x)
 for face in [1,2,3]:
@@ -116,8 +154,25 @@ for face in [1,2,3]:
             points=([nose,prow_point(face,x1,u0),prow_point(face,x1,u1)] if x0==0 else [prow_point(face,x0,u0),prow_point(face,x1,u0),prow_point(face,x1,u1),prow_point(face,x0,u1)])
             start=len(verts); verts.extend(points); faces.append(tuple(range(start,start+len(points))))
     for glazing,(verts,faces) in buckets.items():
-        mesh(('Glass_' if glazing else 'Cockpit_skin_')+str(face),verts,faces,glass if glazing else hull)
-for point in back: beam('Prow_frame',nose,point,.045)
+        ob=mesh(('Glass_' if glazing else 'Cockpit_skin_')+str(face),verts,faces,glass if glazing else hull)
+        if glazing:
+            # Set glass inside the 35 cm reveal, with its own 25 mm thickness.
+            normal=Vector((-.4,0,1) if face==2 else (-1,1 if face==1 else -1,0)).normalized()
+            bm=bmesh.new(); bm.from_mesh(ob.data)
+            bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=.0001)
+            bmesh.ops.dissolve_limit(bm,angle_limit=.001,verts=list(bm.verts),edges=list(bm.edges))
+            bm.to_mesh(ob.data); bm.free()
+            for vertex in ob.data.vertices: vertex.co-=normal*(t*.55)
+            mod=ob.modifiers.new('Glazing thickness','SOLIDIFY'); mod.thickness=.025
+            bpy.context.view_layer.objects.active=ob; bpy.ops.object.modifier_apply(modifier=mod.name)
+        else:
+            # Enforce outward orientation on the disconnected open patches.
+            normal=Vector((-.4,0,1) if face==2 else (-1,1 if face==1 else -1,0))
+            bm=bmesh.new(); bm.from_mesh(ob.data)
+            for f in bm.faces:
+                if f.normal.dot(normal)<0: f.normal_flip()
+            bm.to_mesh(ob.data); bm.free()
+            shell(ob,outward=normal)
 lamp(8,0,2,z=3.05)
 # Cylinder is restored to the specified constant diameter and station limits.
 # Its two plan rectangles remain reserved volumes, not invented rooms.
@@ -125,10 +180,13 @@ for sign in [-1,1]:
     y0,y1=sorted([sign*1,sign*8])
     box('Cylinder_plan_volume',a,b,y0,y1,floor,roof,hull)
 for name,angles in [('upper',(math.asin(roof/radius),math.pi-math.asin(roof/radius))),('lower',(math.pi-math.asin(floor/radius),2*math.pi+math.asin(floor/radius)))]:
-    n=cfg['cylinder_segments']//2+1
+    n=max(97,cfg['cylinder_segments']//2+1)
     arc=[(radius*math.cos(angles[0]+(angles[1]-angles[0])*i/(n-1)),radius*math.sin(angles[0]+(angles[1]-angles[0])*i/(n-1))) for i in range(n)]
-    mesh('Cylinder_'+name,[(x,y,z) for x in [a,b] for y,z in arc],
+    ob=mesh('Cylinder_'+name,[(x,y,z) for x in [a,b] for y,z in arc],
          [(i,i+1,i+1+n,i+n) for i in range(n-1)]+[tuple(reversed(range(n))),tuple(range(n,2*n))],hull)
+    ob.data.materials.clear(); ob.data.materials.append(exterior)
+    for polygon in ob.data.polygons:
+        polygon.use_smooth=abs(polygon.normal.x)<.5
 # Cabin-front segments and actual 1.2m gaps are read verbatim from reference SVG.
 openings={}; cabin_polygons=[]
 for s,group,key in [(-1,'upper-structure','upper_side'),(1,'lower-structure','lower_side')]:
@@ -162,7 +220,7 @@ for s,group,key in [(-1,'upper-structure','upper_side'),(1,'lower-structure','lo
         box('Cabin_partition',x-pt/2,x+pt/2,*yy,floor,roof)
     # Exact diagonal return into hangar from the plan; no extra vestibule.
     p,q=(43,s*8),(49,s*12)
-    wall('Diagonal_source',p,q,floor,roof,thickness=-t if s<0 else t)
+    wall('Diagonal_source',p,q,floor,hangar_roof,thickness=-t if s<0 else t)
     box('Guide_Lateral',10,43,*sorted([s*8,s*10]),floor+.002,floor+.004,guide)
     for x in [12,18,24,30,36,41]: lamp(x,s*9,1.6)
     lamp(46,s*11,1.6)
@@ -205,6 +263,77 @@ audit={'reference':'source plan stretched only along X, authorized 4m extension'
 assert len(cabin_polygons)==top['cabins']['count_total']==6
 assert all(abs(hi-lo-1.2)<1e-6 for gaps in openings.values() for lo,hi in gaps)
 out=ROOT/'godot'/'assets'; out.mkdir(parents=True,exist_ok=True)
+# Continuous exterior loft. Existing structural meshes remain the source of
+# interior surfaces and collisions; their exterior material is hidden in Godot.
+# Stations are in source-plan metres and pass through X exactly once.
+def smoothstep(lo,hi,x):
+    u=max(0,min(1,(x-lo)/(hi-lo)))
+    return u*u*(3-2*u)
+
+def blendmax(v,w,k=1.25):
+    h=max(k-abs(v-w),0)/k
+    return max(v,w)+h*h*k*.25
+
+def skin_width(x):
+    if x<=16: return min(16+t,x+t*math.sqrt(2)*smoothstep(8.6,12,x))
+    if x<=39: return 16+t
+    if x<49: return 16+t-2*smoothstep(39,49,x)
+    return 14+t
+
+def section(x):
+    front=smoothstep(8.6,14,x)
+    rear=smoothstep(b,49,x)
+    base=(.4*x if x<10 else 4+(roof+t-4)*smoothstep(10,16,x))
+    base=base+(hangar_roof+t-base)*smoothstep(39,43,x)
+    low=(-.4*x if x<10 else -4+(floor-ft+4)*smoothstep(10,16,x))
+    low=low+(floor-ft-low)*rear
+    width=skin_width(x)
+    edge=.16*smoothstep(8.6,12,x)
+    upper=[]; lower=[]
+    for i in range(161):
+        y=width*(-1+2*i/160)
+        circ=math.sqrt(max(0,radius*radius-y*y))
+        crest=blendmax(base,circ)
+        trough=-blendmax(-low,circ)
+        z=base+(crest-base)*front*(1-rear)
+        zb=low+(trough-low)*front*(1-rear)
+        if edge>0 and abs(y)>width-edge:
+            cut=edge-math.sqrt(max(0,edge*edge-(abs(y)-width+edge)**2))
+            z-=cut; zb+=cut
+        upper.append((x,y,z)); lower.append((x,y,zb))
+    return upper+list(reversed(lower))
+
+stations=[8.6]+[8.6+(end+t-8.6)*i/220 for i in range(1,221)]
+verts=[v for x in stations for v in section(x)]
+stride=322
+faces=[]
+for j in range(len(stations)-1):
+    for i in range(stride):
+        n=(i+1)%stride
+        faces.append((j*stride+i,j*stride+n,(j+1)*stride+n,(j+1)*stride+i))
+faces.append(tuple(range((len(stations)-1)*stride,len(verts))))
+outer=mesh('Guide_ExteriorContinuous',verts,faces,exterior)
+for p in outer.data.polygons: p.use_smooth=abs(p.normal.x)<.98
+# Structural shell thickness, without changes to the existing FPS collision set.
+mod=outer.modifiers.new('Outer skin thickness','SOLIDIFY'); mod.thickness=.12; mod.offset=-1
+bpy.context.view_layer.objects.active=outer; bpy.ops.object.modifier_apply(modifier=mod.name)
+# Keep inside/outside assignments per face in the GLB. No global metal override.
+for ob in list(bpy.context.scene.objects):
+    if ob.type!='MESH': continue
+    name=ob.name
+    if name.startswith(('Hull_body','Hull_hangar')):
+        ob.data.materials.clear(); ob.data.materials.append(inner); ob.data.materials.append(exterior)
+        x0,y0,x1,y1=ob['interior_line']
+        for p in ob.data.polygons:
+            on_inner=all(abs((ob.data.vertices[i].co.x-x0)*(y1-y0)-(ob.data.vertices[i].co.y-y0)*(x1-x0))<.00001 for i in p.vertices)
+            p.material_index=0 if on_inner else 1
+    elif name in ('Living_roof','Hangar_roof','Continuous_deck'):
+        ob.data.materials.clear(); ob.data.materials.append(ceiling if 'roof' in name else deck); ob.data.materials.append(exterior)
+        for p in ob.data.polygons:
+            p.material_index=int(p.normal.z>-.5 if 'roof' in name else p.normal.z<.5)
+    elif name.startswith('Hangar_front_upper_seal'):
+        ob.data.materials.clear(); ob.data.materials.append(inner)
+        for p in ob.data.polygons: p.material_index=0
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'blockout.blend'))
 bpy.ops.export_scene.gltf(filepath=str(out/'adastra.glb'),export_format='GLB',export_yup=True,export_apply=True,export_animations=False)
 params={'length':X(end),'longitudinal_scale':stretch,'width':32,'floor':floor,'roof':roof,'hangar_roof':hangar_roof,'lights':lights,'labels':labels,
