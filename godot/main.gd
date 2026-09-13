@@ -88,6 +88,9 @@ func _ready() -> void:
 	elif "--screenshots" in OS.get_cmdline_user_args():
 		ui.hide()
 		call_deferred("capture_views")
+	elif "--exterior" in OS.get_cmdline_user_args():
+		ui.hide()
+		call_deferred("capture_exterior")
 	elif "--ui-captures" in OS.get_cmdline_user_args():
 		call_deferred("capture_ui")
 
@@ -420,6 +423,16 @@ func pilot_capture() -> void:
 		await frame_wait(30)
 		await RenderingServer.frame_post_draw
 		get_viewport().get_texture().get_image().save_png("res://../"+data[0]+".png")
+	get_tree().quit()
+
+func capture_exterior() -> void:
+	await frame_wait(40)
+	player.frozen = true
+	overview.current = true
+	overview.position = Vector3(-5,35,55)
+	overview.look_at(Vector3(params.length/2,0,0))
+	await RenderingServer.frame_post_draw
+	get_viewport().get_texture().get_image().save_png("res://../exterior_metal.png")
 	get_tree().quit()
 
 func capture_ui() -> void:
