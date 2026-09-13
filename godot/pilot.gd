@@ -1,12 +1,11 @@
 extends Node3D
 
-# Original, parametric finish for the existing 5 m test segment only.
-const X0 := 18.0
-const X1 := 23.0
-const WALL_NEG_FACE := 8.036
-const WALL_POS_FACE := 9.964
+# Original, parametric corridor finish.  It remains an overlay on the GLB.
+const CORRIDOR_START := 10.0
+const CORRIDOR_END := 47.0
 var installed: Array[String] = []
 var module_parent: Node3D
+var params: Dictionary
 
 func module(title: String) -> void:
 	module_parent = Node3D.new()
@@ -21,7 +20,8 @@ func finish(color: String, roughness: float, metallic: float = 0.0) -> StandardM
 	material.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	return material
 
-func setup(old: Node3D, ship: Node3D) -> void:
+func setup(old: Node3D, ship: Node3D, data: Dictionary) -> void:
+	params = data
 	get_viewport().msaa_3d = Viewport.MSAA_4X
 	name = "Pilot5m"
 	remove_previous_dressing(old)
@@ -37,25 +37,19 @@ func setup(old: Node3D, ship: Node3D) -> void:
 	glow.emission = Color("fff3df")
 	glow.emission_energy_multiplier = 1.3
 
-	# The existing test limits are preserved; each layer is only a surface finish.
-	module("Floor")
-	box("PilotFloor", Vector3(20.5, -.977, 9), Vector3(5, .018, 2), floor_finish)
-	box("FlushAccessFloor",Vector3(20.5,-.977,10.15),Vector3(1.20,.018,.30),floor_finish)
-	module("CeilingBacking")
-	box("PilotCeiling", Vector3(20.5, 2.014, 9), Vector3(5, .035, 2), ceiling)
-	wall_panels(Vector2(X0, X1), WALL_NEG_FACE, -1.0, ivory, graphite, glow)
-	# Finish the panels at the outer edge of the existing frame, never behind it.
-	wall_panels(Vector2(18, 19.64), WALL_POS_FACE, 1.0, ivory, graphite, glow)
-	wall_panels(Vector2(21.36, X1), WALL_POS_FACE, 1.0, ivory, graphite, glow)
-	ceiling_modules(ceiling, ivory, graphite, glow)
-	door_module(ivory, graphite, aluminium)
-	add_lighting()
+	# The same validated kit is repeated only in the three existing corridors.
+	# Cockpit, hangar and cabin interiors are deliberately outside these bounds.
+	var upper_doors := cabin_doors(1.0)
+	var lower_doors := cabin_doors(-1.0)
+	corridor_module("Upper", 9.0, 8.036, 9.964, -1.0, 1.0, upper_doors, floor_finish, ceiling, ivory, graphite, aluminium, glow)
+	corridor_module("Lower", -9.0, -8.036, -9.964, 1.0, -1.0, lower_doors, floor_finish, ceiling, ivory, graphite, aluminium, glow)
+	corridor_module("Central", 0.0, -.964, .964, 1.0, -1.0, [], floor_finish, ceiling, ivory, graphite, aluminium, glow)
 	installed = [
 		"Original ivory composite wall panels",
 		"Original graphite satin floor finish",
 		"Original integrated cove light",
 		"Original full wall panel and inset wall panel",
-		"Original rounded access frame, flush floor transition, base trim and ceiling bays"
+		"Original rounded access frames, flush floor transitions, base trim and ceiling bays"
 	]
 	FileAccess.open("res://../pilot-assets.json", FileAccess.WRITE).store_string(JSON.stringify(installed, "  "))
 
@@ -64,22 +58,48 @@ func remove_previous_dressing(old: Node3D) -> void:
 		if not node is Node3D:
 			continue
 		var p: Vector3 = node.position
-		if p.x >= X0 and p.x <= X1 and p.z >= 7.8 and p.z <= 10.2:
+		# Remove the old corridor-only dressing, never cabin furniture or end areas.
+		var in_living_corridor := p.x >= CORRIDOR_START and p.x <= CORRIDOR_END and absf(p.z) <= 10.2
+		if in_living_corridor and (str(node.name).begins_with("WallTrim") or str(node.name).begins_with("Skirting") or str(node.name).begins_with("Cove") or str(node.name).begins_with("Diffuser") or str(node.name).begins_with("lampSquareCeiling") or str(node.name).begins_with("frame_")):
 			node.hide()
-		if (str(node.name).begins_with("Cove") or str(node.name).begins_with("Skirting")) and p.z > 0 and node is MeshInstance3D:
-			var source: MeshInstance3D = node
-			var original_size: Vector3 = source.mesh.size
-			node.hide()
-			for interval in [Vector2(10, X0), Vector2(X1, 47)]:
-				var copy := source.duplicate()
-				copy.mesh = source.mesh.duplicate()
-				copy.mesh.size = Vector3(interval.y - interval.x, original_size.y, original_size.z)
-				copy.position.x = (interval.x + interval.y) / 2.0
-				old.add_child(copy)
-				copy.show()
 
-func wall_panels(span: Vector2, z: float, side: float, ivory: Material, graphite: Material, glow: Material) -> void:
-	module("Wall_"+str(span.x)+"_"+str(side))
+func cabin_doors(sign_z: float) -> Array:
+	var doors: Array = []
+	for cabin in params.cabins:
+		var is_upper := str(cabin.id).begins_with("U")
+		if (sign_z > 0.0) != is_upper:
+			continue
+		var opening: Array = cabin.opening
+		doors.append({"center":(float(opening[0])+float(opening[1]))/2.0,"width":float(opening[1])-float(opening[0])})
+	return doors
+
+func corridor_module(title: String, center_z: float, inner_face: float, outer_face: float, inner_side: float, outer_side: float, doors: Array, floor_finish: Material, ceiling: Material, ivory: Material, graphite: Material, aluminium: Material, glow: Material) -> void:
+	module(title+"Floor")
+	box("CorridorFloor",Vector3((CORRIDOR_START+CORRIDOR_END)/2.0,-.977,center_z),Vector3(CORRIDOR_END-CORRIDOR_START,.018,2),floor_finish)
+	module(title+"Ceiling")
+	box("CorridorCeiling",Vector3((CORRIDOR_START+CORRIDOR_END)/2.0,2.014,center_z),Vector3(CORRIDOR_END-CORRIDOR_START,.035,2),ceiling)
+	wall_panels(Vector2(CORRIDOR_START,CORRIDOR_END),inner_face,inner_side,ivory,graphite,glow,title+"Inner")
+	for span in wall_spans(doors):
+		wall_panels(span,outer_face,outer_side,ivory,graphite,glow,title+"Outer")
+	ceiling_modules(center_z,ceiling,ivory,graphite,glow,title)
+	for door in doors:
+		door_module(float(door.center),float(door.width),outer_face,aluminium,ivory,graphite)
+	add_lighting(center_z,title)
+
+func wall_spans(doors: Array) -> Array:
+	var spans: Array = []
+	var start := CORRIDOR_START
+	for door in doors:
+		var edge := float(door.center)-(float(door.width)/2.0+.14)
+		if edge-start > .05:
+			spans.append(Vector2(start,edge))
+		start = float(door.center)+(float(door.width)/2.0+.14)
+	if CORRIDOR_END-start > .05:
+		spans.append(Vector2(start,CORRIDOR_END))
+	return spans
+
+func wall_panels(span: Vector2, z: float, side: float, ivory: Material, graphite: Material, glow: Material, title: String) -> void:
+	module(title+"Wall_"+str(snapped(span.x,.01)))
 	var face_z := z
 	var x := span.x
 	while x < span.y:
@@ -98,51 +118,56 @@ func wall_panels(span: Vector2, z: float, side: float, ivory: Material, graphite
 	var occluder := module_parent.get_child(module_parent.get_child_count()-1) as MeshInstance3D
 	occluder.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_SHADOWS_ONLY
 
-func ceiling_modules(ceiling: Material, ivory: Material, graphite: Material, glow: Material) -> void:
-	module("CeilingBays")
-	# Four equal bays tile exactly the five metres; joints terminate inside the fascia.
-	for i in range(4):
-		var x := X0+(float(i)+.5)*1.25
-		box("CeilingPanel",Vector3(x,1.981,9),Vector3(1.246,.035,1.80),ceiling)
+func ceiling_modules(center_z: float, ceiling: Material, ivory: Material, graphite: Material, glow: Material, title: String) -> void:
+	module(title+"CeilingBays")
+	var bay := 1.25
+	var count := int(ceil((CORRIDOR_END-CORRIDOR_START)/bay))
+	for i in range(count):
+		var left := CORRIDOR_START+float(i)*bay
+		var width := minf(bay,CORRIDOR_END-left)
+		box("CeilingPanel",Vector3(left+width/2.0,1.981,center_z),Vector3(width-.004,.035,1.80),ceiling)
 		if i>0:
-			box("CeilingJoint",Vector3(X0+float(i)*1.25,1.965,9),Vector3(.003,.008,1.80),graphite)
-	module("UpperJunctionAndLight")
-	for z in [8.07, 9.93]:
-		box("CeilingFascia",Vector3(20.5,1.875,z),Vector3(5,.245,.10),ivory)
-		var inward := .058 if z<9 else -.058
-		box("LightRecess",Vector3(20.5,1.84,z+inward),Vector3(5,.052,.012),graphite)
-		box("ContinuousDiffuser",Vector3(20.5,1.84,z+inward*1.12),Vector3(4.97,.026,.012),glow)
-	module("CeilingLuminaires")
-	for x in [19.25,21.75]:
-		box("RecessedHousing",Vector3(x,1.948,9),Vector3(.80,.038,.25),graphite)
-		box("Diffuser",Vector3(x,1.925,9),Vector3(.74,.012,.19),glow)
+			box("CeilingJoint",Vector3(left,1.965,center_z),Vector3(.003,.008,1.80),graphite)
+	module(title+"JunctionAndLight")
+	for side in [-1.0,1.0]:
+		var z: float = center_z+float(side)*.93
+		box("CeilingFascia",Vector3((CORRIDOR_START+CORRIDOR_END)/2.0,1.875,z),Vector3(CORRIDOR_END-CORRIDOR_START,.245,.10),ivory)
+		box("LightRecess",Vector3((CORRIDOR_START+CORRIDOR_END)/2.0,1.84,z-side*.058),Vector3(CORRIDOR_END-CORRIDOR_START,.052,.012),graphite)
+		box("ContinuousDiffuser",Vector3((CORRIDOR_START+CORRIDOR_END)/2.0,1.84,z-side*.065),Vector3(CORRIDOR_END-CORRIDOR_START-.03,.026,.012),glow)
+	module(title+"CeilingLuminaires")
+	for x in range(12,47,5):
+		box("RecessedHousing",Vector3(x,1.948,center_z),Vector3(.80,.038,.25),graphite)
+		box("Diffuser",Vector3(x,1.925,center_z),Vector3(.74,.012,.19),glow)
 
-func door_module(ivory: Material, graphite: Material, aluminium: Material) -> void:
-	module("OpeningFrame")
+func door_module(center_x: float, opening_width: float, z: float, aluminium: Material, ivory: Material, graphite: Material) -> void:
+	module("OpeningFrame_"+str(snapped(center_x,.01)))
 	# Leave the original wall exposed between the curved trim and ceiling fascia.
 	# Its vertical inner edge remains outside X=19.9..21.1.
-	var path := PackedVector2Array([Vector2(-.74,-.98),Vector2(-.74,1.35)])
+	var outer_half := opening_width/2.0+.14
+	var curve_x := outer_half-.25
+	var path := PackedVector2Array([Vector2(-outer_half,-.98),Vector2(-outer_half,1.35)])
 	for i in range(17):
 		var angle := PI - float(i)*PI/32.0
-		path.append(Vector2(-.49,1.35)+Vector2(cos(angle),sin(angle))*.25)
-	path.append(Vector2(.49,1.60))
+		path.append(Vector2(-curve_x,1.35)+Vector2(cos(angle),sin(angle))*.25)
+	path.append(Vector2(curve_x,1.60))
 	for i in range(17):
 		var angle := PI/2.0-float(i)*PI/32.0
-		path.append(Vector2(.49,1.35)+Vector2(cos(angle),sin(angle))*.25)
-	path.append(Vector2(.74,-.98))
+		path.append(Vector2(curve_x,1.35)+Vector2(cos(angle),sin(angle))*.25)
+	path.append(Vector2(outer_half,-.98))
 	# Every layer references the same wall face; only 14–25 mm of intentional relief remains.
-	strip(path,.20,9.950,graphite,WALL_POS_FACE)
-	strip(path,.170,9.946,ivory,9.950)
-	strip(path,.115,9.942,ivory,9.946)
-	strip(path,.006,9.939,aluminium,9.942)
-	assert(.74-.20/2.0 >= .60, "Frame reduces opening")
+	var direction := 1.0 if z > 0.0 else -1.0
+	strip(path,center_x,.20,z-direction*.014,graphite,z)
+	strip(path,center_x,.170,z-direction*.018,ivory,z-direction*.014)
+	strip(path,center_x,.115,z-direction*.022,ivory,z-direction*.018)
+	strip(path,center_x,.006,z-direction*.025,aluminium,z-direction*.022)
+	assert(outer_half-.10 >= opening_width/2.0, "Frame reduces opening")
 
-func add_lighting() -> void:
-	module("Lighting")
-	for x in [19.25, 21.75]:
+func add_lighting(center_z: float, title: String) -> void:
+	module(title+"Lighting")
+	for x in range(12,47,5):
 		var light := SpotLight3D.new()
 		light.name = "PilotCoveLight"
-		light.position = Vector3(x, 1.89, 9)
+		light.position = Vector3(x, 1.89, center_z)
 		light.rotation_degrees.x = -90
 		light.spot_range = 3.5
 		light.spot_angle = 72
@@ -155,8 +180,8 @@ func add_lighting() -> void:
 		light.shadow_normal_bias = .02
 		module_parent.add_child(light)
 	var probe := ReflectionProbe.new()
-	probe.position = Vector3(20.5, .45, 9)
-	probe.size = Vector3(5, 3, 2)
+	probe.position = Vector3((CORRIDOR_START+CORRIDOR_END)/2.0, .45, center_z)
+	probe.size = Vector3(CORRIDOR_END-CORRIDOR_START, 3, 2)
 	probe.interior = true
 	probe.box_projection = true
 	probe.ambient_mode = ReflectionProbe.AMBIENT_COLOR
@@ -223,7 +248,7 @@ func plate(title: String, at: Vector3, size: Vector2, radius: float, bevel: floa
 	node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	module_parent.add_child(node)
 
-func strip(points: PackedVector2Array, width: float, z: float, mat: Material, support_z: float) -> void:
+func strip(points: PackedVector2Array, center_x: float, width: float, z: float, mat: Material, support_z: float) -> void:
 	# Shared tangent at arc endpoints prevents cracks between straight and curved trims.
 	var path := PackedVector2Array()
 	for point in points:
@@ -246,13 +271,13 @@ func strip(points: PackedVector2Array, width: float, z: float, mat: Material, su
 		var c := path[i+1]+offsets[i+1]
 		var d := path[i+1]-offsets[i+1]
 		for p in [a,b,c,b,d,c]:
-			st.add_vertex(Vector3(p.x+20.5,p.y,z))
+			st.add_vertex(Vector3(p.x+center_x,p.y,z))
 		# Close both edges back to the supporting wall, including the curved head.
 		var rear := support_z
 		for edge in [[a,c],[d,b]]:
 			var u: Vector2 = edge[0]
 			var v: Vector2 = edge[1]
-			for vertex in [Vector3(u.x+20.5,u.y,z),Vector3(v.x+20.5,v.y,z),Vector3(u.x+20.5,u.y,rear),Vector3(v.x+20.5,v.y,z),Vector3(v.x+20.5,v.y,rear),Vector3(u.x+20.5,u.y,rear)]:
+			for vertex in [Vector3(u.x+center_x,u.y,z),Vector3(v.x+center_x,v.y,z),Vector3(u.x+center_x,u.y,rear),Vector3(v.x+center_x,v.y,z),Vector3(v.x+center_x,v.y,rear),Vector3(u.x+center_x,u.y,rear)]:
 				st.add_vertex(vertex)
 	st.generate_normals()
 	var node := MeshInstance3D.new()
@@ -268,7 +293,7 @@ func strip(points: PackedVector2Array, width: float, z: float, mat: Material, su
 func remove_guide_threshold(node: Node) -> void:
 	if node is MeshInstance3D and str(node.name).begins_with("Guide_Threshold"):
 		var bounds: AABB = node.global_transform * node.get_aabb()
-		if bounds.get_center().x>X0 and bounds.get_center().x<X1 and bounds.get_center().z>9.9:
+		if bounds.get_center().x>CORRIDOR_START and bounds.get_center().x<CORRIDOR_END:
 			node.hide()
 	for child in node.get_children():
 		remove_guide_threshold(child)

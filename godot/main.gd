@@ -52,20 +52,8 @@ func _ready() -> void:
 		add_child(light)
 	var pilot = preload("res://pilot.gd").new()
 	add_child(pilot)
-	pilot.setup(dressing,ship)
-	for data in params.labels:
-		# The pilot's lowered frame leaves this legacy label partially exposed.
-		if data.text == "U1":
-			continue
-		var label := Label3D.new()
-		label.text = data.text
-		label.position = Vector3(data.position[0],data.position[1],data.position[2])
-		label.rotation_degrees.y = data.yaw
-		label.font_size = 64
-		label.pixel_size = 0.0028
-		label.outline_size = 0
-		label.modulate = Color("b7785c") if data.color == "blue" else Color("f1c5a0")
-		add_child(label)
+	pilot.setup(dressing,ship,params)
+	# Legacy U/L labels were blockout guides; the exploration view stays unlabelled.
 	player = PlayerScript.new()
 	add_child(player)
 	var s: Array = params.spawn
@@ -421,9 +409,8 @@ func pilot_capture() -> void:
 	await frame_wait(100)
 	player.frozen = true
 	for data in [
-		["pilot_01_couloir",Vector3(20.5,params.floor,8.7),Vector3(20.5,1.55,9.97)],
-		["pilot_02_acces",Vector3(22.2,params.floor,8.25),Vector3(20.5,.40,9.97)],
-		["pilot_03_raccord",Vector3(18.25,params.floor,9.42),Vector3(22.8,-.20,9.95)]]:
+		["corridor_01_generalise",Vector3(12.5,params.floor,9.0),Vector3(40.0,params.floor+1.35,9.0)],
+		["corridor_02_acces",Vector3(31.2,params.floor,8.25),Vector3(29.5,.40,9.97)]]:
 		player.position = data[1]
 		player.camera.look_at(data[2])
 		await frame_wait(30)
