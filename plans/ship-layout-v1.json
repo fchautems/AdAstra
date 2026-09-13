@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "project": "AdAstra",
+  "plan": {
+    "id": "top-view",
+    "status": "current-parametric-reference",
+    "date": "2026-09-09",
+    "sources": {
+      "baseline_svg": "projects/ad-astra/plans/top-view-v11-base.svg",
+      "wall_svg": "projects/ad-astra/plans/top-view-v14-walls.svg",
+      "original_sketch": "projects/ad-astra/reference/top-view-original-sketch.jpg",
+      "generated_svg": "projects/ad-astra/plans/top-view-v15-from-json.svg"
+    }
+  },
+  "units": {
+    "grid_unit_name": "meter",
+    "grid_unit": 1.0,
+    "meters_per_grid_unit": 1.0,
+    "major_grid_every": 5,
+    "all_coordinates_are_in_meters": true
+  },
+  "coordinate_system": {
+    "origin": {"x": 0.0, "y": 0.0, "meaning": "nose tip on longitudinal center axis"},
+    "x_axis": {"positive_direction": "front_to_rear"},
+    "y_axis": {"negative_direction": "upper_half_of_plan", "positive_direction": "lower_half_of_plan"},
+    "structural_symmetry": {"type": "mirror", "axis": "y=0", "rule": "external structure and main circulation remain symmetric"},
+    "interior_symmetry": {"required": false, "reason": "cabin layout may vary to avoid an overly repetitive interior"}
+  },
+  "validated_constraints": {
+    "central_corridor_clear_width_m": 2.0,
+    "upper_lateral_corridor_straight_clear_width_m": 2.0,
+    "lower_lateral_corridor_straight_clear_width_m": 2.0,
+    "central_corridor_boundaries_y": [-1.0, 1.0],
+    "upper_lateral_corridor_boundaries_y_straight": [-10.0, -8.0],
+    "lower_lateral_corridor_boundaries_y_straight": [8.0, 10.0],
+    "structural_symmetry_must_be_exact": true,
+    "doors_defined": false,
+    "cabin_partitions_defined": true,
+    "cabin_internal_layout_defined": false
+  },
+  "dimensions": {
+    "overall_length_m": 58.0,
+    "max_body_width_m": 32.0,
+    "hangar_width_m": 28.0,
+    "cylinder": {"x_start": 10.0, "x_end": 43.0, "length_m": 33.0, "inner_edge_distance_from_axis_m": 1.0, "outer_edge_distance_from_axis_m": 8.0, "half_height_m": 7.0, "total_rotating_zone_span_including_central_corridor_m": 16.0},
+    "habitable_rectangular_band": {"x_start": 16.0, "x_end": 39.0, "length_m": 23.0, "gross_depth_m": 6.0}
+  },
+  "geometry": {
+    "upper_half": {
+      "outer_hull_reference": {
+        "segments": [
+          {"id": "nose_to_upper_outer_corner", "type": "line", "from": [0.0, 0.0], "to": [16.0, -16.0]},
+          {"id": "upper_outer_body", "type": "polyline", "points": [[10.0, -10.0], [16.0, -16.0], [39.0, -16.0], [39.0, -10.0]]}
+        ]
+      },
+      "cylinder_half": {"type": "rectangle", "x": 10.0, "y": -8.0, "width": 33.0, "height": 7.0},
+      "lateral_corridor": {
+        "straight_section": {
+          "x_start": 10.0,
+          "x_end": 43.0,
+          "outer_boundary": {"from": [10.0, -10.0], "to": [43.0, -10.0]},
+          "inner_boundary": {"from": [10.0, -8.0], "to": [43.0, -8.0]},
+          "clear_width_m": 2.0
+        },
+        "rear_diagonal_section": {
+          "outer_boundary": {"from": [43.0, -10.0], "to": [49.0, -14.0]},
+          "inner_boundary": {"from": [43.0, -8.0], "to": [49.0, -12.0]},
+          "boundaries_are_parallel": true,
+          "current_perpendicular_clear_width_m": 1.6641005887,
+          "target_clear_width_m": 2.0,
+          "width_policy": "parameterized",
+          "adjustable": true,
+          "status": "keep current sketch geometry for now; allow later switch to constant 2 m perpendicular width"
+        }
+      },
+      "hangar": {"front_transition_x": 49.0, "rear_x": 58.0, "upper_outer_y": -14.0, "center_axis_y": 0.0}
+    },
+    "lower_half_generation": {"method": "mirror_upper_structure", "transform": "y -> -y"},
+    "central_corridor": {"axis": {"from": [0.0, 0.0], "to": [58.0, 0.0]}, "clear_boundaries_y": [-1.0, 1.0], "clear_width_m": 2.0}
+  },
+  "walls": {
+    "model": "double-line architectural walls around validated clear-space geometry",
+    "outer_hull_thickness_m": 0.35,
+    "main_structural_wall_thickness_m": 0.35,
+    "cabin_partition_thickness_m": 0.18,
+    "reference": "top-view-v14-walls.svg",
+    "rules": {
+      "corridor_widths_are_clear_dimensions": true,
+      "walls_must_not_reduce_validated_corridor_widths": true,
+      "cylinder_boundary_walls_go_inside_cylinder_volume": true,
+      "outer_hull_wall_goes_outside_reference_hull": true
+    }
+  },
+  "cabins": {
+    "count_total": 6,
+    "count_per_side": 3,
+    "common_requirements": {"private_bathroom": true, "private_kitchenette": true, "large_external_window": true, "internal_bathroom_and_kitchen_geometry": "deferred"},
+    "upper_side": [
+      {"id": "U1", "role": "commander", "x_start": 16.0, "x_end": 25.0, "gross_width_m": 9.0, "gross_depth_m": 6.0, "nominal_gross_area_m2": 54.0},
+      {"id": "U2", "role": "standard", "x_start": 25.0, "x_end": 32.0, "gross_width_m": 7.0, "gross_depth_m": 6.0, "nominal_gross_area_m2": 42.0},
+      {"id": "U3", "role": "standard", "x_start": 32.0, "x_end": 39.0, "gross_width_m": 7.0, "gross_depth_m": 6.0, "nominal_gross_area_m2": 42.0}
+    ],
+    "lower_side": [
+      {"id": "L1", "role": "standard", "x_start": 16.0, "x_end": 23.5, "gross_width_m": 7.5, "gross_depth_m": 6.0, "nominal_gross_area_m2": 45.0},
+      {"id": "L2", "role": "standard", "x_start": 23.5, "x_end": 31.5, "gross_width_m": 8.0, "gross_depth_m": 6.0, "nominal_gross_area_m2": 48.0},
+      {"id": "L3", "role": "standard", "x_start": 31.5, "x_end": 39.0, "gross_width_m": 7.5, "gross_depth_m": 6.0, "nominal_gross_area_m2": 45.0}
+    ],
+    "partition_centerlines": {"upper_x": [25.0, 32.0], "lower_x": [23.5, 31.5]}
+  },
+  "semantic_zones": {
+    "cockpit_front": {"status": "shape_only_not_yet_subdivided"},
+    "upper_habitable_band": {"status": "three cabin bays defined"},
+    "lower_habitable_band": {"status": "three cabin bays defined with intentionally different partition spacing"},
+    "rotating_cylinder": {"status": "geometry_defined; access mechanism deferred"},
+    "rear_hangar": {"status": "shape_defined; internal layout deferred"},
+    "common_area": {"status": "required_candidate_but_location_deferred"}
+  },
+  "future_layers": {
+    "doors": [],
+    "cabin_internal_partitions": [],
+    "bathrooms": [],
+    "kitchenettes": [],
+    "common_area": [],
+    "cylinder_access_modules": []
+  },
+  "generation_policy": {
+    "json_is_parametric_source_of_truth": true,
+    "svg_is_generated_from_json": true,
+    "preserve_validated_corridor_clear_widths": true,
+    "structural_lower_half_is_mirrored": true,
+    "interior_partitions_may_be_asymmetric": true,
+    "change_one_parameter_group_at_a_time": true
+  }
+}
+

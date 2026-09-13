@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.4",
+  "project": "AdAstra",
+  "plan": {
+    "id": "side-profile",
+    "name": "Vue de profil",
+    "status": "provisional-visual-study-v5",
+    "date": "2026-09-11",
+    "purpose": "Vue de profil provisoire alignée avec la vue de dessus, après correction de la bande centrale horizontale et du raccord au hangar."
+  },
+  "units": {
+    "length_unit": "meter",
+    "grid_unit_m": 1.0,
+    "major_grid_every_m": 5.0
+  },
+  "coordinate_system": {
+    "origin": {
+      "x": 0.0,
+      "z": 0.0,
+      "meaning": "pointe avant du vaisseau sur l'axe longitudinal"
+    },
+    "x_axis": {
+      "positive_direction": "front_to_rear"
+    },
+    "z_axis": {
+      "positive_direction": "up"
+    },
+    "longitudinal_axis": {
+      "equation": "z=0"
+    }
+  },
+  "shared_dimensions_from_top_view": {
+    "overall_length_m": 58.0,
+    "cylinder": {
+      "x_start_m": 10.0,
+      "x_end_m": 43.0,
+      "length_m": 33.0,
+      "diameter_m": 16.0
+    },
+    "hangar": {
+      "x_start_m": 43.0,
+      "x_end_m": 58.0
+    }
+  },
+  "profile_geometry": {
+    "cockpit": {
+      "type": "triangle",
+      "apex": [
+        0.0,
+        0.0
+      ],
+      "rear_station_x_m": 10.0,
+      "total_height_m": 8.0,
+      "z_min_m": -4.0,
+      "z_max_m": 4.0,
+      "floor_level_z_m": -1.0,
+      "centered_on_axis": true,
+      "note": "triangle plus bas ; un plancher est visible au niveau du couloir"
+    },
+    "rotating_cylinder": {
+      "type": "side_projection_rectangle",
+      "x_start_m": 10.0,
+      "x_end_m": 43.0,
+      "diameter_m": 16.0,
+      "z_min_m": -8.0,
+      "z_max_m": 8.0,
+      "centered_on_axis": true
+    },
+    "inhabited_band": {
+      "type": "horizontal_band",
+      "x_start_m": 10.0,
+      "x_end_m": 43.0,
+      "floor_level_z_m": -1.0,
+      "ceiling_level_z_m": 1.0,
+      "total_height_m": 2.0,
+      "centered_on_axis": true,
+      "represents": [
+        "couloir",
+        "cabines en profil simplifié"
+      ],
+      "note": "pas de biais en profil ; la bande reste à plat jusqu'au hangar"
+    },
+    "hangar": {
+      "type": "rear_volume",
+      "x_start_m": 43.0,
+      "x_end_m": 58.0,
+      "floor_level_z_m": -1.0,
+      "z_min_m": -4.0,
+      "z_max_m": 1.0,
+      "total_height_m": 5.0,
+      "centered_on_axis": false,
+      "internal_corridor_visible": false,
+      "note": "plancher aligné avec le couloir ; pas de couloir visible dans le hangar"
+    }
+  },
+  "validated_profile_constraints": {
+    "cylinder_profile_height_equals_top_view_width": true,
+    "cockpit_front_shape": "triangle",
+    "central_band_is_horizontal": true,
+    "central_band_reaches_hangar": true,
+    "no_visible_corridor_inside_hangar": true,
+    "hangar_directly_attached_to_cylinder": true
+  },
+  "unknowns_to_resolve_next": [
+    {
+      "id": "cockpit_height_final",
+      "status": "provisional"
+    },
+    {
+      "id": "hangar_height_final",
+      "status": "provisional"
+    }
+  ]
+}
+

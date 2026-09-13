@@ -1,0 +1,45 @@
+# Godot cache and generated imports
+.godot/
+godot/.godot/
+
+# Local toolchains (Godot and Blender executables)
+tools/
+
+# Raw downloads and local working archives
+downloads/
+archive/
+validation/
+
+# Blender backup and temporary files
+*.blend1
+*.blend2
+*.blend@
+*.blend~
+*.autosave
+
+# Logs and runtime results
+*.log
+test-results.json
+performance*.json
+*-manifest.json
+pilot-assets.json
+
+# Generated captures in the project root; curated references remain in screens/
+/*.png
+
+# Build and export output
+build/
+builds/
+dist/
+exports/
+export/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.tmp
+*.bak
+*.swp

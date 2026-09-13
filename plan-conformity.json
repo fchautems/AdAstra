@@ -1,0 +1,307 @@
+{
+  "reference": "source plan stretched only along X, authorized 4m extension",
+  "length_m": 62.0,
+  "cabin_count": 6,
+  "cabins": [
+    {
+      "id": "U1",
+      "polygon": [
+        [
+          10,
+          -10
+        ],
+        [
+          16,
+          -16
+        ],
+        [
+          25.0,
+          -16
+        ],
+        [
+          25.0,
+          -10
+        ]
+      ],
+      "opening": [
+        19.9,
+        21.1
+      ],
+      "usable_area_m2": 66.3,
+      "usable_polygon": [
+        [
+          10.35,
+          -10.35
+        ],
+        [
+          16,
+          -16
+        ],
+        [
+          24.91,
+          -16
+        ],
+        [
+          24.91,
+          -10.35
+        ]
+      ]
+    },
+    {
+      "id": "U2",
+      "polygon": [
+        [
+          25.0,
+          -10
+        ],
+        [
+          25.0,
+          -16
+        ],
+        [
+          34.0,
+          -16
+        ],
+        [
+          34.0,
+          -10
+        ]
+      ],
+      "opening": [
+        28.728571428571428,
+        30.271428571428572
+      ],
+      "usable_area_m2": 49.83,
+      "usable_polygon": [
+        [
+          25.09,
+          -10.35
+        ],
+        [
+          25.09,
+          -16
+        ],
+        [
+          33.91,
+          -16
+        ],
+        [
+          33.91,
+          -10.35
+        ]
+      ]
+    },
+    {
+      "id": "U3",
+      "polygon": [
+        [
+          34.0,
+          -10
+        ],
+        [
+          34.0,
+          -16
+        ],
+        [
+          43.0,
+          -16
+        ],
+        [
+          43.0,
+          -10
+        ]
+      ],
+      "opening": [
+        37.72857142857143,
+        39.27142857142857
+      ],
+      "usable_area_m2": 50.34,
+      "usable_polygon": [
+        [
+          34.09,
+          -10.35
+        ],
+        [
+          34.09,
+          -16
+        ],
+        [
+          43.0,
+          -16
+        ],
+        [
+          43.0,
+          -10.35
+        ]
+      ]
+    },
+    {
+      "id": "L1",
+      "polygon": [
+        [
+          10,
+          10
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          23.5,
+          16
+        ],
+        [
+          23.5,
+          10
+        ]
+      ],
+      "opening": [
+        19.15,
+        20.35
+      ],
+      "usable_area_m2": 57.83,
+      "usable_polygon": [
+        [
+          10.35,
+          10.35
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          23.41,
+          16
+        ],
+        [
+          23.41,
+          10.35
+        ]
+      ]
+    },
+    {
+      "id": "L2",
+      "polygon": [
+        [
+          23.5,
+          10
+        ],
+        [
+          23.5,
+          16
+        ],
+        [
+          33.357142857142854,
+          16
+        ],
+        [
+          33.357142857142854,
+          10
+        ]
+      ],
+      "opening": [
+        27.44285714285714,
+        28.985714285714288
+      ],
+      "usable_area_m2": 54.68,
+      "usable_polygon": [
+        [
+          23.59,
+          10.35
+        ],
+        [
+          23.59,
+          16
+        ],
+        [
+          33.26714285714285,
+          16
+        ],
+        [
+          33.26714285714285,
+          10.35
+        ]
+      ]
+    },
+    {
+      "id": "L3",
+      "polygon": [
+        [
+          33.357142857142854,
+          10
+        ],
+        [
+          33.357142857142854,
+          16
+        ],
+        [
+          43.0,
+          16
+        ],
+        [
+          43.0,
+          10
+        ]
+      ],
+      "opening": [
+        37.40714285714286,
+        38.95
+      ],
+      "usable_area_m2": 53.97,
+      "usable_polygon": [
+        [
+          33.44714285714286,
+          10.35
+        ],
+        [
+          33.44714285714286,
+          16
+        ],
+        [
+          43.0,
+          16
+        ],
+        [
+          43.0,
+          10.35
+        ]
+      ]
+    }
+  ],
+  "circulation_bands": {
+    "central_corridor_clear_width_m": 2.0,
+    "upper_lateral_corridor_straight_clear_width_m": 2.0,
+    "lower_lateral_corridor_straight_clear_width_m": 2.0,
+    "central_corridor_boundaries_y": [
+      -1.0,
+      1.0
+    ],
+    "upper_lateral_corridor_boundaries_y_straight": [
+      -10.0,
+      -8.0
+    ],
+    "lower_lateral_corridor_boundaries_y_straight": [
+      8.0,
+      10.0
+    ],
+    "structural_symmetry_must_be_exact": true,
+    "doors_defined": false,
+    "cabin_partitions_defined": true,
+    "cabin_internal_layout_defined": false
+  },
+  "no_new_room_functions": true,
+  "furniture_count": 0,
+  "cylinder_station_range": [
+    10.0,
+    47.0
+  ],
+  "upper_partition_x": [
+    25.0,
+    34.0
+  ],
+  "lower_partition_x": [
+    23.5,
+    33.357142857142854
+  ],
+  "height_only_retained_override_m": 3.0
+}

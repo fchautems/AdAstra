@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1700"
+viewBox="-2 -24 63 74" preserveAspectRatio="xMidYMid meet">
+<defs>
+  <pattern id="minorGrid" width="1" height="1" patternUnits="userSpaceOnUse">
+    <path d="M1 0 L0 0 0 1" fill="none" stroke="#e6eef6" stroke-width="0.045"/>
+  </pattern>
+  <pattern id="majorGrid" width="5" height="5" patternUnits="userSpaceOnUse">
+    <rect width="5" height="5" fill="url(#minorGrid)"/>
+    <path d="M5 0 L0 0 0 5" fill="none" stroke="#cfdfec" stroke-width="0.075"/>
+  </pattern>
+  <style>
+    .plan { fill:none; stroke:#000000; stroke-width:0.16; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+    .wall { fill:none; stroke:#000000; stroke-width:0.14; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+    .main { fill:none; stroke:#000000; stroke-width:0.16; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+    .secondary { fill:none; stroke:#000000; stroke-width:0.12; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+    .axis { fill:none; stroke:#000000; stroke-width:0.10; stroke-dasharray:0.65 0.50; vector-effect:non-scaling-stroke; }
+    .label { fill:#000000; font-family:Arial,sans-serif; font-size:0.62px; }
+    .title { fill:#000000; font-family:Arial,sans-serif; font-size:0.90px; font-weight:bold; }
+    .small { fill:#333333; font-family:Arial,sans-serif; font-size:0.52px; }
+    .panelTitle { fill:#000000; font-family:Arial,sans-serif; font-size:0.78px; font-weight:bold; }
+    .separator { fill:none; stroke:#aab8c4; stroke-width:0.08; stroke-dasharray:0.5 0.35; vector-effect:non-scaling-stroke; }
+  </style>
+</defs>
+
+<rect x="-2" y="-24" width="63" height="74" fill="#ffffff"/>
+<rect x="-2" y="-24" width="63" height="74" fill="url(#majorGrid)"/>
+
+<text class="title" x="-1.2" y="-21.8">AdAstra — vue de dessus + vue de profil — même échelle longitudinale</text>
+<text class="small" x="-1.2" y="-20.5">Vue de dessus avec ouvertures de cabines • profil v3 corrigé • 1 carreau = 1 m</text>
+
+<text class="panelTitle" x="-1.2" y="-18.5">Vue de dessus</text>
+<g id="topView">
+  <polygon class="plan" points="0,0 16,-16 39,-16 39,-10 43,-10 49,-14 58,-14 58,14 49,14 43,10 39,10 39,16 16,16"/>
+  <g id="upper-structure">
+    <line class="plan" x1="10.0" y1="-10.0" x2="19.9" y2="-10.0"/>
+    <line class="plan" x1="21.1" y1="-10.0" x2="27.9" y2="-10.0"/>
+    <line class="plan" x1="29.1" y1="-10.0" x2="34.9" y2="-10.0"/>
+    <line class="plan" x1="36.1" y1="-10.0" x2="39.0" y2="-10.0"/>
+    <rect class="plan" x="10" y="-8" width="33" height="7"/>
+    <path class="plan" d="M43,-8 L49,-12"/>
+  </g>
+  <g id="lower-structure">
+    <line class="plan" x1="10.0" y1="10.0" x2="19.15" y2="10.0"/>
+    <line class="plan" x1="20.35" y1="10.0" x2="26.9" y2="10.0"/>
+    <line class="plan" x1="28.1" y1="10.0" x2="34.65" y2="10.0"/>
+    <line class="plan" x1="35.85" y1="10.0" x2="39.0" y2="10.0"/>
+    <rect class="plan" x="10" y="1" width="33" height="7"/>
+    <path class="plan" d="M43,8 L49,12"/>
+  </g>
+
+  <polygon class="wall" points="-0.495,0 15.855,16.35 39.35,16.35 39.35,10.35 42.894,10.35 48.894,14.35 58.35,14.35 58.35,-14.35 48.894,-14.35 42.894,-10.35 39.35,-10.35 39.35,-16.35 15.855,-16.35"/>
+  <g id="upper-main-walls">
+    <line class="wall" x1="10.35" y1="-10.35" x2="19.9" y2="-10.35"/>
+    <line class="wall" x1="21.1" y1="-10.35" x2="27.9" y2="-10.35"/>
+    <line class="wall" x1="29.1" y1="-10.35" x2="34.9" y2="-10.35"/>
+    <line class="wall" x1="36.1" y1="-10.35" x2="39.0" y2="-10.35"/>
+    <rect class="wall" x="10.35" y="-7.65" width="32.30" height="6.30"/>
+    <path class="wall" d="M43.194,-7.709 L49.194,-11.709"/>
+  </g>
+  <g id="lower-main-walls">
+    <line class="wall" x1="10.35" y1="10.35" x2="19.15" y2="10.35"/>
+    <line class="wall" x1="20.35" y1="10.35" x2="26.9" y2="10.35"/>
+    <line class="wall" x1="28.1" y1="10.35" x2="34.65" y2="10.35"/>
+    <line class="wall" x1="35.85" y1="10.35" x2="39.0" y2="10.35"/>
+    <rect class="wall" x="10.35" y="1.35" width="32.30" height="6.30"/>
+    <path class="wall" d="M43.194,7.709 L49.194,11.709"/>
+  </g>
+
+  <line class="wall" x1="24.91" y1="-16.0" x2="24.91" y2="-10.35"/><line class="wall" x1="25.09" y1="-16.0" x2="25.09" y2="-10.35"/><line class="wall" x1="31.91" y1="-16.0" x2="31.91" y2="-10.35"/><line class="wall" x1="32.09" y1="-16.0" x2="32.09" y2="-10.35"/>
+  <line class="wall" x1="23.41" y1="10.35" x2="23.41" y2="16.0"/><line class="wall" x1="23.59" y1="10.35" x2="23.59" y2="16.0"/><line class="wall" x1="31.41" y1="10.35" x2="31.41" y2="16.0"/><line class="wall" x1="31.59" y1="10.35" x2="31.59" y2="16.0"/>
+
+  <line class="axis" x1="0" y1="0" x2="58" y2="0"/>
+  <text class="label" x="20.5" y="-12.85" text-anchor="middle">CMD</text>
+  <text class="label" x="28.5" y="-12.85" text-anchor="middle">U2</text>
+  <text class="label" x="35.5" y="-12.85" text-anchor="middle">U3</text>
+  <text class="label" x="19.75" y="13.15" text-anchor="middle">L1</text>
+  <text class="label" x="27.5" y="13.15" text-anchor="middle">L2</text>
+  <text class="label" x="35.25" y="13.15" text-anchor="middle">L3</text>
+</g>
+
+<line class="separator" x1="-1.5" y1="23.5" x2="59.5" y2="23.5"/>
+
+<text class="panelTitle" x="-1.2" y="26.2">Vue de profil</text>
+<g id="sideView" transform="translate(0,36)">
+  <line class="axis" x1="0" y1="0" x2="58" y2="0"/>
+
+  <polygon class="main" points="0,0 10,-4 10,4"/>
+  <line class="secondary" x1="2.5" y1="1" x2="10" y2="1"/>
+  <rect class="main" x="10" y="-8" width="33" height="16"/>
+  <rect class="secondary" x="10" y="-1" width="33" height="2"/>
+  <rect class="main" x="43" y="-4" width="15" height="5"/>
+
+  <text class="label" x="5.1" y="-0.55" text-anchor="middle">COCKPIT</text>
+  <text class="label" x="26.5" y="-6.5" text-anchor="middle">CYLINDRE Ø 16 m</text>
+  <text class="label" x="26.5" y="0.2" text-anchor="middle">CABINES / COULOIR</text>
+  <text class="label" x="50.5" y="-1.0" text-anchor="middle">HANGAR</text>
+  <text class="small" x="26.5" y="-8.55" text-anchor="middle">33 m</text>
+  <text class="small" x="5.1" y="4.9" text-anchor="middle">8 m de haut — provisoire</text>
+  <text class="small" x="26.8" y="2.05" text-anchor="middle">bande centrale à plat jusqu'au hangar</text>
+  <text class="small" x="50.5" y="-4.55" text-anchor="middle">plancher aligné — pas de couloir visible</text>
+</g>
+</svg>
+

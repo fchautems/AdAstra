@@ -1,0 +1,28 @@
+{
+  "wall_thickness_m": 0.35,
+  "floor_thickness_m": 0.25,
+  "cylinder_segments": 64,
+  "player_height_m": 1.75,
+  "player_radius_m": 0.28,
+  "eye_height_m": 1.60,
+  "walk_speed_m_s": 3.2,
+  "run_speed_m_s": 5.5,
+  "mouse_sensitivity": 0.002,
+  "cabin_extension": {
+    "start_x_m": 25.0,
+    "end_x_m": 39.0,
+    "added_length_m": 4.0
+  },
+  "interior": {
+    "clear_height_m": 3.0,
+    "hangar_clear_height_m": 5.5,
+    "corridor_width_m": 2.0,
+    "partition_m": 0.18,
+    "door_width_m": 1.20,
+    "door_height_m": 2.45,
+    "gallery_inner_y_m": 8.0,
+    "gallery_outer_y_m": 10.0,
+    "cabin_outer_y_m": 16.0
+  },
+  "notes": "Architecture from source JSON and SVG. Height, materials and lighting are retained technical overrides."
+}
