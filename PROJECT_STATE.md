@@ -75,3 +75,8 @@ Salles de bain non cloisonnées ; mobilier encore simple et stylisé, non intera
 - Intégration Godot indépendante du blockout et des collisions ; aucune architecture ni circulation source modifiée.
 - Validation réelle `--identity-check` : marche corridor/cabine, porte refermée, import Godot 4.5.2 Compatibility et 56 maillages de collision, résultat PASS.
 - Captures : identity_corridor.png, identity_door.png, identity_bridge.png. Le bridge reste un blockout compact ; détails fins et audio restent à traiter séparément.
+
+## Couche audio légère — 17 septembre 2026
+- Ambiance continue, nappe musicale discrète, pas métalliques et mouvements de portes créés par synthèse dans Godot, sans asset externe ni modification de géométrie.
+- Le mix part volontairement bas : ambiance -19 dB et effets -12 dB. Les sources Pixabay candidates sont consignées dans `AUDIO_SOURCES.md` pour un remplacement ultérieur après écoute.
+- Godot 4.5.2 lancé après ajout : `IDENTITY_CHECK=PASS`; collisions, marche et fermeture automatique des portes toujours validées.

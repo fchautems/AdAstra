@@ -1,11 +1,14 @@
 extends CharacterBody3D
 
+signal footstep_requested
+
 var camera: Camera3D
 var cfg: Dictionary
 var spawn_point: Vector3
 var frozen := false
 var automated := false
 var test_direction := Vector3.ZERO
+var step_distance := 0.0
 
 func setup(config: Dictionary, spawn: Vector3) -> void:
 	cfg = config
@@ -53,5 +56,14 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.y = 0
 	move_and_slide()
+	var planar_speed := Vector2(velocity.x,velocity.z).length()
+	if is_on_floor() and planar_speed > .15:
+		step_distance += planar_speed * delta
+		var interval := 1.05 if Input.is_action_pressed("run") else 1.42
+		if step_distance >= interval:
+			step_distance = 0.0
+			footstep_requested.emit()
+	else:
+		step_distance = minf(step_distance,.5)
 	if position.y < spawn_point.y - 20:
 		reset()

@@ -14,6 +14,7 @@ var dressing: Node3D
 var ui: CanvasLayer
 var paused := false
 var identity: Node3D
+var audio: Node
 
 func _ready() -> void:
 	params = JSON.parse_string(FileAccess.get_file_as_string("res://assets/parameters.json"))
@@ -63,9 +64,13 @@ func _ready() -> void:
 	add_child(player)
 	var s: Array = params.spawn
 	player.setup(params.config,Vector3(s[0],s[1],s[2]))
+	audio = preload("res://audio.gd").new()
+	add_child(audio)
+	audio.setup(player)
 	identity = preload("res://identity.gd").new()
 	add_child(identity)
 	identity.setup(params,pilot,player,ship)
+	identity.door_state_changed.connect(audio.play_door)
 	player.camera.current = true
 	overview = Camera3D.new()
 	add_child(overview)

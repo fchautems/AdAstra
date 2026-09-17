@@ -1,5 +1,7 @@
 extends Node3D
 
+signal door_state_changed(opened: bool)
+
 var library: Node3D
 var doors: Array = []
 var player: CharacterBody3D
@@ -136,6 +138,9 @@ func _physics_process(delta: float) -> void:
 		var distance := difference.length()
 		if distance<2.5: door.open = true
 		elif distance>3.2: door.open = false
+		if door.get("sound_state") == null or bool(door.sound_state) != bool(door.open):
+			door.sound_state = door.open
+			door_state_changed.emit(door.open)
 		var travel: float = door.width*.5+.07
 		door.slide = move_toward(door.slide,travel if door.open else 0.0,delta*2.4)
 		for leaf in door.leaves:
