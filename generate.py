@@ -342,3 +342,6 @@ params={'length':X(end),'longitudinal_scale':stretch,'width':32,'floor':floor,'r
 (out/'parameters.json').write_text(json.dumps(params,indent=2),encoding='utf-8')
 (ROOT/'plan-conformity.json').write_text(json.dumps(audit,indent=2),encoding='utf-8')
 print('PLAN_BLOCKOUT_03_EXPORTED')
+if (ROOT/'prepare_identity.py').exists():
+    import runpy
+    runpy.run_path(str(ROOT/'prepare_identity.py'),run_name='__main__')

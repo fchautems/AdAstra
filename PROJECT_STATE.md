@@ -69,3 +69,9 @@ Salles de bain non cloisonnées ; mobilier encore simple et stylisé, non intera
 - Deux générations Blender (correction d'un chevauchement au hangar), puis réglage des ombres extérieures et cadrage final sans régénération supplémentaire. Trois captures finales : exterior_metal.png, cockpit.png, hangar.png.
 - L'enveloppe extérieure ne reçoit pas les ombres des anciens volumes : compromis de blockout pour éviter leur silhouette sur les raccords nouveaux. L'éclairage intérieur est conservé.
 - Résultat retenu pour cette passe : continuité de la coque et fenêtres conservées ; rendu métallique, petits raccords, panneaux détaillés et portes arrière restent provisoires. La référence artistique reste une direction, pas un rendu final reproduit à l'identique.
+
+## Kit identité visuelle — 17 septembre 2026
+- Kit paramétrique bitmap-free ajouté : arches, panneaux/sol/plafond segmentés, portes rouges à deux battants, éclairages intégrés, consoles et plateforme de commandement.
+- Intégration Godot indépendante du blockout et des collisions ; aucune architecture ni circulation source modifiée.
+- Validation réelle `--identity-check` : marche corridor/cabine, porte refermée, import Godot 4.5.2 Compatibility et 56 maillages de collision, résultat PASS.
+- Captures : identity_corridor.png, identity_door.png, identity_bridge.png. Le bridge reste un blockout compact ; détails fins et audio restent à traiter séparément.

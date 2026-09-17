@@ -13,6 +13,7 @@ var perf: Array = []
 var dressing: Node3D
 var ui: CanvasLayer
 var paused := false
+var identity: Node3D
 
 func _ready() -> void:
 	params = JSON.parse_string(FileAccess.get_file_as_string("res://assets/parameters.json"))
@@ -62,6 +63,9 @@ func _ready() -> void:
 	add_child(player)
 	var s: Array = params.spawn
 	player.setup(params.config,Vector3(s[0],s[1],s[2]))
+	identity = preload("res://identity.gd").new()
+	add_child(identity)
+	identity.setup(params,pilot,player,ship)
 	player.camera.current = true
 	overview = Camera3D.new()
 	add_child(overview)
@@ -78,7 +82,11 @@ func _ready() -> void:
 	ui.fullscreen_requested.connect(toggle_fullscreen)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	print("SCENE_READY meshes_with_collision=",collision_count)
-	if "--test" in OS.get_cmdline_user_args():
+	if "--identity-check" in OS.get_cmdline_user_args():
+		ui.hide()
+		player.automated = true
+		call_deferred("identity_check")
+	elif "--test" in OS.get_cmdline_user_args():
 		ui.hide()
 		player.automated = true
 		call_deferred("run_tests")
@@ -184,6 +192,35 @@ func _process(_delta: float) -> void:
 func frame_wait(count: int) -> void:
 	for i in count:
 		await get_tree().physics_frame
+
+func identity_check() -> void:
+	await frame_wait(30)
+	player.frozen = true
+	for view in [
+		["identity_bridge",Vector3(9.3,params.floor,4.8),Vector3(6.15,.5,0)],
+		["identity_corridor",Vector3(14.5,params.floor,9),Vector3(28,.55,9)],
+		["identity_door",Vector3(19,params.floor,8.4),Vector3(20.5,.45,10.1)]]:
+		player.position = view[1]
+		player.camera.look_at(view[2])
+		await frame_wait(12)
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png("res://../"+view[0]+".png")
+	player.position = Vector3(7,params.floor+.02,0)
+	player.velocity = Vector3.ZERO
+	player.frozen = false
+	var success := true
+	for waypoint in [Vector3(9.6,params.floor,0),Vector3(9.6,params.floor,8.65),Vector3(14,params.floor,9),Vector3(20.5,params.floor,9),Vector3(20.5,params.floor,11.5),Vector3(20.5,params.floor,9),Vector3(16,params.floor,9)]:
+		var passed := await walk_to(waypoint,400)
+		print("IDENTITY_WALK ",waypoint," ",passed," actual=",player.position)
+		success = success and passed
+		if not passed: break
+	await frame_wait(60)
+	var first_door = identity.doors[0]
+	var closed: bool = first_door.slide < .01
+	success = success and closed
+	print("IDENTITY_DOOR_RECLOSED=",closed)
+	print("IDENTITY_CHECK=", "PASS" if success else "FAIL")
+	get_tree().quit(0 if success else 1)
 
 func walk_to(target: Vector3, max_frames := 2200) -> bool:
 	for i in max_frames:

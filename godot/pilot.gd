@@ -29,7 +29,7 @@ func setup(old: Node3D, ship: Node3D, data: Dictionary) -> void:
 	var ivory := surface("e9e7df", .55)
 	var ceiling := finish("eae8e0", .75)
 	# Soft graphite keeps the dark language without reading as black cut-outs.
-	var graphite := finish("606b6e", .50)
+	var graphite := finish("343e45", .46)
 	var floor_finish := surface("d9d8d1", .32, true)
 	var aluminium := finish("a2a5a3", .36, 1.0)
 	var glow := finish("fff8ef", .86)
