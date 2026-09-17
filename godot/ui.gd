@@ -4,6 +4,7 @@ signal explore_requested
 signal resume_requested
 signal quit_requested
 signal fullscreen_requested
+signal audio_volume_changed(kind: String, value: float)
 
 var zone_label: Label
 var help_card: PanelContainer
@@ -108,8 +109,8 @@ func build_start_menu() -> void:
 func build_pause_menu() -> void:
 	pause_menu = PanelContainer.new()
 	pause_menu.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	pause_menu.position = Vector2(-160, -146)
-	pause_menu.custom_minimum_size = Vector2(320, 292)
+	pause_menu.position = Vector2(-160, -225)
+	pause_menu.custom_minimum_size = Vector2(320, 450)
 	pause_menu.add_theme_stylebox_override("panel", panel_style(Color("172024", .94), 13, Color("a9dce0", .28)))
 	var column := VBoxContainer.new()
 	column.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -126,12 +127,42 @@ func build_pause_menu() -> void:
 	var full := button("Plein écran / Fenêtre")
 	full.pressed.connect(func(): fullscreen_requested.emit())
 	column.add_child(full)
+	column.add_child(HSeparator.new())
+	var audio_title := label("AUDIO", 11, CYAN)
+	audio_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	column.add_child(audio_title)
+	add_volume_control(column,"Musique","music",.16)
+	add_volume_control(column,"Ambiance","ambience",.28)
+	add_volume_control(column,"Effets","effects",.62)
 	var quit := button("Quitter")
 	quit.pressed.connect(func(): quit_requested.emit())
 	column.add_child(quit)
 	pause_menu.add_child(column)
 	pause_menu.hide()
 	add_child(pause_menu)
+
+func add_volume_control(column: VBoxContainer, title: String, kind: String, initial: float) -> void:
+	var row := HBoxContainer.new()
+	row.add_theme_constant_override("separation",10)
+	var caption := label(title,13,Color("f2f0e9",.84))
+	caption.custom_minimum_size.x = 82
+	row.add_child(caption)
+	var slider := HSlider.new()
+	slider.min_value = 0.0
+	slider.max_value = 1.0
+	slider.step = .01
+	slider.value = initial
+	slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var value := label(str(roundi(initial*100))+"%",12,CYAN)
+	value.custom_minimum_size.x = 34
+	value.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	slider.value_changed.connect(func(level: float):
+		value.text = str(roundi(level*100))+"%"
+		audio_volume_changed.emit(kind,level)
+	)
+	row.add_child(slider)
+	row.add_child(value)
+	column.add_child(row)
 
 func begin() -> void:
 	started = true
@@ -163,4 +194,3 @@ func _process(delta: float) -> void:
 		help_time -= delta
 		if help_time <= 0.0:
 			help_card.hide()
-

@@ -1,17 +1,18 @@
-# Audio — sélection de remplacement
+# Audio intégré
 
-La première intégration utilise des sons procéduraux légers : aucun fichier tiers
-n’est embarqué tant que le mix de base n’est pas validé. Les sources Pixabay
-suivantes sont les candidates retenues pour les remplacer après écoute :
+Les trois fichiers sources fournis par l’utilisateur sont conservés dans
+`sounds/`. Les versions OGG intégrées au jeu sont dans `godot/audio/`.
 
-- Ambiance intérieure : `Spaceship Interior 5 Min`, DRAGON-STUDIO
-  <https://pixabay.com/sound-effects/film-special-effects-spaceship-interior-5-min-584742/>
-- Porte : `Mechanical Door`, DRAGON-STUDIO
-  <https://pixabay.com/sound-effects/film-special-effects-mechanical-door-386159/>
-- Pas : `Footsteps on Metal Floor`, freesound_community
-  <https://pixabay.com/sound-effects/search/metal%20footstep/>
-- Musique : sélection `Space Ambient`
-  <https://pixabay.com/music/search/space%20ambient/>
+- Ambiance : `placidplace-spaceship-ambience-with-effects-21420.mp3`,
+  convertie en `ship_ambience.ogg`.
+- Musique : `audiopapkin-ambient-soundscapes-001-space-atmosphere-303246.mp3`,
+  convertie en `space_music.ogg`.
+- Portes : `freesound_community-sci-fi-sliding-door-height-adjustable-chair-sounds-27425.mp3`.
+  Le premier son est découpé en `door_open.ogg` (0,60–1,38 s), le suivant en
+  `door_close.ogg` (2,36–3,55 s).
 
-Chaque source devra être téléchargée depuis sa page Pixabay puis vérifiée sous
-la Pixabay Content License avant remplacement du son procédural correspondant.
+Pages source Pixabay :
+
+- <https://pixabay.com/sound-effects/film-special-effects-spaceship-ambience-with-effects-21420/>
+- <https://pixabay.com/sound-effects/film-special-effects-ambient-soundscapes-001-space-atmosphere-303246/>
+- <https://pixabay.com/sound-effects/film-special-effects-sci-fi-sliding-door-height-adjustable-chair-sounds-27425/>

@@ -85,6 +85,7 @@ func _ready() -> void:
 	ui.resume_requested.connect(resume_exploration)
 	ui.quit_requested.connect(func(): get_tree().quit())
 	ui.fullscreen_requested.connect(toggle_fullscreen)
+	ui.audio_volume_changed.connect(audio.set_volume)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	print("SCENE_READY meshes_with_collision=",collision_count)
 	if "--identity-check" in OS.get_cmdline_user_args():
