@@ -1,16 +1,20 @@
 extends Node
 
-const AMBIENCE := preload("res://audio/ship_ambience.ogg")
-const MUSIC := preload("res://audio/space_music.ogg")
-const DOOR_OPEN := preload("res://audio/door_open.ogg")
-const DOOR_CLOSE := preload("res://audio/door_close.ogg")
+const AMBIENCE := preload("res://audio/generated/ambience_main.ogg")
+const MUSIC := preload("res://audio/generated/music.ogg")
+const DOOR_OPEN := preload("res://audio/generated/door_open.ogg")
+const DOOR_CLOSE := preload("res://audio/generated/door_close.ogg")
+const FOOTSTEP_01 := preload("res://audio/generated/footstep_01.ogg")
+const FOOTSTEP_02 := preload("res://audio/generated/footstep_02.ogg")
 
 var ambience: AudioStreamPlayer
 var music: AudioStreamPlayer
 var door: AudioStreamPlayer
+var footstep: AudioStreamPlayer
 var bus_ids := {}
+var next_footstep := 0
 
-func setup(_explorer: CharacterBody3D) -> void:
+func setup(explorer: CharacterBody3D) -> void:
 	name = "ShipAudio"
 	bus_ids["music"] = make_bus("Music")
 	bus_ids["ambience"] = make_bus("Ambience")
@@ -18,6 +22,8 @@ func setup(_explorer: CharacterBody3D) -> void:
 	ambience = make_player(AMBIENCE,"Ambience")
 	music = make_player(MUSIC,"Music")
 	door = make_player(null,"Effects")
+	footstep = make_player(null,"Effects")
+	explorer.footstep_requested.connect(play_footstep)
 	ambience.play()
 	music.play()
 	set_volume("music",.16)
@@ -48,3 +54,8 @@ func set_volume(kind: String, value: float) -> void:
 func play_door(opened: bool) -> void:
 	door.stream = DOOR_OPEN if opened else DOOR_CLOSE
 	door.play()
+
+func play_footstep() -> void:
+	footstep.stream = FOOTSTEP_01 if next_footstep == 0 else FOOTSTEP_02
+	next_footstep = 1-next_footstep
+	footstep.play()

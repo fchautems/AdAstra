@@ -1,18 +1,18 @@
-# Audio intégré
+# Audio intégré et régénérable
 
-Les trois fichiers sources fournis par l’utilisateur sont conservés dans
-`sounds/`. Les versions OGG intégrées au jeu sont dans `godot/audio/`.
+Les fichiers complets restent dans `sounds/sources/`. Godot ne lit que les
+OGG préparés dans `godot/audio/generated/`. Le lien entre les deux est décrit
+dans `sounds/audio_manifest.json` et produit par `prepare_audio.ps1`.
 
-- Ambiance : `placidplace-spaceship-ambience-with-effects-21420.mp3`,
-  convertie en `ship_ambience.ogg`.
-- Musique : `audiopapkin-ambient-soundscapes-001-space-atmosphere-303246.mp3`,
-  convertie en `space_music.ogg`.
-- Portes : `freesound_community-sci-fi-sliding-door-height-adjustable-chair-sounds-27425.mp3`.
-  Le premier son est découpé en `door_open.ogg` (0,60–1,38 s), le suivant en
-  `door_close.ogg` (2,36–3,55 s).
+- `musique.mp3` devient `music.ogg`.
+- `ambiance_1.mp3` est l'ambiance active et devient `ambience_main.ogg`.
+- `ambiance_2.mp3` devient `ambience_alt.ogg`, prête à remplacer la première
+  en modifiant une seule référence dans le manifeste et le script audio.
+- `door.mp3` fournit `door_open.ogg` (0,60–1,38 s) et `door_close.ogg`
+  (2,36–3,55 s).
+- `footsteps_1.mp3` fournit les deux pas alternés `footstep_01.ogg`
+  (1,24–1,45 s) et `footstep_02.ogg` (1,96–2,44 s).
 
-Pages source Pixabay :
-
-- <https://pixabay.com/sound-effects/film-special-effects-spaceship-ambience-with-effects-21420/>
-- <https://pixabay.com/sound-effects/film-special-effects-ambient-soundscapes-001-space-atmosphere-303246/>
-- <https://pixabay.com/sound-effects/film-special-effects-sci-fi-sliding-door-height-adjustable-chair-sounds-27425/>
+Pour remplacer une source : déposer le nouveau fichier dans `sounds/sources/`,
+ajuster son entrée dans `audio_manifest.json`, puis lancer
+`prepare_audio.ps1`. Aucun script Godot ne doit être modifié.

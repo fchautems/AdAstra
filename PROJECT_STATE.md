@@ -80,3 +80,7 @@ Salles de bain non cloisonnées ; mobilier encore simple et stylisé, non intera
 - Les sons procéduraux sont retirés. Ambiance, musique et ouverture/fermeture de porte utilisent les trois fichiers Pixabay fournis dans `sounds/`.
 - Les deux premiers sons utiles de la piste de portes sont découpés en OGG, puis reliés aux mouvements réels des portes. Le menu pause offre trois réglages : musique 16 %, ambiance 28 % et effets 62 %.
 - Godot 4.5.2 lancé après import : `IDENTITY_CHECK=PASS`; collisions, marche et fermeture automatique des portes toujours validées. L’équilibre des niveaux reste à juger à l’écoute dans le jeu.
+
+## Organisation audio régénérable — 19 septembre 2026
+- Sources longues rangées dans `sounds/sources/`; extraits Godot OGG régénérés dans `godot/audio/generated/` à partir de `sounds/audio_manifest.json` via `prepare_audio.ps1`.
+- Deux extraits de porte et deux pas alternés sont définis par temps de début/fin dans le manifeste. Les pas utilisent maintenant les fichiers découpés, sans génération procédurale.
