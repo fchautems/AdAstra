@@ -109,8 +109,8 @@ func build_start_menu() -> void:
 func build_pause_menu() -> void:
 	pause_menu = PanelContainer.new()
 	pause_menu.set_anchors_and_offsets_preset(Control.PRESET_CENTER)
-	pause_menu.position = Vector2(-160, -225)
-	pause_menu.custom_minimum_size = Vector2(320, 450)
+	pause_menu.position = Vector2(-180, -282)
+	pause_menu.custom_minimum_size = Vector2(360, 564)
 	pause_menu.add_theme_stylebox_override("panel", panel_style(Color("172024", .94), 13, Color("a9dce0", .28)))
 	var column := VBoxContainer.new()
 	column.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -132,8 +132,10 @@ func build_pause_menu() -> void:
 	audio_title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	column.add_child(audio_title)
 	add_volume_control(column,"Musique","music",.16)
-	add_volume_control(column,"Ambiance","ambience",.28)
-	add_volume_control(column,"Effets","effects",.62)
+	add_volume_control(column,"Ambiance 1","ambience_main",.28)
+	add_volume_control(column,"Ambiance 2","ambience_alt",.0)
+	add_volume_control(column,"Pas","footsteps",.78)
+	add_volume_control(column,"Portes","doors",.62)
 	var quit := button("Quitter")
 	quit.pressed.connect(func(): quit_requested.emit())
 	column.add_child(quit)

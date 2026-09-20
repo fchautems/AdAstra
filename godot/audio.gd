@@ -1,6 +1,7 @@
 extends Node
 
 const AMBIENCE := preload("res://audio/generated/ambience_main.ogg")
+const AMBIENCE_ALT := preload("res://audio/generated/ambience_alt.ogg")
 const MUSIC := preload("res://audio/generated/music.ogg")
 const DOOR_OPEN := preload("res://audio/generated/door_open.ogg")
 const DOOR_CLOSE := preload("res://audio/generated/door_close.ogg")
@@ -8,6 +9,7 @@ const FOOTSTEP_01 := preload("res://audio/generated/footstep_01.ogg")
 const FOOTSTEP_02 := preload("res://audio/generated/footstep_02.ogg")
 
 var ambience: AudioStreamPlayer
+var ambience_alt: AudioStreamPlayer
 var music: AudioStreamPlayer
 var door: AudioStreamPlayer
 var footstep: AudioStreamPlayer
@@ -17,18 +19,28 @@ var next_footstep := 0
 func setup(explorer: CharacterBody3D) -> void:
 	name = "ShipAudio"
 	bus_ids["music"] = make_bus("Music")
-	bus_ids["ambience"] = make_bus("Ambience")
-	bus_ids["effects"] = make_bus("Effects")
+	bus_ids["ambience_main"] = make_bus("AmbienceMain")
+	bus_ids["ambience_alt"] = make_bus("AmbienceAlt")
+	bus_ids["footsteps"] = make_bus("Footsteps")
+	bus_ids["doors"] = make_bus("Doors")
 	ambience = make_player(AMBIENCE,"Ambience")
+	ambience.bus = "AmbienceMain"
+	ambience_alt = make_player(AMBIENCE_ALT,"AmbienceAlt")
 	music = make_player(MUSIC,"Music")
-	door = make_player(null,"Effects")
-	footstep = make_player(null,"Effects")
+	door = make_player(null,"Doors")
+	footstep = make_player(null,"Footsteps")
 	explorer.footstep_requested.connect(play_footstep)
 	ambience.play()
+	ambience_alt.play()
 	music.play()
+	loop_player(ambience)
+	loop_player(ambience_alt)
+	loop_player(music)
 	set_volume("music",.16)
-	set_volume("ambience",.28)
-	set_volume("effects",.62)
+	set_volume("ambience_main",.28)
+	set_volume("ambience_alt",.0)
+	set_volume("footsteps",.78)
+	set_volume("doors",.62)
 
 func make_bus(title: String) -> int:
 	var existing := AudioServer.get_bus_index(title)
@@ -45,6 +57,9 @@ func make_player(stream: AudioStream, bus: String) -> AudioStreamPlayer:
 	player.bus = bus
 	add_child(player)
 	return player
+
+func loop_player(player: AudioStreamPlayer) -> void:
+	player.finished.connect(func(): player.play())
 
 func set_volume(kind: String, value: float) -> void:
 	if not bus_ids.has(kind):

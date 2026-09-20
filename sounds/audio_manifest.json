@@ -33,12 +33,14 @@
       "source": "footsteps_1.mp3",
       "start": 1.24,
       "end": 1.45,
+      "gain_db": 23,
       "output": "footstep_01.ogg"
     },
     "footstep_02": {
       "source": "footsteps_1.mp3",
       "start": 1.96,
       "end": 2.44,
+      "gain_db": 23,
       "output": "footstep_02.ogg"
     }
   }

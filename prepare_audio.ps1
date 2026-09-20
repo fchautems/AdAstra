@@ -25,10 +25,18 @@ foreach ($property in $manifest.assets.PSObject.Properties) {
         $arguments += @('-ss', [string]$asset.start, '-to', [string]$asset.end)
     }
     $arguments += @('-i', $source)
+    $filters = @()
     if ($null -ne $asset.start) {
         $duration = [double]$asset.end - [double]$asset.start
         $fadeOutStart = [Math]::Max(0, $duration - 0.05)
-        $arguments += @('-af', "afade=t=in:st=0:d=0.015,afade=t=out:st=${fadeOutStart}:d=0.05")
+        $filters += "afade=t=in:st=0:d=0.015"
+        $filters += "afade=t=out:st=${fadeOutStart}:d=0.05"
+    }
+    if ($null -ne $asset.gain_db) {
+        $filters += "volume=$($asset.gain_db)dB"
+    }
+    if ($filters.Count -gt 0) {
+        $arguments += @('-af', ($filters -join ','))
     }
     $arguments += @('-c:a', 'libvorbis', '-q:a', '5', $output)
     & $ffmpeg @arguments

@@ -5,13 +5,13 @@ OGG préparés dans `godot/audio/generated/`. Le lien entre les deux est décrit
 dans `sounds/audio_manifest.json` et produit par `prepare_audio.ps1`.
 
 - `musique.mp3` devient `music.ogg`.
-- `ambiance_1.mp3` est l'ambiance active et devient `ambience_main.ogg`.
-- `ambiance_2.mp3` devient `ambience_alt.ogg`, prête à remplacer la première
-  en modifiant une seule référence dans le manifeste et le script audio.
+- `ambiance_1.mp3` devient `ambience_main.ogg` et peut être mixée séparément.
+- `ambiance_2.mp3` devient `ambience_alt.ogg` et peut être mixée séparément.
 - `door.mp3` fournit `door_open.ogg` (0,60–1,38 s) et `door_close.ogg`
   (2,36–3,55 s).
 - `footsteps_1.mp3` fournit les deux pas alternés `footstep_01.ogg`
-  (1,24–1,45 s) et `footstep_02.ogg` (1,96–2,44 s).
+  (1,24–1,45 s) et `footstep_02.ogg` (1,96–2,44 s). Un gain indiqué dans le
+  manifeste ne modifie que les copies Godot, jamais la source fournie.
 
 Pour remplacer une source : déposer le nouveau fichier dans `sounds/sources/`,
 ajuster son entrée dans `audio_manifest.json`, puis lancer

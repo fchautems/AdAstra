@@ -84,3 +84,7 @@ Salles de bain non cloisonnées ; mobilier encore simple et stylisé, non intera
 ## Organisation audio régénérable — 19 septembre 2026
 - Sources longues rangées dans `sounds/sources/`; extraits Godot OGG régénérés dans `godot/audio/generated/` à partir de `sounds/audio_manifest.json` via `prepare_audio.ps1`.
 - Deux extraits de porte et deux pas alternés sont définis par temps de début/fin dans le manifeste. Les pas utilisent maintenant les fichiers découpés, sans génération procédurale.
+
+## Mixage audio séparé — 20 septembre 2026
+- Le menu pause sépare désormais musique, ambiance 1, ambiance 2, pas et portes. Les deux ambiances peuvent être activées et dosées ensemble.
+- Les pas alternés conservent leurs sources et leurs découpes ; un gain de 23 dB est appliqué uniquement aux OGG générés pour les rendre audibles face aux ambiances.
