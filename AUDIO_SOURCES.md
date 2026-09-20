@@ -10,7 +10,9 @@ dans `sounds/audio_manifest.json` et produit par `prepare_audio.ps1`.
 - `door.mp3` fournit `door_open.ogg` (0,60–1,38 s) et `door_close.ogg`
   (2,36–3,55 s).
 - `footsteps_1.mp3` fournit les deux pas alternés `footstep_01.ogg`
-  (1,24–1,45 s) et `footstep_02.ogg` (1,96–2,44 s). Un gain indiqué dans le
+  (3,70–4,36 s) et `footstep_02.ogg` (4,36–4,92 s), soit le troisième couple
+  gauche/droite et sa résonance complète. Les bornes sont placées dans les
+  silences, sans fondu ajouté. Un gain indiqué dans le
   manifeste ne modifie que les copies Godot, jamais la source fournie.
 
 Pour remplacer une source : déposer le nouveau fichier dans `sounds/sources/`,

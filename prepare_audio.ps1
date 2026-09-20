@@ -21,17 +21,12 @@ foreach ($property in $manifest.assets.PSObject.Properties) {
         throw "Source audio manquante pour ${name}: $source"
     }
     $arguments = @('-y')
-    if ($null -ne $asset.start) {
-        $arguments += @('-ss', [string]$asset.start, '-to', [string]$asset.end)
-    }
     $arguments += @('-i', $source)
-    $filters = @()
     if ($null -ne $asset.start) {
         $duration = [double]$asset.end - [double]$asset.start
-        $fadeOutStart = [Math]::Max(0, $duration - 0.05)
-        $filters += "afade=t=in:st=0:d=0.015"
-        $filters += "afade=t=out:st=${fadeOutStart}:d=0.05"
+        $arguments += @('-ss', [string]$asset.start, '-t', [string]$duration)
     }
+    $filters = @()
     if ($null -ne $asset.gain_db) {
         $filters += "volume=$($asset.gain_db)dB"
     }

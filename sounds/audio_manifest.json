@@ -31,16 +31,16 @@
     },
     "footstep_01": {
       "source": "footsteps_1.mp3",
-      "start": 1.24,
-      "end": 1.45,
-      "gain_db": 23,
+      "start": 3.70,
+      "end": 4.36,
+      "gain_db": 2,
       "output": "footstep_01.ogg"
     },
     "footstep_02": {
       "source": "footsteps_1.mp3",
-      "start": 1.96,
-      "end": 2.44,
-      "gain_db": 23,
+      "start": 4.36,
+      "end": 4.92,
+      "gain_db": 2,
       "output": "footstep_02.ogg"
     }
   }
