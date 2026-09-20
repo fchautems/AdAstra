@@ -10,6 +10,10 @@ $outputDir = Join-Path $root 'godot\audio\generated'
 $ffmpeg = (Get-Command ffmpeg -ErrorAction Stop).Source
 $manifest = Get-Content -Raw -LiteralPath $manifestPath | ConvertFrom-Json
 
+function Format-Seconds([double]$value) {
+    return $value.ToString('0.######', [System.Globalization.CultureInfo]::InvariantCulture)
+}
+
 New-Item -ItemType Directory -Force -Path $outputDir | Out-Null
 
 foreach ($property in $manifest.assets.PSObject.Properties) {
@@ -24,9 +28,15 @@ foreach ($property in $manifest.assets.PSObject.Properties) {
     $arguments += @('-i', $source)
     if ($null -ne $asset.start) {
         $duration = [double]$asset.end - [double]$asset.start
-        $arguments += @('-ss', [string]$asset.start, '-t', [string]$duration)
+        $arguments += @('-ss', (Format-Seconds([double]$asset.start)), '-t', (Format-Seconds($duration)))
     }
     $filters = @()
+    if ($null -ne $asset.fade_out_s) {
+        $fadeDuration = [double]($asset.fade_out_s)
+        $fadeStart = [Math]::Max(0.0, ([double]$duration) - $fadeDuration)
+        $sourceFadeStart = ([double]$asset.start) + $fadeStart
+        $filters += "afade=t=out:st=$(Format-Seconds($sourceFadeStart)):d=$(Format-Seconds($fadeDuration))"
+    }
     if ($null -ne $asset.gain_db) {
         $filters += "volume=$($asset.gain_db)dB"
     }
