@@ -1,5 +1,13 @@
 # PROJECT_STATE — AdAstra
 
+## Note d’audit — 2026-11-17
+
+Ce document décrit l’état historique du plan original au 2026-09-11. Dans le dépôt principal audité au commit `fd2760c`, `blockout.json:cabin_extension` et `generate.py:X()` ajoutent 4 m : l’application active mesure 62 m, avec hauteur intérieure 3 m et hangar 5,5 m. Le JSON de plan reste à 58 m ; il n’a pas été réécrit.
+
+Les fichiers v11/v14 mentionnés ci-dessous sont absents de ce snapshot AdAstra ; ne pas les déclarer supprimés de Brain ou réinitialiser les plans. Les deux JSON et `top-and-side-v3.svg` présents sont préservés. Ces références concernent le vaisseau original, pas l’Enterprise SNW.
+
+La nouvelle mission est documentaire uniquement : voir [dossier SNW](../docs/research/snw-2026-11-17/README.md) et [évaluation des plans](../docs/research/snw-2026-11-17/PIECES_ET_PLANS.md). Dimensions métriques SNW et plan global à consolider avant toute reconstruction. Aucun plan ni modèle existant modifié pendant cet audit.
+
 Updated: 2026-09-11
 
 ## Verified state

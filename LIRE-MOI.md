@@ -1,5 +1,7 @@
 # AdAstra — habillage intérieur 06
 
+Mission du 17 novembre 2026 : [recherche Enterprise SNW](docs/research/snw-2026-11-17/README.md) et [catalogue visuel local](docs/research/snw-2026-11-17/catalogue.html). Ouvrir le HTML localement ; les aperçus distants nécessitent Internet. Le jeu et les plans actuels sont conservés. Les résultats de tests décrits ci-dessous sont historiques ; voir l’audit pour les contrôles de cette mission et leurs limites.
+
 Double-cliquer LANCER.cmd. ZQSD/WASD + souris ; cliquer pour capturer la souris ; Échap pour la libérer ; F2 extérieur ; R cockpit ; F10 quitter.
 
 ## Livraison

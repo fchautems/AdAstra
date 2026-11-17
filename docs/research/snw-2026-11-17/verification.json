@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-17",
+  "protected_original_files_checked": 200,
+  "changed_protected_files": [],
+  "resource_count": 52,
+  "unique_resource_ids": 52,
+  "room_sections": 12,
+  "duplicate_html_ids": 0,
+  "missing_fields": [],
+  "broken_internal_links": [],
+  "http_link_checks": 70,
+  "http_status_counts": {
+    "200": 67,
+    "503": 1,
+    "202": 1,
+    "403": 1
+  },
+  "catalogue_logic": {
+    "javascript_syntax": true,
+    "actual_script_executed_with_extracted_dom_data": true,
+    "stage9_results": 1,
+    "code_filter_results": 11,
+    "non_matching_results": 0,
+    "reset_results": 52,
+    "pass": true,
+    "browser_render_verified": false,
+    "browser_blocker": "Chromium socket() failed: Operation not permitted ; lancement natif sans fenêtre exploitable"
+  },
+  "no_new_binary_assets": true,
+  "github_presence_verified": "À contrôler après publication ; résultat consigné dans PROJECT_STATE.md",
+  "pass_static_checks": true
+}

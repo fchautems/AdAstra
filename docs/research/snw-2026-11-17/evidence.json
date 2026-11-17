@@ -1,0 +1,213 @@
+{
+  "date": "2026-11-17",
+  "repository": "fchautems/AdAstra",
+  "audited_commit": "fd2760c298ccfd4c0906420e6bdd73c6d74fe61e",
+  "tracked_files_at_start": 203,
+  "glb": [
+    {
+      "path": "godot/assets/adastra.glb",
+      "bytes": 7022844,
+      "meshes": 99,
+      "indexed_triangles": 287300,
+      "materials": 9,
+      "sha256": "fb904d10a7b9a0eef70d5f332a802440fa5931cf4d8bcfcfa9565dfb931d47a1"
+    },
+    {
+      "path": "godot/assets/identity_kit.glb",
+      "bytes": 669372,
+      "meshes": 44,
+      "indexed_triangles": 16764,
+      "materials": 8,
+      "sha256": "ee13f096885ac24436d15082634e160817b349134afd98f3670cfcc6796b8b20"
+    },
+    {
+      "path": "godot/assets/station/frame_stretched.glb",
+      "bytes": 13464,
+      "meshes": 1,
+      "indexed_triangles": 302,
+      "materials": 1,
+      "sha256": "24a08ca4aba96901c8a14594f4e2f3fbcc8fc731311845a15586e3d7364fc074"
+    },
+    {
+      "path": "godot/assets/station/frame_standard.glb",
+      "bytes": 13680,
+      "meshes": 1,
+      "indexed_triangles": 302,
+      "materials": 1,
+      "sha256": "a07fe7129691878d3ae35b65d7b41f8c77214ab95818616cbb1722b4ff71e8c7"
+    },
+    {
+      "path": "godot/assets/station/wall-switch.glb",
+      "bytes": 3192,
+      "meshes": 1,
+      "indexed_triangles": 18,
+      "materials": 1,
+      "sha256": "2b297783053aa9b091972f31f5fc3892b7cb7572d017dd37fc22af9ac2640c20"
+    },
+    {
+      "path": "godot/assets/station/display-wall.glb",
+      "bytes": 8776,
+      "meshes": 1,
+      "indexed_triangles": 86,
+      "materials": 1,
+      "sha256": "64eb414b4ae9c665b8ef95711d8bade6285b0a7f6dfb8f1f8bd51a67ab4dec89"
+    },
+    {
+      "path": "godot/assets/station/door-single.glb",
+      "bytes": 5376,
+      "meshes": 1,
+      "indexed_triangles": 52,
+      "materials": 1,
+      "sha256": "85f80cd0ef327f322694b46bebb4d07996ceccaaf10b14fd0ccc6585d252c8c3"
+    },
+    {
+      "path": "godot/assets/furniture/bookcaseClosedDoors.glb",
+      "bytes": 22644,
+      "meshes": 3,
+      "indexed_triangles": 296,
+      "materials": 2,
+      "sha256": "ff33f535acdb1825c0e958a293642b39665adcae0b1317b650e83d2bb687f4e2"
+    },
+    {
+      "path": "godot/assets/furniture/lampSquareCeiling.glb",
+      "bytes": 5628,
+      "meshes": 1,
+      "indexed_triangles": 60,
+      "materials": 2,
+      "sha256": "57066be51583d83ae60071e8179af275189cb2911ecb9fc24953bb930c8bf118"
+    },
+    {
+      "path": "godot/assets/furniture/chairModernCushion.glb",
+      "bytes": 7376,
+      "meshes": 1,
+      "indexed_triangles": 92,
+      "materials": 2,
+      "sha256": "245132697e633e907e2b48c86d56f6c8543604a3440a055d1c71c06ce11d2858"
+    },
+    {
+      "path": "godot/assets/furniture/kitchenFridgeSmall.glb",
+      "bytes": 12988,
+      "meshes": 2,
+      "indexed_triangles": 152,
+      "materials": 4,
+      "sha256": "35dab7f63711623be321bfd82072f4ab29fe8006aac9371c6e6b78df2e02f5ed"
+    },
+    {
+      "path": "godot/assets/furniture/bedDouble.glb",
+      "bytes": 23368,
+      "meshes": 4,
+      "indexed_triangles": 264,
+      "materials": 4,
+      "sha256": "c49b33e7d797d2ba1111895587dba7ff63b17a712eb9b4ceeb40a598f73e476c"
+    },
+    {
+      "path": "godot/assets/furniture/kitchenSink.glb",
+      "bytes": 23480,
+      "meshes": 2,
+      "indexed_triangles": 318,
+      "materials": 6,
+      "sha256": "7b9610277d71f00dcf1bba49cf4d98d77ce5177e84bf76c7da2f8893e542f743"
+    },
+    {
+      "path": "godot/assets/furniture/tableRound.glb",
+      "bytes": 6444,
+      "meshes": 1,
+      "indexed_triangles": 80,
+      "materials": 1,
+      "sha256": "f8daea9124a542a00b7bdacfddac82dc468573d43e44d7b54dd6316e9695754b"
+    },
+    {
+      "path": "godot/assets/furniture/kitchenStoveElectric.glb",
+      "bytes": 18604,
+      "meshes": 1,
+      "indexed_triangles": 338,
+      "materials": 6,
+      "sha256": "cf646b960d7dfed1fac27898ff6de1f0671cfa33beecbed06ead7d0684517392"
+    },
+    {
+      "path": "godot/assets/pilot/frame.glb",
+      "bytes": 10804760,
+      "meshes": 1,
+      "indexed_triangles": 192,
+      "materials": 2,
+      "sha256": "0c6e6a933f58e6cdded7d4b85d7683528603e4cfa0686c20f6f7f834d1c489c5"
+    }
+  ],
+  "inspected_repositories": [
+    {
+      "repo": "RodZill4/godot-procedural3d",
+      "commit": "3113abadc77155e99cdc17da3efb009dd09cf0ee",
+      "date": "2019-01-21T22:01:54+01:00",
+      "subject": "Fixed door problem in Godot 3.1 (all doors detect leaving body at start, not sure why...)",
+      "tracked_file_count": 410
+    },
+    {
+      "repo": "paarthbhatt/Star-Trek",
+      "commit": "601d886f0777a619621a5314cfad9870e07c4d0c",
+      "date": "2026-01-06T18:47:33+05:30",
+      "subject": "Update README.md with comprehensive project documentation",
+      "tracked_file_count": 84
+    },
+    {
+      "repo": "majikayogames/SimpleDungeons",
+      "commit": "15b32406e2f10c55cdb864e18661137bacfead89",
+      "date": "2025-04-02T19:00:13-04:00",
+      "subject": "Fix room.max_count not being respected",
+      "tracked_file_count": 108
+    },
+    {
+      "repo": "ColormaticStudios/quality-godot-first-person-2",
+      "commit": "27fab75ca8f6d949d887e9f3f9008c2b0e8bb603",
+      "date": "2026-09-30T05:32:19Z",
+      "subject": "Merge pull request 'fix/camera-frame-rate' (#5) from unexpectedfrost/quality-godot-first-person:fix/camera-frame-rate into main",
+      "tracked_file_count": 28
+    },
+    {
+      "repo": "MacdonaldRobinson/Godot4-3D-inventory-and-interaction-system",
+      "commit": "299b115511fb830f50d0d06ea9d9fbf2dcb2da80",
+      "date": "2024-06-10T08:43:19-06:00",
+      "subject": "Update README.md",
+      "tracked_file_count": 65
+    },
+    {
+      "repo": "snddude/godot-interaction_system",
+      "commit": "9b43c0838de6f66d76e6d66c9ae138116bf360b9",
+      "date": "2026-10-23T23:45:25+08:00",
+      "subject": "Change version number to 1.0.1.470",
+      "tracked_file_count": 68
+    },
+    {
+      "repo": "majikayogames/godot-character-controller-stairs",
+      "commit": "e067dd13fa37072cf4836639505db170c49733da",
+      "date": "2023-12-28T15:13:35-05:00",
+      "subject": "Create THIRD_PARTY_LICENSES",
+      "tracked_file_count": 21
+    },
+    {
+      "repo": "pg07gordon/NetTrekUnity",
+      "commit": "7698bcfd9e4fc245841802475b737cfc3cdc8bf3",
+      "date": "2017-08-31T16:02:23-07:00",
+      "subject": "Small Beam Updates",
+      "tracked_file_count": 600
+    }
+  ],
+  "godot_smoke": {
+    "version": "4.6.3 Linux headless",
+    "isolated_copy": true,
+    "import_exit_code": 0,
+    "load_exit_code": 0,
+    "scene_ready_collision_meshes": 56,
+    "warnings": [
+      "ObjectDB instances leaked at exit",
+      "8 resources still in use at exit"
+    ],
+    "fps_tested": false,
+    "windows_tested": false
+  },
+  "adg_pdf": {
+    "pages": 254,
+    "bytes": 24157982,
+    "sha256": "3ef6e7d5fe483af9c9f0c2da37dc1a18681e3251ecb86f74964640554ca76fb6",
+    "published_in_repository": false
+  }
+}

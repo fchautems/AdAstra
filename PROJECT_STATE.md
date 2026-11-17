@@ -1,5 +1,20 @@
 # AdAstra — habillage intérieur 06
 
+## Mission documentaire Enterprise SNW — 2026-11-17
+
+- Objectif courant demandé : préparer la reconstruction immersive de l’Enterprise NCC-1701 de Strange New Worlds. Cette mission reste limitée à l’audit et à la recherche ; aucun début de reconstruction.
+- Audit : dépôt principal au commit `fd2760c298ccfd4c0906420e6bdd73c6d74fe61e`, 203 fichiers suivis. Application Godot existante, Compatibility, Blender/GLB, portes, FPS, UI et audio confirmés. Le vaisseau original de 62 m reste distinct de l’Enterprise.
+- Écart Brain : ancien résumé Three.js sans tranche Godot dépassé. Plans sources 58 m, extension active +4 m, hauteur intérieure 3 m. Les plans, modèles et sources fonctionnelles sont préservés.
+- Phases 1–4 : audit, recherche multi-sources, lecture ciblée de huit dépôts clonés, inspection de deux modèles Sketchfab par API/aperçu et comparaison des ressources. Dossier ADG de 254 pages inspecté en sept planches contact puis sur des feuilles choisies. Aucun intérieur SNW complet, disponible et licencié pour notre usage n’a été validé ; ne pas interpréter cela comme une preuve d’inexistence.
+- Phase 5 : [dossier structuré](docs/research/snw-2026-11-17/README.md), [catalogue HTML](docs/research/snw-2026-11-17/catalogue.html), 52 fiches, 12 familles de pièces, audit des plans/code, architecture et critères du premier témoin. Les images du catalogue sont des références distantes ; aucun fichier protégé nouveau publié.
+- Phase 6 : 200 fichiers d’origine protégés contrôlés par SHA-256, aucune modification ; JSON/ancres/liens internes valides ; 70 sondes HTTP (67 réponses 200, une 202, une 403, une 503). Un statut HTTP ne prouve pas la licence ni le contenu.
+- Contrôles réels : import et chargement d’une copie sous Godot Linux 4.6.3, `SCENE_READY meshes_with_collision=56`. Avertissement de fuite d’instances et 8 ressources utilisées à la fermeture ; aucune correction hors périmètre. Pas de benchmark ni de parcours graphique Windows/GTX 1070.
+- Catalogue : JavaScript réel exercé avec données extraites du HTML (recherche, filtre, remise à zéro). Vérification visuelle bloquée : Chromium refuse un appel socket dans cet environnement ; lancement natif sans fenêtre exploitable. Rendu desktop/mobile non validé. Aperçus Internet avec remplacement explicite en cas de refus distant.
+- Phase 7 : recommander de conserver Godot 4 + Blender, réemployer l’existant et adapter surtout marches/interactions. Premier témoin proposé : secteur arrière de passerelle, accès/cabine turbolift et petit couloir ; raccord hypothétique signalé. Pas de changement de moteur ni de version.
+- Limites : métriques SNW et plan global encore à relever/recouper ; packs payants non acquis ; Stage 9 exclu ; provenance audio existante incomplète. Voir [méthode et limites](docs/research/snw-2026-11-17/METHODE_ET_VERIFICATIONS.md).
+- Publication : documentation préparée pour enregistrement dans AdAstra ; contrôle distant consigné après écriture. Brain à actualiser pour ce jalon et la nouvelle cible, en conservant l’historique du vaisseau original.
+- Prochaine action : vérifier visuellement le catalogue sur un navigateur disponible, puis valider les références/cotes de la zone témoin avant toute implémentation.
+
 ## Interface de base
 
 Le lancement s'effectue en fenêtre maximisée, sans déformation grâce à l'adaptation de l'interface à l'écran. F11 bascule en plein écran puis en fenêtre. Une page d'accueil minimale mène à l'exploration. Pendant la marche, seul le nom de zone et un point central discret restent visibles ; l'aide aux commandes disparaît après quelques secondes. Échap ouvre le menu pause, libère la souris et propose Reprendre, Aide / Commandes, Plein écran / Fenêtre et Quitter. Reprendre recapture la souris. Aucune scène 3D, géométrie, collision ou commande de déplacement n'a été modifiée.

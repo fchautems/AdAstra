@@ -1,0 +1,302 @@
+[
+  {
+    "id": "passerelle",
+    "title": "01 · Passerelle",
+    "location": "Pont 1 selon Roddenberry Archive",
+    "pages": [
+      95,
+      96,
+      97
+    ],
+    "refs": [
+      "P01",
+      "P08",
+      "P09",
+      "M02",
+      "M03",
+      "M05"
+    ],
+    "note": "Deux niveaux et accès arrière à relever ; dimensions métriques inconnues.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-bridge-manned.jpg",
+        "Décor SNW · photo promotionnelle via EAS",
+        "P15"
+      ],
+      [
+        "https://media.sketchfab.com/models/ea5c7dd3c1ad432e8b3f294be96917ea/thumbnails/7d4d220b8db34deabe0c520d5f7dac81/7ab53b5c7970419d8eefa27af0911fda.jpeg",
+        "Comparaison · passerelle fan générique, pas SNW",
+        "M02"
+      ]
+    ]
+  },
+  {
+    "id": "couloirs",
+    "title": "02 · Couloirs et intersections",
+    "location": "Ponts / connexions globales inconnus",
+    "pages": [
+      68,
+      69
+    ],
+    "refs": [
+      "P01",
+      "P03",
+      "P15",
+      "M07",
+      "M08"
+    ],
+    "note": "Comparer murs, plafond et modules courbes. La largeur actuelle AdAstra ne prouve pas celle de SNW.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-corridor-1.jpg",
+        "Couloir final · photo promotionnelle via EAS",
+        "P15"
+      ],
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-corridor-ceiling.jpg",
+        "Plafond final · photo promotionnelle via EAS",
+        "P15"
+      ]
+    ]
+  },
+  {
+    "id": "turbolifts",
+    "title": "03 · Turbolifts et accès",
+    "location": "Accès passerelle décrit ; réseau inconnu",
+    "pages": [
+      73,
+      74
+    ],
+    "refs": [
+      "P01",
+      "P08",
+      "P20",
+      "C06"
+    ],
+    "note": "Aperçu dédié non obtenu. Plans directs ci-dessous ; ne pas remplacer la cabine par une autre génération.",
+    "images": []
+  },
+  {
+    "id": "capitaine",
+    "title": "04 · Cabine du capitaine",
+    "location": "Pont 5 selon Roddenberry Archive",
+    "pages": [
+      153,
+      154,
+      155,
+      156
+    ],
+    "refs": [
+      "P01",
+      "P08",
+      "P10",
+      "M13"
+    ],
+    "note": "Distinguer quartiers de Pike, Ready Room et ancienne cabine originale AdAstra.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-pikes-quarters-1.jpg",
+        "Quartiers de Pike · photo promotionnelle via EAS",
+        "P15"
+      ]
+    ]
+  },
+  {
+    "id": "equipage",
+    "title": "05 · Quartiers de l’équipage",
+    "location": "Spock : pont 5 selon Archive ; autres inconnus",
+    "pages": [],
+    "refs": [
+      "P08",
+      "P12",
+      "M13"
+    ],
+    "note": "Aperçu distant Archive susceptible de refuser l’affichage. Dimensions inconnues ; conserver les variantes par personnage.",
+    "images": [
+      [
+        "https://cfy-rb-prod-cms.otoy-tf-1.com/media/2259-uss-enterprise-ncc-1701__spoock-quarter__image.webp",
+        "Spock · reconstruction Roddenberry, CDN refusé lors du contrôle",
+        "P08"
+      ]
+    ]
+  },
+  {
+    "id": "infirmerie",
+    "title": "06 · Infirmerie",
+    "location": "Pont inconnu dans les sources retenues",
+    "pages": [
+      192,
+      193,
+      194,
+      195
+    ],
+    "refs": [
+      "P01",
+      "P04",
+      "P15"
+    ],
+    "note": "Séparer soins, bureau et laboratoire médical ; cotes à relever.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-sickbay-lab.jpg",
+        "Laboratoire médical · photo promotionnelle via EAS",
+        "P15"
+      ],
+      [
+        "https://www.jwilliamallen.com/uploads/1/2/3/4/12344240/snw2-drawing-number-page-22_orig.jpg",
+        "Gurney · dessin de production John Allen",
+        "P02"
+      ]
+    ]
+  },
+  {
+    "id": "machines",
+    "title": "07 · Salle des machines",
+    "location": "Pont 18 selon Roddenberry Archive",
+    "pages": [
+      99,
+      111,
+      112,
+      113
+    ],
+    "refs": [
+      "P01",
+      "P08",
+      "P11",
+      "P22",
+      "M08",
+      "M09"
+    ],
+    "note": "Le volume virtuel de tournage doit devenir une géométrie cohérente depuis les positions de visite.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-engineering.jpg",
+        "Machines · photo promotionnelle via EAS",
+        "P15"
+      ],
+      [
+        "https://www.jwilliamallen.com/uploads/1/2/3/4/12344240/snw2-drawing-number-page-01_orig.jpg",
+        "Équipement technique · dessin John Allen, pas plan de la salle",
+        "P02"
+      ]
+    ]
+  },
+  {
+    "id": "transporteur",
+    "title": "08 · Transporteur",
+    "location": "Pont 6 selon Roddenberry Archive",
+    "pages": [
+      59,
+      60,
+      61,
+      62
+    ],
+    "refs": [
+      "P01",
+      "P08",
+      "P13"
+    ],
+    "note": "Plateforme, plafond et passage arrière à recouper. Dimensions inconnues.",
+    "images": [
+      [
+        "https://cfy-rb-prod-cms.otoy-tf-1.com/media/2259-uss-enterprise-ncc-1701__transporter__image.webp",
+        "Transporteur · reconstruction Archive, CDN refusé lors du contrôle",
+        "P08"
+      ]
+    ]
+  },
+  {
+    "id": "briefing",
+    "title": "09 · Salle de briefing / Ready Room",
+    "location": "Connexion passerelle décrite ; placement à confirmer",
+    "pages": [
+      169,
+      170,
+      171
+    ],
+    "refs": [
+      "P01",
+      "P05",
+      "P07",
+      "P14"
+    ],
+    "note": "Le concept a changé de taille et de fenêtres ; comparer à la version construite.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-pike-readyroom-1.jpg",
+        "Ready Room · photo promotionnelle via EAS",
+        "P15"
+      ]
+    ]
+  },
+  {
+    "id": "mess",
+    "title": "10 · Mess et espaces communs",
+    "location": "Pont inconnu ; distinguer mess S1 et Port Galley",
+    "pages": [],
+    "refs": [
+      "P02",
+      "P22",
+      "M13"
+    ],
+    "note": "Le Port Galley et son comptoir disposent de références de fabrication ; la salle complète reste à relever.",
+    "images": [
+      [
+        "https://www.jwilliamallen.com/uploads/1/2/3/4/12344240/bar-counter-in-set-camera-camera-7_orig.jpg",
+        "Port Galley · rendu de production John Allen",
+        "P02"
+      ],
+      [
+        "https://www.jwilliamallen.com/uploads/1/2/3/4/12344240/snw2-port-galley-bar-page-16_orig.jpg",
+        "Port Galley · feuille de fabrication John Allen",
+        "P02"
+      ]
+    ]
+  },
+  {
+    "id": "hangar",
+    "title": "11 · Hangar et navettes",
+    "location": "Arrière du corps secondaire : hypothèse de travail",
+    "pages": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "refs": [
+      "P01",
+      "P06",
+      "P22"
+    ],
+    "note": "Aperçu dédié non obtenu. Le PDF documente la navette ; aucun hangar SNW prêt à importer validé. Cargo ≠ hangar.",
+    "images": []
+  },
+  {
+    "id": "laboratoires",
+    "title": "12 · Laboratoires et espaces techniques",
+    "location": "Ponts et raccords inconnus",
+    "pages": [],
+    "refs": [
+      "P02",
+      "P15",
+      "P20",
+      "M08"
+    ],
+    "note": "Le laboratoire S3, le laboratoire médical et les tubes techniques doivent garder des fiches séparées.",
+    "images": [
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/science-lab-s3.jpg",
+        "Laboratoire S3 · photo promotionnelle via EAS",
+        "P15"
+      ],
+      [
+        "https://www.ex-astris-scientia.org/gallery/snw/snw-enterprise-jefferies-tubes.jpg",
+        "Tube technique · photo promotionnelle via EAS",
+        "P15"
+      ]
+    ]
+  }
+]
