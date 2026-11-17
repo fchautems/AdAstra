@@ -12,7 +12,8 @@
 - Catalogue : JavaScript réel exercé avec données extraites du HTML (recherche, filtre, remise à zéro). Vérification visuelle bloquée : Chromium refuse un appel socket dans cet environnement ; lancement natif sans fenêtre exploitable. Rendu desktop/mobile non validé. Aperçus Internet avec remplacement explicite en cas de refus distant.
 - Phase 7 : recommander de conserver Godot 4 + Blender, réemployer l’existant et adapter surtout marches/interactions. Premier témoin proposé : secteur arrière de passerelle, accès/cabine turbolift et petit couloir ; raccord hypothétique signalé. Pas de changement de moteur ni de version.
 - Limites : métriques SNW et plan global encore à relever/recouper ; packs payants non acquis ; Stage 9 exclu ; provenance audio existante incomplète. Voir [méthode et limites](docs/research/snw-2026-11-17/METHODE_ET_VERIFICATIONS.md).
-- Publication : documentation préparée pour enregistrement dans AdAstra ; contrôle distant consigné après écriture. Brain à actualiser pour ce jalon et la nouvelle cible, en conservant l’historique du vaisseau original.
+- Publication vérifiée : commit documentaire `b248eb506de5599aa203f417f59209a57dcd26c7`, relu par `git fetch` ; les 16 fichiers livrés correspondent octet pour octet aux fichiers locaux. Diff limité aux trois documents d’état/entrée et au dossier de recherche ; aucun fichier fonctionnel ou géométrique modifié. Le présent complément consigne ce contrôle après publication.
+- Brain : fiche, index et état historique associés actualisés au jalon du 2026-11-17, commit `05975ca3d0b36ee9fdb0e2800e38df9004737792` ; trois fichiers relus par le connecteur et comparés exactement. Historique et décisions du vaisseau original conservés.
 - Prochaine action : vérifier visuellement le catalogue sur un navigateur disponible, puis valider les références/cotes de la zone témoin avant toute implémentation.
 
 ## Interface de base

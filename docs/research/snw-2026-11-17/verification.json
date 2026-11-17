@@ -27,6 +27,12 @@
     "browser_blocker": "Chromium socket() failed: Operation not permitted ; lancement natif sans fenêtre exploitable"
   },
   "no_new_binary_assets": true,
-  "github_presence_verified": "À contrôler après publication ; résultat consigné dans PROJECT_STATE.md",
-  "pass_static_checks": true
+  "github_presence_verified": {
+    "published_commit": "b248eb506de5599aa203f417f59209a57dcd26c7",
+    "verified_files": 16,
+    "contents_match_local": true,
+    "only_documentation_changed": true
+  },
+  "pass_static_checks": true,
+  "publication_verification_method": "Public git fetch, name-only diff from audited commit, byte-for-byte comparison of all 16 delivered files"
 }
