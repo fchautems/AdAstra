@@ -39,3 +39,11 @@ Sources. [ADG p.68, modules de couloir](https://assets.adg.org/media/submissions
 Le plan directeur est une feuille de tournage WIP du 1er mars 2021. Le schéma reprend l’implantation de la salle et simplifie les contours, les emprises et les seuils. L’image raster du dossier ADG ne permet pas de confirmer les cotes d’ensemble. La grille et la barre d’échelle s’appliquent aux dimensions dessinées pour cette version.
 
 [Référence principale ADG p. 97](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=97) · [Pupitre central p. 93](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=93) · [Détail de l’écran p. 96](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=96).
+
+## Raccord au turbolift v0.2 — 18 novembre 2026
+
+[Ouvrir le trajet du couloir à la passerelle](raccord-passerelle-v02.svg). La vue de gauche commence dans le couloir témoin. Le visiteur monte dans le turbolift puis ressort par la même porte directement sur la passerelle, à l’arrière bâbord du pont 1. L’accès tribord mène au bureau du capitaine.
+
+Les deux vues ont la même échelle (40 unités SVG par mètre) et montrent la même cabine de 2,45 m de large sur 2,55 m de profondeur, avec un seuil de 1,2 m. La cabine de droite est recalée sur le seuil de la passerelle v0.1. Le couloir témoin de 5 m sur environ 3,8 m est un raccord proposé. Le numéro du pont de départ, son orientation dans le vaisseau, le dénivelé et le trajet de la gaine restent à déterminer. La flèche de montée indique l’ordre du parcours.
+
+Les feuilles [secteur v0.1](secteur-v01.svg) et [passerelle détaillée v0.1](passerelle-v01.svg) documentent les bases de ce raccord.

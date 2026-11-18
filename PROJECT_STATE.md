@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Raccord 2D couloir–turbolift–passerelle v0.2 — 2026-11-18
+
+- [Vue intégrée](plans/snw/raccord-passerelle-v02.svg) : depuis le couloir témoin, embarquement, montée au pont 1 et sortie directe à l’arrière bâbord. La même cabine à une porte est représentée aux deux arrêts. La vue détaillée de la passerelle sert de base au raccord.
+- Contrôles : plans à 40 unités SVG par mètre, recalage des jambages à moins de 0,25 unité SVG, repères de la passerelle présents, SVG et PNG ouverts et rendu contrôlé. Les deux plans v0.1 restent disponibles.
+- En suspens : numéro du pont de départ, orientation du couloir, trajet de la gaine et dénivelé, cotes définitives. Le dessin traite uniquement de la liaison en 2D.
+- Prochaine action : faire relire le trajet et confirmer le pont de départ avant d’étendre le plan à une autre pièce.
+
 ## Livraison des fichiers à télécharger — 2026-11-18
 
 - Règle pour chaque livrable : vérifier que le fichier s’ouvre localement, que la publication a abouti et que le lien pointe vers la bonne version. Donner dès le premier message le lien durable et, si possible, un lien de secours vers une autre copie ou un autre format. Ajouter un aperçu dans le chat quand le format s’y prête. Un lien temporaire seul ne suffit pas.
