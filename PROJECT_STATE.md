@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Plan d’ensemble du pont 2 V05 — 2026-11-18
+
+- [Plan V05](plans/snw/pont-2-plan-d-ensemble-v05.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_55c183bf5a388191add69f6f0fd874c4&account_id=personal). Galerie et pièce avant reculées ensemble de 2 m par rapport à la V04. Le bord avant de la galerie est à +13 m du centre de la passerelle. Pièce de 17 × 4,4 m avec accès centré. L’ellipse d’étude et le raccord du turbolift sont repris de la V04.
+- Contrôles en plan réussis. Boucle continue, quatre emprises distinctes et quatre accès, aucun chevauchement du turbolift avec les pièces, implantation interne à l’ellipse. Le SVG est relu à l’identique et le PNG s’ouvre.
+- La simulation transversale donne un minimum de 2,62 m libres dans les virages, à +11,73 m et latéralement à ±11,88 m, avec 0,50 m de réserve structure et plafond. Les quatre combinaisons testées passent le gabarit de 2,50 m.
+- Prochaine action. Chercher une coupe ou une géométrie 3D de référence à cette station pour confirmer la courbure transversale de la coque et la largeur de travail avant de figer l’implantation.
+
 ## Coupe transversale du pont 2 V01 — 2026-11-18
 
 - [Coupe B–B′](plans/snw/pont-2-coupe-transversale-v01.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_6b339205a5108191bfedd7399f44c9ef&account_id=personal). Coupe à +14,06 m devant le centre de la passerelle, à l’endroit le plus serré des quatre scénarios, au bord extérieur des virages (±11,32 m de l’axe). Le point a été déterminé sur le contour des deux virages symétriques de la V04, en vérifiant également le bord avant à +15,0 m.
