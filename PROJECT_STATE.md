@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Coupe v0.1 et arrêt d’essai du turbolift — 2026-11-18
+
+- [Coupe locale](plans/snw/coupe-soucoupe-v01.svg) comparée à l’écran de « Valles Marineris » (S4E01). Les séparations internes visibles apportent un repère qualitatif. Le profil extérieur de saison 1 conserve son rôle de référence.
+- Hypothèse d’essai : couloir du pont 2, plancher 4 m sous celui du pont 1. La cote absolue du plancher haut, l’implantation du pont 2 et le tracé de la gaine restent ouverts.
+- Contrôles : séparation de 4 m reportée selon l’échelle de travail, projection longitudinale du seuil v02, formats SVG et PNG ouverts et rendu vérifié.
+- Prochaine action : positionner en vue de dessus le palier et le couloir du pont 2 en tenant compte de l’accès bâbord et de la gaine.
+
 ## Repérage 2D du pont 1 dans la coque SNW — 2026-11-18
 
 - Référence retenue avec Fréd : Enterprise de Pike, saison 1. Le [repérage 2D](plans/snw/repere-passerelle-coque.svg) relie le profil et la vue de dessus de la coque à l’emprise de passerelle du plan v02.

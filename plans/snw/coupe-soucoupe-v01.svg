@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="980" viewBox="0 0 1280 980" role="img" aria-labelledby="title desc">
+<title id="title">AdAstra · Coupe locale de la soucoupe</title>
+<desc id="desc">Comparaison entre la coupe visible dans Valles Marineris et un essai de positionnement sous le dôme. Le départ au pont 2, les niveaux de plancher absolus et le dénivelé de quatre mètres sont des hypothèses de conception.</desc>
+<defs>
+  <clipPath id="reference"><rect x="52" y="185" width="1176" height="255" rx="8"/></clipPath>
+  <clipPath id="coque"><path d="M823 201Q868 196 880 187L909 180 914 179 914 175 923 175 923 179 Q933 172 946 172Q959 171 966 178L982 184 998 193 1030 194 1074 203 1076 212 1085 212 1085 229Q1052 232 1030 242L984 258 Q951 278 928 267L913 260Q888 248 852 238L823 238Z"/></clipPath>
+  <clipPath id="profil"><rect x="52" y="576" width="791" height="300" rx="8"/></clipPath>
+  <marker id="montee" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 0 8 4 0 8Z" fill="#227259"/>
+  </marker>
+</defs>
+<style>
+text{font-family:'DejaVu Sans',sans-serif;fill:#193148}
+.title{font-size:38px;font-weight:700} .section{font-size:24px;font-weight:700}
+.text{font-size:16px} .note{font-size:14px;fill:#456077} .label{font-size:16px;font-weight:700}
+.hyp{fill:#845615} .light{fill:#e6f8fa;paint-order:stroke;stroke:#142638;stroke-width:4;stroke-linejoin:round;font-size:15px;font-weight:700}
+.cyan{fill:none;stroke:#8fe0ed;stroke-width:2}
+</style>
+<rect width="1280" height="980" fill="#f3f7fb"/>
+<text x="34" y="60" class="title">Coupe locale de la soucoupe</text>
+<text x="36" y="89" class="text">AdAstra · Enterprise de Pike · Un premier arrêt sous la passerelle</text>
+
+<rect x="30" y="114" width="1220" height="372" rx="14" fill="white" stroke="#cedae6"/>
+<text x="52" y="154" class="section">Ce que montre l’écran de « Valles Marineris »</text>
+<g clip-path="url(#reference)">
+<rect x="52" y="185" width="1176" height="255" fill="#13273d"/>
+<path d="M70 254L470 255 1115 251 M70 275H465L469 255
+         M725 280H905 M717 292H907 M620 315L908 323 1111 323
+         M671 345L869 353 1005 356 M746 371L866 376 1003 379"
+      fill="none" stroke="#7bc3d1" stroke-width="2" opacity=".72"/>
+<path d="M55 275H113L166 310 132 333 57 366 M69 302H540L586 333
+         L756 386 811 404 827 423Q886 449 939 407L993 389 1021 375 1055 360 1082 375 1142 356"
+      fill="none" stroke="#7bc3d1" stroke-width="2.3"/>
+<path d="M955 346h12v28h-12 M967 360h15v-73h-99" class="cyan"/>
+<text x="873" y="292" text-anchor="end" class="light">Séparations visibles</text>
+</g>
+<text x="52" y="466" class="note">Relevé schématique de l’écran · Proue à droite</text>
+<text x="1228" y="466" text-anchor="end" class="note">Niveaux visibles · Hauteurs et numéros non lisibles</text>
+
+<rect x="30" y="504" width="1220" height="410" rx="14" fill="white" stroke="#cedae6"/>
+<text x="52" y="544" class="section">Essai sur le profil de la saison 1</text>
+<rect x="52" y="576" width="791" height="300" rx="8" fill="#eff4f8"/>
+<g clip-path="url(#profil)">
+  <g transform="translate(49.5 574) scale(3.55) translate(-837 -160)">
+    <path d="M823 201Q868 196 880 187L909 180 914 179 914 175 923 175 923 179 Q933 172 946 172Q959 171 966 178L982 184 998 193 1030 194 1074 203 1076 212 1085 212 1085 229Q1052 232 1030 242L984 258 Q951 278 928 267L913 260Q888 248 852 238L823 238Z"
+        fill="#dbe6ee" stroke="#667f94" stroke-width=".65"/>
+    <path d="M823 216H1085 M843 230Q873 229 900 226H1085" fill="none" stroke="#a0b2c2" stroke-width=".55"/>
+    <rect x="928.14" y="175.7" width="37.71" height="9.300000000000011" rx="1.1" fill="#fff0cd" opacity=".85" clip-path="url(#coque)"/>
+    <path d="M928.14 185H965.86 M906 195.24H994"
+          fill="none" stroke="#986321" stroke-width=".9" stroke-dasharray="2.4 1.6"/>
+  </g>
+</g>
+<path d="M391.8 696V665" fill="none" stroke="#227259" stroke-width="3" stroke-dasharray="5 4" marker-end="url(#montee)"/>
+<path d="M390 708H308V737" fill="none" stroke="#227259" stroke-width="1.4"/>
+<text x="106" y="755" class="label" style="fill:#227259">Turbolift · liaison de principe</text>
+<path d="M511 663H602V645H627 M608 699H627V716H635" fill="none" stroke="#986321" stroke-width="1.6"/>
+<text x="638" y="650" class="label hyp">Pont 1</text>
+<text x="638" y="670" class="note">Passerelle</text>
+<text x="646" y="721" class="label hyp">Pont 2 proposé</text>
+<text x="646" y="741" class="note">Couloir de départ</text>
+<path d="M549 663h10v36h-10 M559 681h16" fill="none" stroke="#986321" stroke-width="1.6"/>
+<rect x="573" y="669" width="48" height="23" rx="5" fill="#fff8e8"/>
+<text x="597" y="686" text-anchor="middle" class="label hyp">4 m</text>
+<text x="69" y="851" class="note">Projection de profil · Le seuil du turbolift est à bâbord, hors de l’axe médian.</text>
+
+<rect x="861" y="576" width="367" height="300" rx="8" fill="#fff8e8" stroke="#ead9b0"/>
+<text x="884" y="610" class="label hyp">Hypothèses d’implantation</text>
+<path d="M884 632h319" stroke="#ead9b0"/>
+<text x="884" y="662" class="text" font-weight="700">Pont 2 comme premier arrêt</text>
+<text x="884" y="685" class="note">Le palier le plus proche pour l’essai.</text>
+<text x="884" y="727" class="text" font-weight="700">4 m entre les planchers</text>
+<text x="884" y="750" class="note">Cote de travail révisable.</text>
+<text x="884" y="792" class="text" font-weight="700">Gaine à définir</text>
+<text x="884" y="815" class="note">La flèche relie les deux arrêts.</text>
+<text x="884" y="837" class="note">L’altitude du plancher reste inconnue.</text>
+
+<text x="34" y="949" class="note">Sources · Écran SNW S4E01 reproduit par Ex Astris Scientia · Profil d’après Dávid Metlesits · Raccord AdAstra v02</text>
+</svg>
