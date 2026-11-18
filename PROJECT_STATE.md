@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Coupe longitudinale du pont 2 v01 — 2026-11-18
+
+- [Coupe et ligne de coupe A–A′](plans/snw/pont-2-coupe-longitudinale-v01.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_96822901a4f08191a447c461cc528c1d&account_id=personal). Les emprises de la v03 sont reportées sur l’axe longitudinal du vaisseau. Le centre de passerelle est à x=947 dans le repère profil, la proue est du côté des x croissants et l’échelle de travail est de 1 132 unités pour 442 m. Le pont 2 est à 4 m sous le plancher du pont 1 placé provisoirement à y=185.
+- Hauteur brute minimale du plancher au profil extérieur selon les deux tracés AdAstra du même profil Metlesits : galerie avant 0,4 à 0,7 m, espace avant 2,1 à 2,3 m, galerie arrière 4,7 à 5,0 m, espace arrière environ 6,2 m. Au bout avant de l’espace, la marge brute tombe sous le gabarit d’essai de 2,5 m. Le profil projeté fournit une borne extérieure et les épaisseurs et coupes transversales restent à établir.
+- Contrôles : correspondance des emprises v03 avec la ligne de coupe, relevés sur deux tracés SVG du même profil, logique du seuil de 2,5 m et rendu du SVG/PNG vérifiés.
+- Prochaine action : reculer la galerie et redimensionner l’espace avant. Tester un bord avant de galerie à environ +15 m du centre de la passerelle, où les deux tracés donnent au moins 3 m bruts sur l’axe dans la configuration d’essai. Contrôler ensuite la largeur et les dégagements en coupe transversale.
+
 ## Plan d’ensemble du pont 2 v03 — 2026-11-18
 
 - [Plan à l’échelle](plans/snw/pont-2-ensemble-v03.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_b0f053f8d41c819184b1028a3b4a6f71&account_id=personal). La galerie transversale raccorde le carrefour du turbolift aux deux côtés de l’anneau. Depuis ce carrefour, les galeries de 3,8 m desservent la proue et l’arrière. Quatre espaces sont accessibles et restent sans affectation. L’emprise de 8 × 6 m est reprise côté tribord.
