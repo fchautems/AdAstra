@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Vue détaillée de la passerelle SNW v0.1 — 2026-11-18
+
+- [Vue 2D](plans/snw/passerelle-v01.svg) et [sources](plans/snw/README.md). Écran, poste de navigation, barre, fauteuil du capitaine, consoles périphériques, escalier et seuils du turbolift et du bureau du capitaine.
+- Contrôles : implantation comparée à la feuille ADG S01 DP et aux photos de production, SVG validé comme XML, export PNG rendu et inspecté. Le schéma de liaison v0.1, le code et la géométrie sont préservés.
+- Cotes de travail : largeur ≈ 14 m et plateforme ≈ 7 m. Cotes exactes, hauteurs, marches et dégagements à confirmer.
+- Prochaine action : soumettre cette vue à Fréd pour validation de l’implantation de la passerelle. Les raccordements et la 3D attendent cette validation.
+
 ## Plan local Enterprise SNW v0.1 — 2026-11-18
 
 - [Plan 2D et relevés](plans/snw/README.md). Le dessin situe l’accès arrière bâbord et propose un deuxième palier avec un tronçon de couloir.

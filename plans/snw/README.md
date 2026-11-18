@@ -22,3 +22,20 @@ Méthode reproductible. Sur la page 74 rendue à 1980 × 1530 px, l’intervalle
 La page 69 montre des façades de turbolift associées au décor de couloir et la page 97 un turbolift associé au décor de passerelle. Cette concordance guide le parcours proposé. L’implantation des plateaux et le nombre de décors construits ne permettent pas d’attribuer un pont au couloir représenté ici. Le raccord retenu est révisable.
 
 Sources. [ADG p.68, modules de couloir](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=68) · [ADG p.69, couloirs](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=69) · [ADG p.73, élévations du turbolift](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=73) · [ADG p.74, plan du turbolift](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=74) · [ADG p.97, plan de passerelle](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=97) · [Roddenberry Archive, Enterprise 2259](https://roddenberry.x.io/2259-uss-enterprise-ncc-1701/?view=Main).
+
+## Passerelle de commandement, vue détaillée v0.1 — 18 novembre 2026
+
+[Ouvrir la vue de dessus (SVG)](passerelle-v01.svg). Cette feuille représente uniquement la salle et ses seuils. L’avant est en haut, bâbord à gauche. Elle complète le schéma des deux paliers conservé ci-dessus.
+
+| Élément | Base du dessin |
+|---|---|
+| Écran, plateforme, fauteuil, navigation et barre | Disposition relevée sur le plan directeur S01 DP. La photo p. 93 recoupe le pupitre central à deux postes. La p. 96 précise l’arc de l’écran. |
+| Consoles périphériques | Secteurs fonctionnels lus p. 97. Les emprises sont schématisées. Les détails du mobilier et des sièges s’appuient aussi sur les p. 93–95. |
+| Escalier arrière et garde-corps | Positions interprétées d’après la p. 97. Le nombre exact de marches et les hauteurs restent inconnus. |
+| Seuils | Turbolift à l’arrière bâbord et accès au bureau du capitaine à tribord d’après la p. 97. L’ouverture tribord et les dégagements restent à coter. |
+| Largeur de travail ≈ 14 m | Hypothèse arrondie dans la continuité du rayon de travail de 7,2 m du schéma de secteur. La cote couvre l’enveloppe dessinée des postes latéraux. |
+| Plateforme ≈ 7 m | Proportion relevée sur l’image du tracé directeur (≈ 164 px entre bords de plateforme pour ≈ 323 px entre les bords externes des postes latéraux), reportée sur la largeur de travail. Les deux valeurs en mètres restent provisoires. |
+
+Le plan directeur est une feuille de tournage WIP du 1er mars 2021. Le schéma reprend l’implantation de la salle et simplifie les contours, les emprises et les seuils. L’image raster du dossier ADG ne permet pas de confirmer les cotes d’ensemble. La grille et la barre d’échelle s’appliquent aux dimensions dessinées pour cette version.
+
+[Référence principale ADG p. 97](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=97) · [Pupitre central p. 93](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=93) · [Détail de l’écran p. 96](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=96).
