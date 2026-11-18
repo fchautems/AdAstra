@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1270" viewBox="0 0 960 1270" role="img" aria-labelledby="title desc">
+<title id="title">AdAstra · Plan d’ensemble du pont 2</title>
+<desc id="desc">La vue de dessus montre l’enveloppe de travail complète du pont, la proue en haut et bâbord à gauche. Au sortir du turbolift, un palier de 5 mètres rejoint un carrefour sur la galerie centrale. Celle-ci traverse un anneau desservant l’avant et l’arrière. Quatre zones restent à affecter. Le contour de plancher et les dégagements en hauteur restent à vérifier.</desc>
+<defs>
+  <linearGradient id="fond" x2="1" y2="1"><stop stop-color="#14283a"/><stop offset="1" stop-color="#08131f"/></linearGradient>
+  <radialGradient id="coque" cx="50%" cy="43%" r="69%"><stop stop-color="#223e53"/><stop offset="1" stop-color="#142839"/></radialGradient>
+  <pattern id="grille" x="480" y="635" width="61.75" height="61.75" patternUnits="userSpaceOnUse"><path d="M61.75 0 H0 V61.75" fill="none" stroke="#97bacb" opacity=".21"/></pattern>
+  <clipPath id="contour"><ellipse cx="480" cy="680.8120" rx="296.4" ry="438.425"/></clipPath>
+  <marker id="sortie" markerWidth="5" markerHeight="5" refX="4.35" refY="2.5" orient="auto"><path d="M0 0 5 2.5 0 5Z" fill="#ffdd9b"/></marker>
+</defs>
+<style>
+  text {font-family:"DejaVu Sans",sans-serif;fill:#edf5fa}
+  .titre {font-size:51px;font-weight:700;letter-spacing:-1.7px}
+  .sous-titre {font-size:20px;fill:#b6cbd8}
+  .entete {font-size:15px;font-weight:700;letter-spacing:2.7px;fill:#95ddce}
+  .axe {font-size:14px;font-weight:700;letter-spacing:2.3px;fill:#c0d1db}
+  .label {font-size:19px;font-weight:700}
+  .petit {font-size:15px;fill:#c0d1db}
+  .zone {font-size:18px;font-weight:700;fill:#dce7f0;text-anchor:middle}
+  .galerie {font-size:16px;font-weight:700;fill:#cefff2;text-anchor:middle}
+  .halo {stroke:#122737;stroke-width:4px;paint-order:stroke;stroke-linejoin:round}
+</style>
+<rect width="960" height="1270" fill="url(#fond)"/>
+<text x="46" y="58" class="entete">ADASTRA / ENTERPRISE DE PIKE</text>
+<text x="44" y="117" class="titre">Pont 2</text>
+<text x="47" y="152" class="sous-titre">Plan d’ensemble de la circulation</text>
+<text x="913" y="146" class="axe" text-anchor="end">VUE DE DESSUS · V03</text>
+<path d="M46 174H914" stroke="#4a697c"/>
+
+<ellipse cx="480" cy="680.8120" rx="296.4" ry="438.425" fill="url(#coque)"/>
+<g clip-path="url(#contour)">
+  <path d="M150 233H810V1123H150Z" fill="url(#grille)"/>
+  <path d="M480 242V1117" stroke="#b8d0dd" opacity=".39" stroke-dasharray="5 8"/>
+</g>
+<ellipse cx="480" cy="680.8120" rx="296.4" ry="438.425" fill="none" stroke="#d9b27c" stroke-width="1.65" stroke-dasharray="7 6"/>
+<path d="M480 218V200 M474 206L480 200 486 206" fill="none" stroke="#cee1e8" stroke-width="1.6"/>
+<text x="498" y="214" class="axe">PROUE</text>
+<text x="480" y="1081" class="axe" text-anchor="middle">ARRIÈRE</text>
+
+<g id="implantation" transform="translate(480 635) scale(12.35)" stroke-linecap="round" stroke-linejoin="round">
+  <g fill="#83cdbd" stroke="#83cdbd">
+      <path d="M-7 -23 H7 Q13 -23 13 -17 V11 Q13 18 7 18 H-7 Q-13 18 -13 11 V-17 Q-13 -23 -7 -23 Z M-13 0 H13" fill="none" stroke-width="4.03"/>
+      <path d="M-4.8 -1.9 H2.4 L3.4 -.9 V2.3 L2.2 3.5 H-4.8 L-5.5 2.8 V-1.2 Z" stroke-width="0.23"/>
+      <path d="M-1.9 -5 H1.9 V0 H-1.9 Z" transform="translate(-4.425 5.3) rotate(38.290163)" stroke-width="0.23"/>
+      <path d="M0 -22 V-17.3 M3.45 17 V13.8 M-13 -1 H-16 M13 1 H15.9" fill="none" stroke-width="2.43"/>
+    </g>
+  <g id="sol-circulation" fill="#226459" stroke="#226459">
+      <path d="M-7 -23 H7 Q13 -23 13 -17 V11 Q13 18 7 18 H-7 Q-13 18 -13 11 V-17 Q-13 -23 -7 -23 Z M-13 0 H13" fill="none" stroke-width="3.8"/>
+      <path d="M-4.8 -1.9 H2.4 L3.4 -.9 V2.3 L2.2 3.5 H-4.8 L-5.5 2.8 V-1.2 Z" stroke-width="0"/>
+      <path d="M-1.9 -5 H1.9 V0 H-1.9 Z" transform="translate(-4.425 5.3) rotate(38.290163)" stroke-width="0"/>
+      <path d="M0 -22 V-17.3 M3.45 17 V13.8 M-13 -1 H-16 M13 1 H15.9" fill="none" stroke-width="2.2"/>
+    </g>
+  <g id="emprises" fill="#304d63" stroke="#9bb6c7" stroke-width=".11" stroke-dasharray=".36 .23">
+    <rect x="-8.5" y="-17.3" width="17" height="12" rx=".65"/>
+    <rect x="-2.8" y="6" width="12.5" height="7.8" rx=".6"/>
+    <rect x="-21.3" y="-6" width="5.3" height="10.5" rx=".55"/>
+    <rect x="15.9" y="-3" width="6" height="8" rx=".55"/>
+  </g>
+  <path d="M-1.08 -17.3H1.08 M2.37 13.8H4.53 M-16 -2.08V.08 M15.9 -.08V2.08" fill="none" stroke="#87ccbc" stroke-width=".19"/>
+  <path d="M-7 -23 H7 Q13 -23 13 -17 V11 Q13 18 7 18 H-7 Q-13 18 -13 11 V-17 Q-13 -23 -7 -23 Z M-13 0 H13" fill="none" stroke="#bbe8d9" stroke-width=".075" stroke-dasharray=".28 .37" opacity=".60"/>
+  <g id="turbolift" transform="translate(-4.425 5.3) rotate(38.290163)">
+    <path d="M-.6 0 V.325 L-1.225 .725 V1.925 L-.275 2.55 H.275 L1.225 1.925 V.725 L.6 .325 V0Z" fill="#8a6837"/>
+    <path d="M-.6 0 V.325 L-1.225 .725 V1.925 L-.275 2.55 H.275 L1.225 1.925 V.725 L.6 .325 V0" fill="none" stroke="#ffdd9b" stroke-width=".18"/>
+    <path d="M-.6 0H.6" stroke="#ffdd9b" stroke-width=".13" stroke-dasharray=".18 .16"/>
+    <path d="M0 1.4V-4.2" fill="none" stroke="#ffdd9b" stroke-width=".14" marker-end="url(#sortie)"/>
+  </g>
+  <circle cx="-13" cy="0" r=".23" fill="#cdf8ea"/>
+  <circle cx="13" cy="0" r=".23" fill="#cdf8ea"/>
+</g>
+
+<text x="480" y="311" class="galerie">Galerie avant</text>
+<path d="M480 321V337" stroke="#94ccbe"/>
+<text x="480" y="499" class="zone">Espace avant</text>
+<text x="522.6" y="764" class="zone">Espace arrière</text>
+<text x="250" y="633" class="zone" style="font-size:14px">Bâbord</text>
+<text x="713" y="650" class="zone" style="font-size:14px">Tribord</text>
+<text x="480" y="921" class="galerie">Galerie arrière</text>
+<path d="M480 904V874" stroke="#94ccbe"/>
+
+<path d="M40 738H357L419 705" fill="none" stroke="#e3bd81" stroke-width="1.4"/>
+<circle cx="419" cy="705" r="3" fill="#ffdd9b"/>
+<text x="41" y="726" class="label halo" style="fill:#ffdd9b">Turbolift</text>
+<text x="41" y="762" class="petit halo">Depuis la passerelle</text>
+<path d="M496 651L626 752H906" fill="none" stroke="#9fc7ba" stroke-width="1.4"/>
+<circle cx="496" cy="651" r="3" fill="#ccf0df"/>
+<text x="732" y="740" class="label halo">Carrefour</text>
+<text x="732" y="776" class="petit halo">Galerie transversale</text>
+
+<path d="M672 1050H795.5M672 1043V1057M733.75 1044V1056M795.5 1043V1057" stroke="#c0d1db" stroke-width="1.45"/>
+<text x="672" y="1080" class="petit">0</text><text x="795.5" y="1080" class="petit" text-anchor="end">10 m</text>
+
+<path d="M46 1134H914" stroke="#4a697c"/>
+<path d="M46 1163H78" stroke="#d9b27c" stroke-width="2" stroke-dasharray="5 4"/><text x="90" y="1169" class="petit">Contour d’étude</text>
+<rect x="324" y="1154" width="26" height="17" rx="3" fill="#226459" stroke="#83cdbd"/><text x="364" y="1169" class="petit">Galeries · 3,8 m utiles</text>
+<rect x="640" y="1154" width="26" height="17" rx="3" fill="#304d63" stroke="#9bb6c7" stroke-dasharray="4 3"/><text x="680" y="1169" class="petit">Espaces à affecter</text>
+<text x="46" y="1211" class="petit">Enveloppe au plancher · ≈ 71 m d’après le profil · 48 m supposés en largeur</text>
+<text x="46" y="1238" class="petit">Hypothèse de travail · Plancher à 4 m sous le pont 1. Dégagement sous plafond à vérifier.</text>
+</svg>
