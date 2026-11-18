@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Plan d’ensemble du pont 2 v03 — 2026-11-18
+
+- [Plan à l’échelle](plans/snw/pont-2-ensemble-v03.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_b0f053f8d41c819184b1028a3b4a6f71&account_id=personal). La galerie transversale raccorde le carrefour du turbolift aux deux côtés de l’anneau. Depuis ce carrefour, les galeries de 3,8 m desservent la proue et l’arrière. Quatre espaces sont accessibles et restent sans affectation. L’emprise de 8 × 6 m est reprise côté tribord.
+- Repère repris : seuil à 4,425 m bâbord et 5,30 m arrière du centre de la passerelle, orienté à 38,290163° dans le dessin. Le palier de 5 × 3,8 m s’ouvre sur le carrefour. Le contour de travail v02 est repris, avec environ 71 m en longueur d’après le profil à l’altitude d’essai et 48 m supposés en largeur.
+- Contrôles : coordonnées et orientation du seuil, continuité du palier et de la circulation, quatre accès distincts, absence de recouvrement entre la cabine et les espaces, emprises contenues dans l’ellipse de travail. SVG et PNG rendus et inspectés.
+- En suspens : dégagement sous plafond et largeur réelle de la tranche. Les 4 m entre planchers restent une hypothèse. Prochaine action : vérifier en coupe le passage sous la coque à l’avant et à l’arrière avant de figer les galeries.
+
 ## Implantation retenue du turbolift au pont 2 — 2026-11-18
 
 - Décision AdAstra : retenir le [plan des deux paliers](plans/snw/pont-2-palier-v01.svg) comme repère du pont 2. Le seuil du pont 2 est à l’aplomb du seuil arrière bâbord de la passerelle, à 4,425 m vers bâbord et 5,30 m vers l’arrière depuis le centre de la passerelle. La porte garde la même orientation et ouvre vers l’intérieur de la soucoupe, en diagonale vers l’avant et tribord.
