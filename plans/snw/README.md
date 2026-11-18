@@ -79,3 +79,15 @@ Le palier se confond avec le départ du couloir témoin. Le tronçon de 5 m sur 
 Le plan est orienté sur le seuil du turbolift. La flèche de proue rend visible la rotation de 38,29° des axes de cette zone par rapport à ceux du vaisseau. Le seuil estimé de 1,2 m et le dénivelé de travail de 4 m reprennent le plan v01. Le rectangle provisoire de réservation mesure 3,15 × 2,90 m autour de la cabine. Il ménage 0,35 m de chaque côté de l’emprise intérieure maximale de 2,45 m et 0,35 m côté arrière sur les 2,55 m de profondeur. L’encombrement mécanique et les épaisseurs restent à vérifier.
 
 La salle, son implantation et le tracé autour du palier sont des propositions AdAstra. La planche couvre le secteur desservi par le turbolift. Le reste du pont et l’intégration à la coque restent à étudier.
+
+## Plan d’ensemble provisoire du pont 2 — 18 novembre 2026
+
+[Ouvrir le plan du pont 2](pont-2-ensemble-v01.svg). Le dessin revient au repère du vaisseau, proue en haut et bâbord à gauche. Le seuil du turbolift reste à 4,425 m à bâbord et 5,30 m à l’arrière du centre de passerelle du v02, avec sa rotation initiale de 38,29°. Le couloir de 26 m et le palier de 5 m sont repris. Les deux extrémités du couloir se prolongent vers la proue et forment une boucle de 3,8 m de largeur utile. La pièce de 8 × 6 m reste sans affectation.
+
+### Origine du contour
+
+- **Relevé longitudinal** : sur le profil de Dávid Metlesits ramené à 1 280 px de large, le plancher d’essai du pont 2 est à y≈195,24. À la ligne y=195, le contour de la zone locale croise les pixels x≈847 et x≈1028. L’échelle de travail précédente (1 132 px pour 442 m) donne 70,67 m, arrondis à 71 m. L’arrondi sur la ligne de pixels et l’altitude du plancher influencent le résultat.
+- **Hypothèse transversale** : la vue de dessus situe l’axe et le dôme. Elle ne donne pas la largeur de cette tranche. Pour ce dessin, le contour de travail est elliptique, centré sur l’axe du vaisseau et large de 48 m par choix d’ébauche. Les extrémités avant et arrière suivent le relevé longitudinal.
+- **Contrôle en plan** : l’enveloppe du couloir, l’accès et la réserve de cabine se trouvent à l’intérieur de cette ellipse de travail. Le contour est au niveau du plancher. Le volume disponible à la hauteur du plafond, surtout vers l’extérieur de la boucle, reste à vérifier par coupe.
+
+[Profil de référence](https://www.ex-astris-scientia.org/scans/dis/snw-enterprise-david-side.jpg) · [Vue de dessus](https://www.ex-astris-scientia.org/scans/dis/snw-enterprise-david-top.jpg) · [Hypothèse de plancher](coupe-soucoupe-v01.svg).

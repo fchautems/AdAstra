@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1015" viewBox="0 0 1420 1015" role="img" aria-labelledby="title desc">
+<title id="title">AdAstra · Plan d’ensemble du pont 2</title>
+<desc id="desc">Ébauche à l’échelle du pont 2. Le contour elliptique est une estimation à partir du profil. Le palier et le couloir existants sont reliés par deux branches prolongées en une boucle vers la proue. La pièce près du couloir reste sans affectation.</desc>
+<defs>
+<g id="cabine">
+      <path d="M-24 0V13L-49 29V77L-11 102H11L49 77V29L24 13V0Z" fill="#daeee6"/>
+      <path d="M-24 0V13L-49 29V77L-11 102H11L49 77V29L24 13V0"
+            fill="none" stroke="#376357" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M-24 0H24" stroke="#376357" stroke-width="2" stroke-dasharray="4 3"/>
+    </g>
+<pattern id="grid" width="46.75" height="46.75" patternUnits="userSpaceOnUse">
+  <path d="M46.75 0H0V46.75" fill="none" stroke="#e8eef4"/>
+</pattern>
+<g id="circulation">
+  <path d="M-11 -6.9 V-17.5 Q-11 -20.5 -8 -20.5 H12 Q15 -20.5 15 -17.5 V-6.9 Z" fill="none" stroke="#385e7c" stroke-width="4.2" stroke-linejoin="round"/>
+  <path d="M-11 -6.9 V-17.5 Q-11 -20.5 -8 -20.5 H12 Q15 -20.5 15 -17.5 V-6.9 Z" fill="none" stroke="#b4d2e8" stroke-width="3.8" stroke-linejoin="round"/>
+  <rect x="-11" y="-8.8" width="26" height="3.8" fill="#d6e7f2"/>
+  <path d="M-11 -5H-1.9V0H-.6M.6 0H1.9V-5H15M-11 -8.8H2M10 -8.8H15"
+        fill="none" stroke="#385e7c" stroke-width=".2"/>
+  <path d="M-1.9 -5H1.9V0H-1.9Z" fill="#d6e7f2"/>
+  <path d="M-1.9 -5V0H-.6M.6 0H1.9V-5" fill="none" stroke="#385e7c" stroke-width=".2"/>
+  <rect x="2" y="-14.8" width="8" height="6" fill="#e9e4f0"/>
+  <path d="M5.2 -8.8H2V-14.8H10V-8.8H6.8" fill="none" stroke="#766387" stroke-width=".22"/>
+  <path d="M5.2 -8.8H6.8" stroke="#766387" stroke-width=".14" stroke-dasharray=".23 .18"/>
+  <use href="#cabine" transform="scale(.025)"/>
+</g>
+</defs>
+<style>
+text{font-family:"DejaVu Sans",sans-serif;fill:#19324b}
+.title{font-weight:700;font-size:42px} .section{font-weight:700;font-size:24px}
+.label{font-weight:700;font-size:16px} .note{font-size:15px;fill:#506981}
+.axis{stroke:#9aafc1;stroke-width:1.2;stroke-dasharray:5 5;fill:none}
+.hyp{stroke:#946620;stroke-width:2;stroke-dasharray:7 5;fill:none}
+.lead{stroke:#647d92;stroke-width:1.5;fill:none}
+.legend{font-size:15px;fill:#28445b}
+.key{fill:#247460;stroke:white;stroke-width:1.7}
+.letter{fill:white;font-weight:700;font-size:13px;text-anchor:middle}
+</style>
+<rect width="1420" height="1015" fill="#f4f7fa"/>
+<text x="36" y="62" class="title">Pont 2 · Plan d’ensemble</text>
+<text x="38" y="91" class="note">AdAstra · Tranche horizontale de travail · Sous la passerelle</text>
+
+<rect x="30" y="113" width="772" height="859" rx="15" fill="white" stroke="#cedbe5"/>
+<text x="54" y="154" class="section">Contour estimé et couloirs</text>
+<text x="54" y="180" class="note">Vue de dessus · Bâbord à gauche</text>
+<rect x="52" y="197" width="727" height="696" rx="9" fill="url(#grid)"/>
+<ellipse cx="410" cy="544.68" rx="224.40" ry="330.40" fill="#f7eddc" fill-opacity=".45"/>
+<ellipse cx="410" cy="544.68" rx="224.40" ry="330.40" class="hyp"/>
+<path d="M410 199V881 M75 510H759" class="axis"/>
+<text x="410" y="239" text-anchor="middle" class="label">↑ PROUE</text>
+<text x="79" y="495" class="label">BÂBORD</text>
+<text x="755" y="495" text-anchor="end" class="label">TRIBORD</text>
+<g transform="translate(410 510) scale(9.35)">
+  <circle cx="0" cy="0" r="7" fill="none" stroke="#91a4b6" stroke-width=".11" stroke-dasharray=".38 .34"/>
+  <g transform="translate(-4.425 5.300) rotate(38.290163)"><use href="#circulation"/></g>
+</g>
+<path d="M355.4 579.3L285 608H166" class="lead"/>
+<text x="164" y="603" text-anchor="end" class="label" style="fill:#247460">Turbolift</text>
+<text x="164" y="625" text-anchor="end" class="note">Vers le pont 1</text>
+<rect x="269" y="691" width="282" height="59" rx="8" fill="#fff" stroke="#e8dcc7"/>
+<text x="410" y="717" text-anchor="middle" class="label">≈ 71 m × 48 m</text>
+<text x="410" y="739" text-anchor="middle" class="note">Longueur estimée · largeur supposée</text>
+<path d="M80 922H173.5m-93.5-5v10m93.5-10v10" stroke="#385e7c" stroke-width="2"/>
+<text x="127" y="949" text-anchor="middle" class="note">10 m</text>
+<text x="779" y="940" text-anchor="end" class="note">Pointillés gris · Emprise approchée de la passerelle</text>
+
+<rect x="819" y="113" width="571" height="226" rx="15" fill="white" stroke="#cedbe5"/>
+<text x="843" y="154" class="section">Repère sur le profil</text>
+<text x="843" y="179" class="note">Plancher du pont 2 placé à 4 m sous celui du pont 1</text>
+<polygon points="1092.540 208.200 1061.300 210.600 1059.880 213.000 1059.880 215.400 1059.880 217.800 1055.620 220.200 1052.780 222.600 1044.260 225.000 1035.740 227.400 1030.060 229.800 1022.960 232.200 1018.700 234.600 1013.020 237.000 1008.760 239.400 1005.920 241.800 1003.080 244.200 1000.240 246.600 997.400 249.000 994.560 251.400 990.300 253.800 981.780 256.200 973.260 258.600 964.740 261.000 957.640 263.400 950.540 265.800 943.440 268.200 936.340 270.600 930.660 273.000 923.560 275.400 917.880 277.800 912.200 280.200 905.100 282.600 899.420 285.000 892.320 287.400 882.380 289.800 1285.660 289.800 1285.660 287.400 1285.660 285.000 1285.660 282.600 1279.980 280.200 1277.140 277.800 1275.720 275.400 1260.100 273.000 1253.000 270.600 1245.900 268.200 1238.800 265.800 1230.280 263.400 1221.760 261.000 1211.820 258.600 1190.520 256.200 1176.320 253.800 1174.900 251.400 1173.480 249.000 1172.060 246.600 1167.800 244.200 1164.960 241.800 1162.120 239.400 1157.860 237.000 1155.020 234.600 1152.180 232.200 1149.340 229.800 1146.500 227.400 1142.240 225.000 1136.560 222.600 1135.140 220.200 1133.720 217.800 1130.880 215.400 1128.040 213.000 1125.200 210.600 1120.940 208.200" fill="#d9e4ee" stroke="#7790a5" stroke-width="1.3"/>
+<path d="M964.740 261.000 H1221.76" class="hyp"/>
+<circle cx="964.74" cy="261.00" r="3" fill="#946620"/>
+<circle cx="1221.76" cy="261.00" r="3" fill="#946620"/>
+<text x="1093.2" y="316" text-anchor="middle" class="note">≈ 71 m au niveau de coupe choisi</text>
+<text x="1365" y="316" text-anchor="end" class="note">Proue →</text>
+
+<rect x="819" y="356" width="571" height="616" rx="15" fill="white" stroke="#cedbe5"/>
+<text x="843" y="398" class="section">Agrandissement des couloirs</text>
+<text x="843" y="424" class="note">Vue orientée sur le seuil du turbolift</text>
+<rect x="842" y="435" width="525" height="330" rx="9" fill="#f3f7fb"/>
+<g transform="translate(1024 728) scale(12.7)"><use href="#circulation"/></g>
+<circle cx="1024" cy="748.32" r="11" class="key"/><text x="1024" y="753.32" class="letter">A</text>
+<circle cx="1024" cy="640.37" r="11" class="key"/><text x="1024" y="645.37" class="letter">B</text>
+<circle cx="1195.45" cy="472.73" r="11" class="key"/><text x="1195.45" y="477.73" class="letter">C</text>
+<circle cx="1100.2" cy="578.14" r="11" class="key"/><text x="1100.2" y="583.14" class="letter">D</text>
+<path d="M845 781H1364" stroke="#d8e3ed"/>
+<text x="845" y="811" class="legend"><tspan font-weight="700">A</tspan> · Turbolift et palier</text>
+<text x="845" y="843" class="legend"><tspan font-weight="700">B</tspan> · Couloir de l’ébauche</text>
+<text x="1110" y="811" class="legend"><tspan font-weight="700">C</tspan> · Boucle proposée vers la proue</text>
+<text x="1110" y="843" class="legend"><tspan font-weight="700">D</tspan> · Pièce sans affectation</text>
+<path d="M845 871H1364" stroke="#d8e3ed"/>
+<text x="845" y="902" class="note">La boucle relie les deux extrémités du couloir initial.</text>
+<text x="845" y="929" class="note">Le volume habitable reste à vérifier en coupe.</text>
+
+<text x="33" y="999" class="note">Profil d’après Dávid Metlesits · Dimensions et tracés de travail AdAstra</text>
+</svg>

@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Plan d’ensemble du pont 2 — 2026-11-18
+
+- [Ébauche à l’échelle](plans/snw/pont-2-ensemble-v01.svg) : le palier existant et le couloir principal sont intégrés au contour d’essai du pont. Une boucle ferme les deux branches vers la proue. La pièce de l’ébauche reste sans affectation.
+- Mesure et hypothèses : ≈ 71 m en longueur au niveau de plancher retenu, d’après le profil et l’échelle de 442 m. Largeur de 48 m et contour elliptique choisis pour le dessin. Le palier reste aligné sur le pont 1 avec un dénivelé de travail de 4 m.
+- Contrôles : reprise des coordonnées et de l’orientation du seuil, emprises des couloirs et de la cabine dans le contour de travail, SVG et PNG ouverts et vérifiés.
+- Prochaine action : vérifier le dégagement du plafond en coupe, notamment sur les branches extérieures de la boucle.
+
 ## Première ébauche du secteur du pont 2 — 2026-11-18
 
 - [Plan du secteur](plans/snw/pont-2-ebauche-v01.svg) : palier raccordé en T au couloir principal, première salle de coordination et deux ouvertures pour prolonger la circulation.
