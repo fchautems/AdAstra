@@ -71,3 +71,11 @@ Pour l’essai AdAstra, le couloir témoin v02 part du **pont 2 proposé**, à *
 [Voir le plan des deux ponts](pont-2-palier-v01.svg). Les vues ont les mêmes axes, la proue vers le haut et une échelle horizontale commune. Le seuil de la cabine est à environ 4,4 m bâbord et 5,3 m arrière du centre de la passerelle v02. Le pont 2 reprend ces coordonnées et la même orientation de cabine. L’essai suppose donc une gaine verticale, avec un arrêt à −4 m par rapport au plancher du pont 1.
 
 Le palier se confond avec le départ du couloir témoin. Le tronçon de 5 m sur 3,8 m part perpendiculairement au seuil de 1,2 m, en direction de l’intérieur du vaisseau. Son extrémité en pointillés indique la limite du tronçon dessiné. La gaine sera à dimensionner et la suite du couloir à relier à une circulation du pont 2. L’altitude de ce pont et la géométrie du raccord sont des choix pour AdAstra.
+
+## Première ébauche du secteur du pont 2 — 18 novembre 2026
+
+[Ouvrir le plan](pont-2-ebauche-v01.svg). Depuis le turbolift, le palier v01 de 5 × 3,8 m débouche en T sur un couloir principal de 26 × 3,8 m. En tournant à droite, on rejoint la première salle proposée, une salle de coordination de 8 × 6 m avec une porte de 1,6 m. Le parcours tracé mesure 19,55 m depuis le repère dans la cabine jusqu’au repère dans la salle. Les deux extrémités du couloir sont ouvertes pour de futurs raccords.
+
+Le plan est orienté sur le seuil du turbolift. La flèche de proue rend visible la rotation de 38,29° des axes de cette zone par rapport à ceux du vaisseau. Le seuil estimé de 1,2 m et le dénivelé de travail de 4 m reprennent le plan v01. Le rectangle provisoire de réservation mesure 3,15 × 2,90 m autour de la cabine. Il ménage 0,35 m de chaque côté de l’emprise intérieure maximale de 2,45 m et 0,35 m côté arrière sur les 2,55 m de profondeur. L’encombrement mécanique et les épaisseurs restent à vérifier.
+
+La salle, son implantation et le tracé autour du palier sont des propositions AdAstra. La planche couvre le secteur desservi par le turbolift. Le reste du pont et l’intégration à la coque restent à étudier.

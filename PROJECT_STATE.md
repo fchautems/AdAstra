@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Première ébauche du secteur du pont 2 — 2026-11-18
+
+- [Plan du secteur](plans/snw/pont-2-ebauche-v01.svg) : palier raccordé en T au couloir principal, première salle de coordination et deux ouvertures pour prolonger la circulation.
+- Hypothèses d’implantation : couloir de 26 × 3,8 m, salle de 8 × 6 m, passage de 1,6 m et réservation de gaine de 3,15 × 2,90 m. Le seuil, l’orientation du palier et le dénivelé de travail reprennent le v01.
+- Contrôles : parcours de 19,55 m à l’échelle du dessin, franchissement au centre des deux ouvertures, SVG et export PNG vérifiés.
+- Prochaine action : décider où mènent les deux branches du couloir et situer ce secteur dans l’enveloppe du pont 2.
+
 ## Implantation du palier du pont 2 — 2026-11-18
 
 - [Plan des deux ponts](plans/snw/pont-2-palier-v01.svg) : même seuil arrière bâbord et même orientation de cabine. Couloir témoin de 5 × 3,8 m vers l’intérieur de la soucoupe.
