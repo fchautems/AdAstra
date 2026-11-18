@@ -91,3 +91,9 @@ La salle, son implantation et le tracé autour du palier sont des propositions A
 - **Contrôle en plan** : l’enveloppe du couloir, l’accès et la réserve de cabine se trouvent à l’intérieur de cette ellipse de travail. Le contour est au niveau du plancher. Le volume disponible à la hauteur du plafond, surtout vers l’extérieur de la boucle, reste à vérifier par coupe.
 
 [Profil de référence](https://www.ex-astris-scientia.org/scans/dis/snw-enterprise-david-side.jpg) · [Vue de dessus](https://www.ex-astris-scientia.org/scans/dis/snw-enterprise-david-top.jpg) · [Hypothèse de plancher](coupe-soucoupe-v01.svg).
+
+## Variante en anneau du pont 2 — 18 novembre 2026
+
+[Ouvrir le plan v02](pont-2-ensemble-v02.svg). Le palier de 5 m débouche sur un anneau ovale de 3,8 m de largeur utile. Les deux directions se rejoignent vers la proue. Le seuil et son orientation sont repris du v01. La pièce de 8 × 6 m est déplacée sur la tangente côté tribord avec un accès de 1,6 m. Elle reste sans affectation. La zone centrale et l’arrière du pont restent disponibles pour l’aménagement.
+
+Le dessin utilise le même contour provisoire de 71 × 48 m que le v01. Le tracé en anneau et l’emplacement de la pièce sont des propositions AdAstra. Les emprises de l’anneau, du palier et de la pièce ont été contrôlées dans le contour en vue de dessus. Le passage sous plafond reste à vérifier en coupe.

@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Variante en anneau du pont 2 — 2026-11-18
+
+- [Plan v02](plans/snw/pont-2-ensemble-v02.svg) : projet de circulation en anneau, palier existant repris, pièce sans affectation déplacée sur tribord.
+- Contrôles : connexion du palier à l’anneau et emprises vérifiées par rapport au contour de travail. SVG et export PNG ouverts et vérifiés.
+- En suspens : largeur réelle de la tranche et hauteur disponible sous la coque.
+- Prochaine action : demander un retour sur le tracé en anneau avant de développer les secteurs intérieurs.
+
 ## Plan d’ensemble du pont 2 — 2026-11-18
 
 - [Ébauche à l’échelle](plans/snw/pont-2-ensemble-v01.svg) : le palier existant et le couloir principal sont intégrés au contour d’essai du pont. Une boucle ferme les deux branches vers la proue. La pièce de l’ébauche reste sans affectation.

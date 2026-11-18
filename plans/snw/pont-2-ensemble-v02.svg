@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="915" viewBox="0 0 1300 915" role="img" aria-labelledby="title desc">
+<title id="title">AdAstra · Anneau de circulation du pont 2</title>
+<desc id="desc">Proposition de circulation en ovale dans la soucoupe. Le turbolift rejoint un carrefour à partir duquel les deux directions se rejoignent vers la proue. Une pièce sans affectation est accessible sur tribord. Le contour extérieur est provisoire.</desc>
+<defs>
+<g id="cabine">
+      <path d="M-24 0V13L-49 29V77L-11 102H11L49 77V29L24 13V0Z" fill="#daeee6"/>
+      <path d="M-24 0V13L-49 29V77L-11 102H11L49 77V29L24 13V0"
+            fill="none" stroke="#376357" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M-24 0H24" stroke="#376357" stroke-width="2" stroke-dasharray="4 3"/>
+    </g>
+<pattern id="grid" width="47.5" height="47.5" patternUnits="userSpaceOnUse">
+<path d="M47.5 0H0V47.5" fill="none" stroke="#a3c1d7" opacity=".12"/>
+</pattern>
+<radialGradient id="back" cx="30%" cy="40%" r="87%">
+<stop stop-color="#173147"/><stop offset="1" stop-color="#09121f"/>
+</radialGradient>
+<linearGradient id="hull" x2="0" y2="1">
+<stop stop-color="#2a455a"/><stop offset="1" stop-color="#132839"/>
+</linearGradient>
+<marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+<path d="M0 0 7 3.5 0 7Z" fill="#adf1dd"/>
+</marker>
+</defs>
+<style>
+text{font-family:"DejaVu Sans",sans-serif;fill:#eef6fa}
+.title{font-size:51px;font-weight:700;letter-spacing:-.6px}
+.subtitle{font-size:17px;fill:#adc4d4} .label{font-size:17px;font-weight:700}
+.note{font-size:15px;fill:#adc4d4} .axis{font-size:13px;letter-spacing:2px;font-weight:700;fill:#c0d2df}
+.caption{font-size:14px;font-weight:700;letter-spacing:1.4px;fill:#97d5c5}
+.external{paint-order:stroke;stroke:#102333;stroke-width:4;stroke-linejoin:round}
+.lead{fill:none;stroke:#8bb7c0;stroke-width:1.4}
+</style>
+<rect width="1300" height="915" fill="url(#back)"/>
+<text x="38" y="69" class="title">L’anneau du pont 2</text>
+<text x="41" y="100" class="subtitle">AdAstra · Implantation proposée dans la soucoupe</text>
+<path d="M38 125H1262" stroke="#536b7e"/>
+
+<rect x="32" y="145" width="769" height="723" rx="15" fill="#0e2030" stroke="#355063"/>
+<rect x="51" y="159" width="728" height="694" rx="7" fill="url(#grid)"/>
+<ellipse cx="424" cy="515.24" rx="228.0" ry="335.70"
+         fill="url(#hull)" stroke="#bd9d73" stroke-width="1.6" stroke-dasharray="7 5"/>
+<path d="M424 162V847" stroke="#819fb3" stroke-dasharray="4 7" opacity=".38"/>
+<text x="424" y="204" text-anchor="middle" class="axis">↑ PROUE</text>
+<text x="75" y="460" class="axis">BÂBORD</text>
+<text x="761" y="460" text-anchor="end" class="axis">TRIBORD</text>
+
+<g transform="translate(424 480) scale(9.5)">
+  <circle r="7" fill="none" stroke="#a2bdce" stroke-opacity=".48" stroke-width=".12" stroke-dasharray=".4 .34"/>
+  <ellipse cx="0" cy="-12.25" rx="15" ry="13.75" fill="none" stroke="#73c9b9" stroke-width="4.05"/>
+  <ellipse cx="0" cy="-12.25" rx="15" ry="13.75" fill="none" stroke="#1f5d5b" stroke-width="3.8"/>
+  <ellipse cx="0" cy="-12.25" rx="15" ry="13.75" fill="none" stroke="#98dfcd" stroke-width=".09" stroke-dasharray=".32 .28"/>
+  <g transform="translate(-4.425 5.3) rotate(38.290163)">
+    <path d="M-1.9 -5H1.9V0H-1.9Z" fill="#1f5d5b"/>
+    <path d="M-1.9 -4.2V0H-.6M1.9 -4.2V0H.6" fill="none" stroke="#73c9b9" stroke-width=".14"/>
+    <use href="#cabine" transform="scale(.025)"/>
+    <path d="M0 1.4V-3.7" stroke="#adf1dd" stroke-width=".15" stroke-dasharray=".34 .28" marker-end="url(#arrow)"/>
+  </g>
+  <g transform="translate(12.29 -4.36) rotate(-52.625)">
+    <path d="M-.8 1.55H.8V2.8H-.8Z" fill="#4f7f83"/>
+    <rect x="-4" y="2.8" width="8" height="6" rx=".45" fill="#304f65"/>
+    <path d="M-.8 2.8H-3.55Q-4 2.8 -4 3.25V8.35Q-4 8.8 -3.55 8.8H3.55Q4 8.8 4 8.35V3.25Q4 2.8 3.55 2.8H.8"
+          fill="none" stroke="#9db6c8" stroke-width=".15"/>
+  </g>
+  <path d="M-12.8 -5.1Q-14.9 -8.2 -14.97 -11.65"
+        fill="none" stroke="#adf1dd" stroke-width=".17" marker-end="url(#arrow)"/>
+  <path d="M12.8 -5.1Q14.9 -8.2 14.97 -11.65" fill="none" stroke="#adf1dd" stroke-width=".17" marker-end="url(#arrow)"/>
+</g>
+<text x="424" y="358" class="label" text-anchor="middle">Zone à aménager</text>
+<text x="424" y="382" class="note" text-anchor="middle">À l’intérieur de l’anneau</text>
+<path d="M364.77 533.72L286 581H80" class="lead"/>
+<text x="80" y="571" class="label">Turbolift</text>
+<text x="80" y="605" class="note external">Liaison avec le pont 1</text>
+<path d="M607.58 441.80L663 551H743" class="lead"/>
+<text x="757" y="581" text-anchor="end" class="label external">Pièce sans affectation</text>
+<text x="757" y="604" text-anchor="end" class="note external">8 × 6 m · Implantation proposée</text>
+
+<path d="M80 815H175m-95-5v10m95-10v10" stroke="#b0c9d7" stroke-width="1.6"/>
+<text x="127.5" y="840" text-anchor="middle" class="note">10 m</text>
+
+<rect x="825" y="145" width="443" height="723" rx="15" fill="#112437" stroke="#355063"/>
+<text x="852" y="200" class="caption">CIRCULATION</text>
+<text x="852" y="246" class="label">Un anneau, deux directions</text>
+<text x="852" y="276" class="note">Depuis le turbolift, les deux trajets</text>
+<text x="852" y="300" class="note">se rejoignent du côté de la proue.</text>
+<path d="M852 329H1239" stroke="#3c586d"/>
+<text x="852" y="369" class="label">Anneau · 3,8 m de large</text>
+<text x="852" y="399" class="note">Largeur utile du passage.</text>
+<text x="852" y="456" class="label">Palier · 5 m depuis le seuil</text>
+<text x="852" y="486" class="note">L’axe de sortie du turbolift est repris.</text>
+<path d="M852 526H1239" stroke="#3c586d"/>
+
+<path d="M853 571H892" stroke="#bd9d73" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="905" y="576" class="label">Contour de travail</text>
+<text x="905" y="605" class="note">≈ 71 m de long · 48 m supposés en largeur</text>
+<path d="M853 653H892" stroke="#a2bdce" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="905" y="658" class="label">Passerelle au-dessus</text>
+<text x="905" y="687" class="note">Emprise approchée · Pont 1</text>
+<path d="M852 732H1239" stroke="#3c586d"/>
+<text x="852" y="777" class="note">La hauteur sous la coque reste à vérifier.</text>
+<text x="35" y="893" class="note">Pont 2 · Vue de dessus · Ébauche v02</text>
+</svg>
