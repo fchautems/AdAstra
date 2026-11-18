@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1016" viewBox="0 0 1280 1016" role="img" aria-labelledby="title desc">
+<title id="title">AdAstra · La passerelle dans la coque</title>
+<desc id="desc">Profil de l’Enterprise et zoom supérieur sur le dôme. Le plan v02 est orienté vers la proue et centré sous le dôme par hypothèse. Le profil situe la zone du pont 1, sans déterminer son niveau vertical.</desc>
+<defs>
+  <clipPath id="profil"><rect x="62" y="192" width="1156" height="237"/></clipPath>
+  <clipPath id="detail"><rect x="0" y="0" width="661" height="333" rx="8"/></clipPath>
+  <g id="bridge-v02">
+
+
+  <path d="M247 266 Q333 168 470 168 Q607 168 693 266 L687 279
+           A280 280 0 0 1 692 647 A280 280 0 0 1 189 477 A280 280 0 0 1 253 279Z"
+        fill="#f1f5f9"/>
+  <path d="M693.6,308.5 A280,280 0 0 1 747.3,516.0 M733 558 Q720 609 696 641
+           M693.6,645.5 A280,280 0 0 1 369.7,738.4 M246.4,645.5 A280,280 0 0 1 246.4,308.5"
+        fill="none" stroke="#2c4963" stroke-width="3"/>
+  <path d="M247 266 Q333 168 470 168 Q607 168 693 266 L680 283
+           Q601 193 470 193 Q339 193 260 283Z" fill="#aacfe4" stroke="#477c9d" stroke-width="2"/>
+  <path d="M271 262 Q350 181 470 181 Q590 181 669 262" fill="none" stroke="#e8f6fb" stroke-width="3"/>
+  <path d="M295.1,340.3 A222,222 0 0 1 644.9,340.3" fill="none" stroke="#8296a8" stroke-width="1.5"/>
+  <path d="M260 283 290 322 M680 283 650 322" class="lead"/>
+  <g><title>Communications</title><path d="M694.1,314.2 A277,277 0 0 1 747.0,472.2 L700.0,473.0 A230,230 0 0 0 656.1,341.8 Z" class="desk"/><path d="M687.6,332.9 A261,261 0 0 1 730.5,461.1" class="controls"/></g><g><title>Capteurs du vaisseau</title><path d="M694.1,639.8 A277,277 0 0 1 624.9,706.6 L598.6,667.7 A230,230 0 0 0 656.1,612.2 Z" class="desk"/><path d="M674.3,639.5 A261,261 0 0 1 625.2,686.8" class="controls"/></g><g><title>Ordinateur de bord</title><path d="M624.9,706.6 A277,277 0 0 1 551.0,741.9 L537.2,697.0 A230,230 0 0 0 598.6,667.7 Z" class="desk"/><path d="M606.4,699.5 A261,261 0 0 1 557.1,723.0" class="controls"/></g><g><title>Ingénierie</title><path d="M546.4,743.3 A277,277 0 0 1 384.4,740.4 L398.9,695.7 A230,230 0 0 0 533.4,698.1 Z" class="desk"/><path d="M530.9,730.8 A261,261 0 0 1 400.3,728.5" class="controls"/></g><g><title>Armement</title><path d="M248.8,643.7 A277,277 0 0 1 206.6,562.6 L251.3,548.1 A230,230 0 0 0 286.3,615.4 Z" class="desk"/><path d="M254.9,624.8 A261,261 0 0 1 225.5,568.4" class="controls"/></g><g><title>Défense</title><path d="M206.6,562.6 A277,277 0 0 1 193.0,472.2 L240.0,473.0 A230,230 0 0 0 251.3,548.1 Z" class="desk"/><path d="M218.5,546.7 A261,261 0 0 1 209.1,483.8" class="controls"/></g><g><title>Systèmes environnementaux</title><path d="M193.2,467.3 A277,277 0 0 1 245.9,314.2 L283.9,341.8 A230,230 0 0 0 240.1,469.0 Z" class="desk"/><path d="M209.8,456.5 A261,261 0 0 1 252.4,332.9" class="controls"/></g>
+  <g fill="#b8c9d8" stroke="#557795" stroke-width="1.2">
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(72 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(143 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(180 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(255 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(288 470 477)"/>
+  </g>
+
+
+
+  <circle cx="470" cy="477" r="141" fill="#e1edf5" stroke="#6e879d" stroke-width="1.8"/>
+  <g fill="none" stroke="#8b5d62" stroke-width="3.2" stroke-linecap="round"><path d="M418.4,355.5 A132,132 0 0 1 521.6,355.5"/><path d="M589.6,421.2 A132,132 0 0 1 591.5,528.6"/><path d="M348.5,528.6 A132,132 0 0 1 350.4,421.2"/></g>
+  <path d="M522.8,607.7 A141,141 0 0 1 417.2,607.7 L426.9,583.6 A115,115 0 0 0 513.1,583.6 Z" fill="#c2d4e4" stroke="#677f95" stroke-width="1.4"/>
+  <g class="lead"><path d="M512.6,588.1 A119,119 0 0 1 427.4,588.1"/><path d="M515.2,594.6 A126,126 0 0 1 424.8,594.6"/><path d="M517.7,601.2 A133,133 0 0 1 422.3,601.2"/><path d="M520.2,607.7 A140,140 0 0 1 419.8,607.7"/></g>
+  <path d="M416 427 Q470 397 524 427 L521 453 Q470 433 419 453Z" class="desk"/>
+  <path d="M470 413V441" class="lead"/>
+  <path d="M428 455v13q11 10 23 0v-13 M489 455v13q11 10 23 0v-13"
+        fill="#b8c9d8" stroke="#557795" stroke-width="1.5"/>
+  <path d="M428 558 L419 529 L441 494 H499 L521 529 L512 558Z"
+        fill="#cfdfec" stroke="#8196a9" stroke-width="1.5"/>
+  <rect x="451" y="516" width="38" height="43" rx="12" fill="#f0d7cb" stroke="#88665f" stroke-width="2"/>
+  <path d="M457 553Q470 559 483 553 M454 529v17 M486 529v17"
+        fill="none" stroke="#88665f" stroke-width="2"/>
+
+  <path d="M253 658 274 674 M312 704 345 728" stroke="#376357" stroke-width="4" fill="none"/>
+  <path d="M729 515 719 553" stroke="#376357" stroke-width="2" stroke-dasharray="4 4"/>
+
+
+
+
+
+  <path d="M471 614V653" class="lead"/>
+
+
+
+
+
+</g>
+</defs>
+<style>
+
+
+    text {font-family:'DejaVu Sans',sans-serif;fill:#152b42}
+    .title{font-size:36px;font-weight:700} .sub{font-size:15px}
+    .name{font-size:15px;font-weight:700} .small{font-size:12px} .muted{fill:#4b6075}
+    .axis{font-size:12px;font-weight:700;letter-spacing:1px}
+    .desk{fill:#d5e3ef;stroke:#557795;stroke-width:1.5} .controls{fill:none;stroke:#7998b1;stroke-width:3}
+    .badge circle{fill:#223f5b;stroke:white;stroke-width:1.3} .badge text{fill:white;font-size:11px;font-weight:700;text-anchor:middle}
+    .access{fill:none;stroke:#376357;stroke-width:2.2;marker-end:url(#arrow)}
+    .lead{fill:none;stroke:#64788c;stroke-width:1.4}
+    .dim{fill:none;stroke:#966419;stroke-width:1.4;stroke-dasharray:5 4}
+    .measure{font-size:13px;fill:#805414;font-weight:700}
+
+    .section{font-size:22px;font-weight:700} .hyp{fill:#805414}
+    .route{fill:none;stroke:#27624f;stroke-width:3.4;stroke-dasharray:7 5;marker-end:url(#arrow)}
+    .route-label{fill:#27624f;font-size:15px;font-weight:700}
+
+text{fill:#183049}
+.section{font-size:22px;font-weight:700} .caption{font-size:14px;fill:#4a6278}
+.heading{font-size:18px;font-weight:700}
+.callout{font-size:16px;font-weight:700;fill:#7b4c0a}
+.hull{fill:#d5dde5;stroke:#53657a;stroke-width:2;stroke-linejoin:round}
+.seam{fill:none;stroke:#77899a;stroke-width:1.5}
+.dome{fill:#e0e7db;stroke:#53657a;stroke-width:1.5}
+.amber{stroke:#986017;stroke-width:2;fill:none}
+</style>
+<rect width="1280" height="1016" fill="#f3f7fb"/>
+<text x="33" y="58" class="title">La passerelle dans la coque</text>
+<text x="35" y="87" class="sub muted">USS Enterprise NCC-1701 · Strange New Worlds, saison 1 · Repérage 2D</text>
+
+<rect x="30" y="113" width="1220" height="364" rx="13" fill="white" stroke="#cedae6"/>
+<text x="54" y="151" class="section">Profil du vaisseau</text>
+<text x="54" y="176" class="caption">Pont 1 · Au sommet de la soucoupe</text>
+<g clip-path="url(#profil)">
+<svg x="62" y="191" width="1156" height="231" viewBox="62 144 1156 236" preserveAspectRatio="xMidYMid meet">
+
+<path d="M443 211L533 304 607 299 548 211Z" class="hull"/>
+<path d="M629 284L702 241 728 231 852 238 776 274 777 302Z" class="hull"/>
+<path d="M410 327L439 325Q455 295 518 288L635 279Q756 272 793 294L800 312 800 364
+         Q777 390 641 382L558 374Q541 345 513 337L478 331 410 330Z" class="hull"/>
+<path d="M800 329H826M814 304Q802 317 806 335Q806 350 815 361" class="seam"/>
+<path d="M74 165L140 162 176 161 205 154 632 149Q678 148 679 181Q681 216 633 216
+         L188 211 139 206Z" class="hull"/>
+<path d="M139 164V205M176 161V209M495 153V214M627 152V215" class="seam"/>
+<path d="M647 153Q681 155 679 184Q676 209 648 214L648 195 665 191 666 177 647 173Z" fill="#a45c55"/>
+
+<path d="M676 214L699 236 744 237 779 240 851 238Q898 256 922 264L929 269Q947 277 972 265L1030 243
+         Q1060 232 1095 233L1182 232 1206 215 1075 211 1073 203 996 192 966 179
+         Q951 167 930 176L924 178 924 174 914 174 914 179Q889 182 867 194
+         L787 210 755 210 750 204 718 204 715 210Z" class="hull"/>
+<path d="M690 218H1195M709 227H1189M788 211Q861 197 900 194L973 193 1070 205" class="seam"/>
+<path d="M924 179Q945 166 965 178L963 181H925Z" class="dome"/>
+
+</svg>
+</g>
+<path d="M922 215V201H960V215 M941 201V165H1006" class="amber"/>
+<text x="1017" y="170" class="callout">Zone de la passerelle</text>
+<text x="1017" y="191" class="caption">Hauteur du plancher inconnue</text>
+<path d="M141 434h125m-125-5v10m125-10v10" stroke="#27445e" stroke-width="1.7"/>
+<text x="203.5" y="456" text-anchor="middle" class="caption">50 m</text>
+<text x="1219" y="456" text-anchor="end" class="caption">Proue →</text>
+<text x="641" y="455" text-anchor="middle" class="caption">Échelle de travail · longueur totale 442 m</text>
+
+<rect x="30" y="494" width="711" height="459" rx="13" fill="white" stroke="#cedae6"/>
+<text x="54" y="532" class="section">Vue de dessus · zoom sur le dôme</text>
+<text x="54" y="557" class="caption">Emprise v02 centrée sur le dôme par hypothèse</text>
+<g transform="translate(55 574)" clip-path="url(#detail)">
+  <rect width="661" height="333" fill="#edf2f6"/>
+  <svg width="661" height="333" viewBox="811 195 278 140" preserveAspectRatio="xMidYMid meet">
+
+<circle cx="947" cy="265" r="258" class="hull"/>
+<circle cx="947" cy="265" r="218" class="seam"/>
+<circle cx="947" cy="265" r="193" class="seam"/>
+<circle cx="947" cy="265" r="117" class="seam"/>
+<path d="M681 265L691 186Q752 193 791 226L894 225Q918 217 955 223
+         Q995 222 998 263Q997 305 955 307Q923 310 895 301L790 303Q741 346 693 346Z" class="hull"/>
+<circle cx="947" cy="265" r="21" class="dome"/>
+<circle cx="920" cy="265" r="5" class="seam"/>
+
+    <path d="M811 265H1089" fill="none" stroke="white" stroke-width="1" stroke-dasharray="3 3" opacity=".85"/>
+    <g transform="translate(947 265) rotate(90) scale(0.06402715) translate(-470 -477)">
+      <path d="M247 266Q333 168 470 168Q607 168 693 266L687 279A280 280 0 1 1 253 279Z"
+            fill="#ffe5a3" fill-opacity=".77" stroke="#784b09" stroke-width="10"/>
+      <path d="M263 265Q347 184 470 184Q593 184 677 265" fill="none" stroke="#784b09" stroke-width="9"/>
+      <circle cx="470" cy="477" r="141" fill="none" stroke="#784b09" stroke-width="7"/>
+      <circle cx="470" cy="538" r="22" fill="#784b09"/>
+      <path d="M274 674L312 704" fill="none" stroke="#205a4b" stroke-width="17"/>
+    </g>
+  </svg>
+</g>
+<text x="54" y="933" class="caption">Axe du vaisseau en pointillés · Proue à droite</text>
+
+<rect x="758" y="494" width="492" height="459" rx="13" fill="white" stroke="#cedae6"/>
+<text x="782" y="532" class="section">La passerelle du plan v02</text>
+<text x="782" y="557" class="caption">Vue agrandie · Proue à droite</text>
+<g transform="translate(1012 726) rotate(90) scale(.418) translate(-470 -477)">
+  <use href="#bridge-v02"/>
+  <path d="M274 674L312 704" stroke="#2b6b58" stroke-width="14"/>
+</g>
+<path d="M782 857h24" stroke="#2b6b58" stroke-width="4"/>
+<text x="815" y="862" class="caption">Accès arrière bâbord au turbolift</text>
+<text x="782" y="894" class="caption">Le pont de départ et le trajet de la gaine</text>
+<text x="782" y="915" class="caption">restent à situer.</text>
+
+<text x="32" y="986" class="caption">Tracé simplifié d’après Dávid Metlesits (2022) · Plan de décor ADG, p. 97 · Dimensions intérieures provisoires</text>
+</svg>

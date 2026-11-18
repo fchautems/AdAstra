@@ -47,3 +47,13 @@ Le plan directeur est une feuille de tournage WIP du 1er mars 2021. Le schéma r
 Les deux vues ont la même échelle (40 unités SVG par mètre) et montrent la même cabine de 2,45 m de large sur 2,55 m de profondeur, avec un seuil de 1,2 m. La cabine de droite est recalée sur le seuil de la passerelle v0.1. Le couloir témoin de 5 m sur environ 3,8 m est un raccord proposé. Le numéro du pont de départ, son orientation dans le vaisseau, le dénivelé et le trajet de la gaine restent à déterminer. La flèche de montée indique l’ordre du parcours.
 
 Les feuilles [secteur v0.1](secteur-v01.svg) et [passerelle détaillée v0.1](passerelle-v01.svg) documentent les bases de ce raccord.
+
+## Repérage de la passerelle dans la coque — 18 novembre 2026
+
+[Ouvrir le repérage 2D](repere-passerelle-coque.svg). La référence d’AdAstra est l’Enterprise de Pike dans *Strange New Worlds*, saison 1. Le profil indique le dôme au sommet de la soucoupe. Le zoom de dessus y superpose l’emprise de la passerelle v02, avec sa proue tournée comme celle du vaisseau. Le détail agrandi localise l’accès arrière bâbord au turbolift.
+
+Le centre de la passerelle est placé sous le centre du dôme pour cet essai. Les vues extérieures de Dávid Metlesits sont des rendus de référence de 2022. Le SVG du dépôt en utilise un tracé simplifié. Les deux vues partagent le même cadrage source. La silhouette latérale mesure environ 1 132 px sur un rendu ramené à 1 280 px de large. La longueur de travail de 442 m donne environ 2,56 px/m dans ce repère. Le plan v02 à 40 unités SVG/m est donc réduit par un facteur d’environ 0,0640 avant le zoom de présentation. La largeur de travail de la passerelle est d’environ 14 m, sa profondeur dessinée d’environ 14,7 m. Le repère du profil porte sur cette emprise longitudinale.
+
+Le centrage du plan et ses dimensions restent provisoires. La superposition localise la salle dans la silhouette. La cote du plancher du pont 1, les dégagements verticaux, le pont de départ et la gaine du turbolift restent à établir. Pour la suite, comparer le profil à la coupe affichée dans « Valles Marineris » et relever les ponts qui y sont effectivement visibles.
+
+[Profil](https://www.ex-astris-scientia.org/scans/dis/snw-enterprise-david-side.jpg) et [vue de dessus](https://www.ex-astris-scientia.org/scans/dis/snw-enterprise-david-top.jpg) · [Plan de décor ADG p. 97](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=97) · [Indication de longueur à l’écran, reproduite par EAS](https://www.ex-astris-scientia.org/schematics/enterprise-whatisstarfleet.jpg) · [Coupe à étudier](https://www.ex-astris-scientia.org/articles/scaling/msd-vallesmarineris.jpg).

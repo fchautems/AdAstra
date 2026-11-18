@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Repérage 2D du pont 1 dans la coque SNW — 2026-11-18
+
+- Référence retenue avec Fréd : Enterprise de Pike, saison 1. Le [repérage 2D](plans/snw/repere-passerelle-coque.svg) relie le profil et la vue de dessus de la coque à l’emprise de passerelle du plan v02.
+- Contrôles : rendu des deux orthovues avec le même cadrage source, échelle de travail de 442 m, rotation du tracé v02 vers la proue, fichiers SVG et PNG ouverts et rendu vérifié. Le tracé de coque du SVG est simplifié.
+- Hypothèses ouvertes : centrage du plan sous le dôme, dimensions exactes du décor, altitude du plancher, numéro du pont de départ et gaine du turbolift.
+- Prochaine action : comparer la coupe « Valles Marineris » au profil avant de proposer une implantation verticale des ponts.
+
 ## Raccord 2D couloir–turbolift–passerelle v0.2 — 2026-11-18
 
 - [Vue intégrée](plans/snw/raccord-passerelle-v02.svg) : depuis le couloir témoin, embarquement, montée au pont 1 et sortie directe à l’arrière bâbord. La même cabine à une porte est représentée aux deux arrêts. La vue détaillée de la passerelle sert de base au raccord.
