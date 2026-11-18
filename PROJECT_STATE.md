@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Implantation retenue du turbolift au pont 2 — 2026-11-18
+
+- Décision AdAstra : retenir le [plan des deux paliers](plans/snw/pont-2-palier-v01.svg) comme repère du pont 2. Le seuil du pont 2 est à l’aplomb du seuil arrière bâbord de la passerelle, à 4,425 m vers bâbord et 5,30 m vers l’arrière depuis le centre de la passerelle. La porte garde la même orientation et ouvre vers l’intérieur de la soucoupe, en diagonale vers l’avant et tribord.
+- Contrôles : coordonnées et rotation vérifiées dans le raccord de la passerelle v02, le dessin des deux paliers et le plan d’ensemble v02. L’alignement a été contrôlé en plan.
+- Hypothèses de conception : gaine verticale sur ce tronçon et dénivelé de travail de 4 m entre les planchers. Le dégagement sous la coque reste à vérifier en coupe.
+- Prochaine action : reprendre avec Fréd le plan d’ensemble du pont 2 à partir de ce palier.
+
 ## Variante en anneau du pont 2 — 2026-11-18
 
 - [Plan v02](plans/snw/pont-2-ensemble-v02.svg) : projet de circulation en anneau, palier existant repris, pièce sans affectation déplacée sur tribord.
