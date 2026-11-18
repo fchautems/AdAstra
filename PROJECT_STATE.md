@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Plan et coupe du pont 2 V04 — 2026-11-18
+
+- [Plan et coupe V04](plans/snw/pont-2-plan-et-coupe-v04.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_faf98f37a1fc8191ba5a3de4e3ecffb9&account_id=personal). Les deux vues partagent le même zéro au centre de la passerelle et la même échelle longitudinale. En plan, l’ellipse V03 est reprise avec la même échelle dans les deux directions. La vignette de la coupe V01 comprimait la largeur de 48 m supposée avec 2,95 unités par mètre, contre 13 dans le sens longitudinal.
+- Variante d’essai : bord avant de la galerie de +24,9 à +15,0 m (recul de 9,9 m). Le seuil, le palier et le carrefour central sont conservés. L’espace avant est ramené à 4,4 m de profondeur pour conserver son accès depuis la galerie.
+- Contrôles : les deux tracés du même profil extérieur donnent des minima bruts de 3,06 à 3,64 m sur l’axe pour la galerie V04, contre 0,44 à 0,72 m pour la V03. Le réseau en plan est connexe, les quatre accès sont distincts et les emprises restent à l’intérieur du contour de travail. Le SVG a été relu à l’identique après publication et le PNG s’ouvre.
+- Prochaine action : vérifier en coupe transversale la hauteur libre aux extrémités de la galerie, en intégrant l’épaisseur du plafond et de la structure. Les 48 m de largeur et les 4 m entre planchers restent des hypothèses.
+
 ## Coupe longitudinale du pont 2 v01 — 2026-11-18
 
 - [Coupe et ligne de coupe A–A′](plans/snw/pont-2-coupe-longitudinale-v01.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_96822901a4f08191a447c461cc528c1d&account_id=personal). Les emprises de la v03 sont reportées sur l’axe longitudinal du vaisseau. Le centre de passerelle est à x=947 dans le repère profil, la proue est du côté des x croissants et l’échelle de travail est de 1 132 unités pour 442 m. Le pont 2 est à 4 m sous le plancher du pont 1 placé provisoirement à y=185.
