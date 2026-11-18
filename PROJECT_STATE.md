@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Plan local Enterprise SNW v0.1 — 2026-11-18
+
+- [Plan 2D et relevés](plans/snw/README.md). Le dessin situe l’accès arrière bâbord et propose un deuxième palier avec un tronçon de couloir.
+- Contrôles : accès recoupé entre la feuille de production et Roddenberry Archive. Cotes de cabine, seuil et largeur de couloir estimées par calibration des feuilles ADG. Le SVG a été rendu et inspecté visuellement.
+- En suspens : rayon exact de la passerelle, hauteurs, numérotation du pont d’arrivée et raccords à la circulation générale.
+- Prochaine action : examiner le plan v0.1 et consolider les cotes de la passerelle avant de s’en servir pour la 3D.
+
 ## Mission documentaire Enterprise SNW — 2026-11-17
 
 - Objectif courant demandé : préparer la reconstruction immersive de l’Enterprise NCC-1701 de Strange New Worlds. Cette mission reste limitée à l’audit et à la recherche ; aucun début de reconstruction.

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title desc">
+  <title id="title">AdAstra · Plan local passerelle, turbolift et couloir</title>
+  <desc id="desc">Deux vues à la même échelle. La passerelle donne sur le turbolift à l’arrière bâbord. La même cabine, à porte unique, dessert un autre palier dont le couloir est hypothétique.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0 L7 3.5 L0 7Z" fill="#1a634e"/>
+    </marker>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#e5ebf0"/>
+    </pattern>
+    <g id="lift">
+      <path d="M-19 0 L-19 10 L-39.2 23 L-39.2 62 L-9 81.6 H9 L39.2 62 V23 L19 10 L19 0Z" fill="#e4f4ed"/>
+      <path d="M-19 0 L-19 10 L-39.2 23 L-39.2 62 L-9 81.6 H9 L39.2 62 V23 L19 10 L19 0" fill="none" stroke="#246955" stroke-width="2.7" stroke-linejoin="round"/>
+      <path d="M-19 0H19" stroke="#246955" stroke-width="2" stroke-dasharray="4 4"/>
+    </g>
+    <clipPath id="bridge-panel"><rect x="52" y="163" width="506" height="459"/></clipPath>
+    <mask id="bridge-gap">
+      <rect width="1100" height="760" fill="white"/>
+      <rect x="-19" y="-16" width="38" height="36" transform="translate(173 541) rotate(38)" fill="black"/>
+    </mask>
+  </defs>
+  <style>
+    text{font-family:'DejaVu Sans',sans-serif;fill:#182c40}
+    .heading{font-size:29px;font-weight:700}.section{font-size:19px;font-weight:700}
+    .small{font-size:13px}.tiny{font-size:11px}.label{font-size:14px;font-weight:700}
+    .muted{fill:#455a6e}.hyp{fill:#815217}.green{fill:#1a634e}
+    .leader{fill:none;stroke:#51667a;stroke-width:1.4}
+    .route{fill:none;stroke:#1a634e;stroke-width:2.4;stroke-dasharray:5 4;marker-end:url(#arrow)}
+    .dim{stroke:#566a7c;stroke-width:1;fill:none}
+  </style>
+  <rect width="1100" height="760" fill="#f4f7fa"/>
+  <text x="32" y="43" class="heading">Passerelle → turbolift → couloir</text>
+  <text x="33" y="70" class="small muted">AdAstra · Enterprise NCC-1701 · Strange New Worlds, saison 1 · Plan d’étude v0.1 · 18.11.2026</text>
+
+  <rect x="30" y="96" width="550" height="556" rx="10" fill="white" stroke="#c6d2dd"/>
+  <rect x="600" y="96" width="470" height="556" rx="10" fill="white" stroke="#c6d2dd"/>
+  <text x="52" y="130" class="section">A · Passerelle, pont 1</text>
+  <text x="623" y="130" class="section">B · Palier d’arrivée</text>
+  <text x="623" y="153" class="small hyp">Pont et implantation proposés</text>
+  <rect x="52" y="163" width="506" height="460" fill="url(#grid)"/>
+  <rect x="622" y="163" width="426" height="460" fill="url(#grid)"/>
+
+  <text x="315" y="155" text-anchor="middle" class="tiny muted">↑ AVANT</text>
+  <text x="62" y="346" class="tiny muted">BÂBORD</text>
+  <text x="555" y="346" text-anchor="end" class="tiny muted">TRIBORD</text>
+  <path d="M149 201 A230.4 230.4 0 0 1 481 201" transform="translate(0 32)" fill="none" stroke="#94a4b2" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M84.6 360 A230.4 230.4 0 0 0 545.4 360" fill="#e5eef7" stroke="#345d81" stroke-width="3" mask="url(#bridge-gap)"/>
+  <path d="M84.6 360 A230.4 230.4 0 0 1 545.4 360" clip-path="url(#bridge-panel)" fill="#eff3f6" fill-opacity=".62" stroke="#94a4b2" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M315 166 V575" stroke="#b9c5ce" stroke-width="1" stroke-dasharray="4 5"/>
+  <path d="M125 436 A204 204 0 0 0 144 472 M246 551 A202 202 0 0 0 482 474" fill="none" stroke="#8bacc6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M213 360 A102 102 0 0 0 417 360Z" fill="#f9fbfd" stroke="#345d81" stroke-width="2"/>
+  <path d="M280 453 Q315 470 350 453 M284 446 Q315 461 346 446 M289 439 Q315 453 341 439" fill="none" stroke="#345d81" stroke-width="2"/>
+  <circle cx="315" cy="406" r="12" fill="#c8d9e8" stroke="#345d81" stroke-width="2"/>
+  <text x="315" y="385" text-anchor="middle" class="small">Siège du capitaine</text>
+  <text x="315" y="212" text-anchor="middle" class="small muted">Avant de la passerelle · hors zone</text>
+  <text x="352" y="483" class="label">Anneau arrière</text>
+  <text x="352" y="503" class="tiny muted">Marches vers le centre</text>
+  <use href="#lift" transform="translate(173 541) rotate(38)"/>
+  <path class="route" d="M276 510 Q238 513 210 528 L152 568"/>
+  <path class="leader" d="M169 598 L196 614 H227"/>
+  <text x="233" y="618" class="label green">Accès turbolift arrière bâbord</text>
+
+  <path d="M799.2 194 V354 H840.8 M920.8 194 V354 H879.2" fill="none" stroke="#a56d25" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M799.2 194 H920.8 V354 H799.2Z" fill="#fcf2de" opacity=".62"/>
+  <path d="M799.2 194 H920.8" stroke="#a56d25" stroke-width="2" stroke-dasharray="3 5"/>
+  <path d="M799.2 354 H840.8 M879.2 354 H920.8" stroke="#a56d25" stroke-width="3" stroke-dasharray="7 5"/>
+  <use href="#lift" transform="translate(860 354)"/>
+  <path class="route" d="M860 404 V220"/>
+  <text x="639" y="237" class="label hyp">Couloir témoin</text>
+  <path class="leader" d="M758 232 H793"/>
+  <text x="642" y="190" class="tiny muted">Limite du témoin</text>
+  <path class="leader" d="M756 186 L790 194"/>
+  <path class="dim" d="M940 194V354 M933 194H947 M933 354H947 M799.2 177H920.8 M799.2 171V183 M920.8 171V183"/>
+  <text x="955" y="278" class="small hyp">5,0 m</text>
+  <text x="860" y="172" text-anchor="middle" class="small hyp">≈ 3,8 m</text>
+  <path class="leader" d="M895 358 L929 372 H947"/>
+  <text x="951" y="370" class="tiny green">Porte</text>
+  <text x="951" y="386" class="tiny green">≈ 1,2 m</text>
+  <text x="860" y="463" text-anchor="middle" class="label green">Même cabine · ≈ 2,45 × 2,55 m</text>
+  <text x="860" y="486" text-anchor="middle" class="small muted">Entrée et sortie par la même porte</text>
+
+  <rect x="642" y="527" width="384" height="78" rx="8" fill="#eef4f8" stroke="#c6d2dd"/>
+  <text x="834" y="552" text-anchor="middle" class="label">Trajet proposé entre les deux vues</text>
+  <text x="834" y="576" text-anchor="middle" class="small muted">Entrer · changer de palier · ressortir</text>
+
+  <path d="M35 680H66" stroke="#345d81" stroke-width="3"/>
+  <text x="75" y="685" class="small">Disposition d’après les références</text>
+  <path d="M366 680H396" stroke="#a56d25" stroke-width="3" stroke-dasharray="7 5"/>
+  <text x="405" y="685" class="small">Implantation proposée</text>
+  <path d="M623 680H653" stroke="#94a4b2" stroke-width="2" stroke-dasharray="5 6"/>
+  <text x="662" y="685" class="small">Hors zone</text>
+  <path d="M940 680H1036 M940 673V687 M972 675V685 M1004 675V685 M1036 673V687" class="dim"/>
+  <text x="940" y="705" text-anchor="middle" class="tiny">0</text>
+  <text x="972" y="705" text-anchor="middle" class="tiny">1</text>
+  <text x="1036" y="705" text-anchor="middle" class="tiny">3 m</text>
+  <text x="34" y="729" class="tiny muted">Échelle graphique commune · cotes de cabine et largeur du couloir estimées sur dessin · voir notes de relevé</text>
+</svg>
