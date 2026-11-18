@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Coupe transversale du pont 2 V01 — 2026-11-18
+
+- [Coupe B–B′](plans/snw/pont-2-coupe-transversale-v01.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_6b339205a5108191bfedd7399f44c9ef&account_id=personal). Coupe à +14,06 m devant le centre de la passerelle, à l’endroit le plus serré des quatre scénarios, au bord extérieur des virages (±11,32 m de l’axe). Le point a été déterminé sur le contour des deux virages symétriques de la V04, en vérifiant également le bord avant à +15,0 m.
+- Hypothèses de calcul : les deux tracés du même profil longitudinal donnent la hauteur brute sur l’axe. En travers, le profil d’essai suit h(x,y) = h(x,0) × (1 − (y/R(x))²)^p, avec p = 1/2 ou 1 et R(x) tiré de l’ellipse de travail V04, supposée large de 48 m à son maximum. La structure et le plafond occupent une réserve verticale d’essai de 0,50 m. Gabarit de projet de 2,50 m libres.
+- Contrôles : les minima sur les virages varient entre 1,94 et 2,85 m libres selon les quatre combinaisons. Avec deux mètres de recul supplémentaire du tracé avant, le bord passe de +15 à +13 m et les quatre minima atteignent au moins 2,62 m dans cette simulation. Le SVG publié a été relu à l’identique et le PNG s’ouvre.
+- Prochaine action : examiner la variante +13 m en plan et sonder une géométrie de coque 3D ou une coupe de référence à cette station. Les deux courbures sont des scénarios et la V04 reste une implantation d’essai.
+
 ## Plan et coupe du pont 2 V04 — 2026-11-18
 
 - [Plan et coupe V04](plans/snw/pont-2-plan-et-coupe-v04.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_faf98f37a1fc8191ba5a3de4e3ecffb9&account_id=personal). Les deux vues partagent le même zéro au centre de la passerelle et la même échelle longitudinale. En plan, l’ellipse V03 est reprise avec la même échelle dans les deux directions. La vignette de la coupe V01 comprimait la largeur de 48 m supposée avec 2,95 unités par mètre, contre 13 dans le sens longitudinal.
