@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Implantation du palier du pont 2 — 2026-11-18
+
+- [Plan des deux ponts](plans/snw/pont-2-palier-v01.svg) : même seuil arrière bâbord et même orientation de cabine. Couloir témoin de 5 × 3,8 m vers l’intérieur de la soucoupe.
+- Hypothèses de projet : gaine verticale sur ce tronçon et 4 m entre planchers. La suite du couloir et l’encombrement de la gaine restent à préciser.
+- Contrôles : coordonnées de seuil reprises du v02, deux vues à la même échelle, SVG et export PNG vérifiés.
+- Prochaine action : proposer un raccord vers une circulation du pont 2 et vérifier l’encombrement autour de la gaine.
+
 ## Coupe v0.1 et arrêt d’essai du turbolift — 2026-11-18
 
 - [Coupe locale](plans/snw/coupe-soucoupe-v01.svg) comparée à l’écran de « Valles Marineris » (S4E01). Les séparations internes visibles apportent un repère qualitatif. Le profil extérieur de saison 1 conserve son rôle de référence.

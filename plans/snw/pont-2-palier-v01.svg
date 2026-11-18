@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="897" viewBox="0 0 1280 897" role="img" aria-labelledby="title desc">
+<title id="title">AdAstra · Raccord du pont 2 à la passerelle</title>
+<desc id="desc">Deux vues de dessus à la même échelle et dans la même orientation. L’ascenseur est à l’arrière bâbord. La cabine et son seuil sont alignés entre les deux ponts. Au pont 2, un tronçon de couloir démarre devant la cabine et part vers l’intérieur du vaisseau. Le dénivelé de quatre mètres et la gaine verticale sont des choix d’essai.</desc>
+<defs>
+  <g id="cabine">
+      <path d="M-24 0V13L-49 29V77L-11 102H11L49 77V29L24 13V0Z" fill="#daeee6"/>
+      <path d="M-24 0V13L-49 29V77L-11 102H11L49 77V29L24 13V0"
+            fill="none" stroke="#376357" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M-24 0H24" stroke="#376357" stroke-width="2" stroke-dasharray="4 3"/>
+    </g>
+  <pattern id="grid" width="31.2" height="31.2" patternUnits="userSpaceOnUse">
+    <path d="M31.2 0H0V31.2" fill="none" stroke="#e7edf3"/>
+  </pattern>
+  <marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+    <path d="M0 0 7 3.5 0 7Z" fill="#28715a"/>
+  </marker>
+</defs>
+<style>
+
+
+    text {font-family:'DejaVu Sans',sans-serif;fill:#152b42}
+    .title{font-size:36px;font-weight:700} .sub{font-size:15px}
+    .name{font-size:15px;font-weight:700} .small{font-size:12px} .muted{fill:#4b6075}
+    .axis{font-size:12px;font-weight:700;letter-spacing:1px}
+    .desk{fill:#d5e3ef;stroke:#557795;stroke-width:1.5} .controls{fill:none;stroke:#7998b1;stroke-width:3}
+    .badge circle{fill:#223f5b;stroke:white;stroke-width:1.3} .badge text{fill:white;font-size:11px;font-weight:700;text-anchor:middle}
+    .access{fill:none;stroke:#376357;stroke-width:2.2;marker-end:url(#arrow)}
+    .lead{fill:none;stroke:#64788c;stroke-width:1.4}
+    .dim{fill:none;stroke:#966419;stroke-width:1.4;stroke-dasharray:5 4}
+    .measure{font-size:13px;fill:#805414;font-weight:700}
+
+    .section{font-size:22px;font-weight:700} .hyp{fill:#805414}
+    .route{fill:none;stroke:#27624f;stroke-width:3.4;stroke-dasharray:7 5;marker-end:url(#arrow)}
+    .route-label{fill:#27624f;font-size:15px;font-weight:700}
+
+text{fill:#1a344c}
+.section{font-size:23px;font-weight:700} .note{font-size:15px;fill:#4c667e}
+.label{font-size:16px;font-weight:700} .green{fill:#22674f} .amber{fill:#89571a}
+.axis-line{fill:none;stroke:#b3c3d1;stroke-width:1.3;stroke-dasharray:5 6}
+.dimensions{fill:none;stroke:#89571a;stroke-width:1.6}
+.guide{fill:none;stroke:#638097;stroke-width:1.5}
+</style>
+<rect width="1280" height="897" fill="#f3f7fb"/>
+<text x="35" y="58" class="title">Du pont 2 à la passerelle</text>
+<text x="37" y="87" class="sub muted">AdAstra · Vue de dessus des deux ponts · Implantation d’essai</text>
+
+<rect x="30" y="112" width="601" height="623" rx="14" fill="white" stroke="#cedae6"/>
+<rect x="649" y="112" width="601" height="623" rx="14" fill="white" stroke="#cedae6"/>
+<text x="54" y="149" class="section">Pont 1 · Passerelle</text>
+<text x="673" y="149" class="section">Pont 2 · Palier et couloir témoin</text>
+<text x="54" y="174" class="note">Arrivée du turbolift à l’arrière bâbord</text>
+<text x="673" y="174" class="note">Premier arrêt proposé sous la passerelle</text>
+<rect x="53" y="190" width="555" height="520" fill="url(#grid)"/>
+<rect x="672" y="190" width="555" height="520" fill="url(#grid)"/>
+
+<text x="328" y="194" text-anchor="middle" class="axis">↑ PROUE</text>
+<text x="949" y="194" text-anchor="middle" class="axis">↑ PROUE</text>
+<path d="M328 212V703 M56 442H607 M949 212V703 M675 442H1227" class="axis-line"/>
+<text x="59" y="483" class="axis">BÂBORD</text>
+<text x="692" y="410" class="axis">BÂBORD</text>
+
+<g transform="translate(328 442) scale(0.78) translate(-470 -477)">
+
+
+
+  <path d="M247 266 Q333 168 470 168 Q607 168 693 266 L687 279
+           A280 280 0 0 1 692 647 A280 280 0 0 1 189 477 A280 280 0 0 1 253 279Z"
+        fill="#f1f5f9"/>
+  <path d="M693.6,308.5 A280,280 0 0 1 747.3,516.0 M733 558 Q720 609 696 641
+           M693.6,645.5 A280,280 0 0 1 369.7,738.4 M246.4,645.5 A280,280 0 0 1 246.4,308.5"
+        fill="none" stroke="#2c4963" stroke-width="3"/>
+  <path d="M247 266 Q333 168 470 168 Q607 168 693 266 L680 283
+           Q601 193 470 193 Q339 193 260 283Z" fill="#aacfe4" stroke="#477c9d" stroke-width="2"/>
+  <path d="M271 262 Q350 181 470 181 Q590 181 669 262" fill="none" stroke="#e8f6fb" stroke-width="3"/>
+  <path d="M295.1,340.3 A222,222 0 0 1 644.9,340.3" fill="none" stroke="#8296a8" stroke-width="1.5"/>
+  <path d="M260 283 290 322 M680 283 650 322" class="lead"/>
+  <g><title>Communications</title><path d="M694.1,314.2 A277,277 0 0 1 747.0,472.2 L700.0,473.0 A230,230 0 0 0 656.1,341.8 Z" class="desk"/><path d="M687.6,332.9 A261,261 0 0 1 730.5,461.1" class="controls"/></g><g><title>Capteurs du vaisseau</title><path d="M694.1,639.8 A277,277 0 0 1 624.9,706.6 L598.6,667.7 A230,230 0 0 0 656.1,612.2 Z" class="desk"/><path d="M674.3,639.5 A261,261 0 0 1 625.2,686.8" class="controls"/></g><g><title>Ordinateur de bord</title><path d="M624.9,706.6 A277,277 0 0 1 551.0,741.9 L537.2,697.0 A230,230 0 0 0 598.6,667.7 Z" class="desk"/><path d="M606.4,699.5 A261,261 0 0 1 557.1,723.0" class="controls"/></g><g><title>Ingénierie</title><path d="M546.4,743.3 A277,277 0 0 1 384.4,740.4 L398.9,695.7 A230,230 0 0 0 533.4,698.1 Z" class="desk"/><path d="M530.9,730.8 A261,261 0 0 1 400.3,728.5" class="controls"/></g><g><title>Armement</title><path d="M248.8,643.7 A277,277 0 0 1 206.6,562.6 L251.3,548.1 A230,230 0 0 0 286.3,615.4 Z" class="desk"/><path d="M254.9,624.8 A261,261 0 0 1 225.5,568.4" class="controls"/></g><g><title>Défense</title><path d="M206.6,562.6 A277,277 0 0 1 193.0,472.2 L240.0,473.0 A230,230 0 0 0 251.3,548.1 Z" class="desk"/><path d="M218.5,546.7 A261,261 0 0 1 209.1,483.8" class="controls"/></g><g><title>Systèmes environnementaux</title><path d="M193.2,467.3 A277,277 0 0 1 245.9,314.2 L283.9,341.8 A230,230 0 0 0 240.1,469.0 Z" class="desk"/><path d="M209.8,456.5 A261,261 0 0 1 252.4,332.9" class="controls"/></g>
+  <g fill="#b8c9d8" stroke="#557795" stroke-width="1.2">
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(72 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(143 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(180 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(255 470 477)"/>
+    <rect x="464" y="252" width="12" height="15" rx="4" transform="rotate(288 470 477)"/>
+  </g>
+
+
+
+  <circle cx="470" cy="477" r="141" fill="#e1edf5" stroke="#6e879d" stroke-width="1.8"/>
+  <g fill="none" stroke="#8b5d62" stroke-width="3.2" stroke-linecap="round"><path d="M418.4,355.5 A132,132 0 0 1 521.6,355.5"/><path d="M589.6,421.2 A132,132 0 0 1 591.5,528.6"/><path d="M348.5,528.6 A132,132 0 0 1 350.4,421.2"/></g>
+  <path d="M522.8,607.7 A141,141 0 0 1 417.2,607.7 L426.9,583.6 A115,115 0 0 0 513.1,583.6 Z" fill="#c2d4e4" stroke="#677f95" stroke-width="1.4"/>
+  <g class="lead"><path d="M512.6,588.1 A119,119 0 0 1 427.4,588.1"/><path d="M515.2,594.6 A126,126 0 0 1 424.8,594.6"/><path d="M517.7,601.2 A133,133 0 0 1 422.3,601.2"/><path d="M520.2,607.7 A140,140 0 0 1 419.8,607.7"/></g>
+  <path d="M416 427 Q470 397 524 427 L521 453 Q470 433 419 453Z" class="desk"/>
+  <path d="M470 413V441" class="lead"/>
+  <path d="M428 455v13q11 10 23 0v-13 M489 455v13q11 10 23 0v-13"
+        fill="#b8c9d8" stroke="#557795" stroke-width="1.5"/>
+  <path d="M428 558 L419 529 L441 494 H499 L521 529 L512 558Z"
+        fill="#cfdfec" stroke="#8196a9" stroke-width="1.5"/>
+  <rect x="451" y="516" width="38" height="43" rx="12" fill="#f0d7cb" stroke="#88665f" stroke-width="2"/>
+  <path d="M457 553Q470 559 483 553 M454 529v17 M486 529v17"
+        fill="none" stroke="#88665f" stroke-width="2"/>
+
+  <path d="M253 658 274 674 M312 704 345 728" stroke="#376357" stroke-width="4" fill="none"/>
+  <path d="M729 515 719 553" stroke="#376357" stroke-width="2" stroke-dasharray="4 4"/>
+
+
+
+
+
+
+
+
+
+
+
+
+  <use href="#cabine" transform="translate(293 689) rotate(38.290163)"/>
+  <path d="M0 56V-48" transform="translate(293 689) rotate(38.290163)" fill="none" stroke="#28715a" stroke-width="3" marker-end="url(#arrow)"/>
+</g>
+<path d="M150 693H171L170 677" class="guide"/>
+<text x="73" y="700" class="label green">Turbolift</text>
+<text x="195" y="701" class="note">Sortie sur la passerelle</text>
+
+<g transform="translate(949 442) scale(0.78) translate(-470 -477)">
+  <g transform="translate(293 689) rotate(38.290163)">
+    <path d="M-76 -200H76V0H-76Z" fill="#fff0d4"/>
+    <path d="M-24 0H-76V-200 M24 0H76V-200" fill="none" stroke="#9a6523" stroke-width="3.2"/>
+    <path d="M-76 -200H76" fill="none" stroke="#9a6523" stroke-width="2.3" stroke-dasharray="6 5"/>
+    <path d="M-76 -218H76 M-76 -225V-211 M76 -225V-211 M100 0V-200 M94 0H106 M94 -200H106" class="dimensions"/>
+    <use href="#cabine"/>
+    <path d="M0 -174V56" fill="none" stroke="#28715a" stroke-width="3.2" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+  </g>
+</g>
+<path d="M904.9 561.3 L969 545H1017" class="guide"/>
+<text x="1027" y="541" class="label amber">Couloir témoin</text>
+<text x="1027" y="563" class="note">5 m × 3,8 m</text>
+<path d="M861.1 448.2 L855 475H747" class="guide"/>
+<text x="691" y="461" class="note">Suite à définir</text>
+<path d="M826.2 619.4 L908 636H978" class="guide"/>
+<text x="987" y="632" class="label green">Seuil aligné</text>
+<text x="987" y="654" class="note">Passage ≈ 1,2 m</text>
+<path d="M773.2 655.1 L769 685H704" class="guide"/>
+<text x="689" y="680" class="label green">Cabine</text>
+
+<g aria-label="Écart vertical entre les deux ponts">
+  <rect x="1033" y="215" width="193" height="136" rx="10" fill="#eef6f2" stroke="#c5dacf"/>
+  <path d="M1048 252H1074 M1048 313H1074 M1061 308V257" fill="none" stroke="#28715a" stroke-width="1.8"/>
+  <text x="1086" y="257" class="note">Pont 1</text>
+  <text x="1086" y="288" class="label green">4 m provisoires</text>
+  <text x="1086" y="318" class="note">Pont 2</text>
+</g>
+
+<rect x="30" y="754" width="1220" height="109" rx="12" fill="white" stroke="#cedae6"/>
+<text x="54" y="786" class="label">Même position du seuil sur les deux vues</text>
+<text x="54" y="812" class="note">4,4 m vers bâbord et 5,3 m vers l’arrière depuis le centre de la passerelle.</text>
+<text x="54" y="838" class="note">Gaine verticale et orientation de la cabine retenues pour cet essai.</text>
+<path d="M1055 796h62.4v6h-62.4z" fill="#2b4860"/><path d="M1117.4 796h62.4v6h-62.4z" fill="white" stroke="#2b4860"/>
+<text x="1055" y="823" class="note">0</text><text x="1117" y="823" text-anchor="middle" class="note">2</text><text x="1179" y="823" text-anchor="end" class="note">4 m</text>
+</svg>

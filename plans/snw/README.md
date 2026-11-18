@@ -65,3 +65,9 @@ Le centrage du plan et ses dimensions restent provisoires. La superposition loca
 Pour l’essai AdAstra, le couloir témoin v02 part du **pont 2 proposé**, à **4 m sous le plancher du pont 1**. La cote est un espacement de projet, non un relevé. Le plancher haut est placé provisoirement à y=185 dans le repère image du repérage précédent, puis le plancher bas à y≈195,24, avec 1 132 unités d’image pour 442 m. Le seuil v02 est projeté en profil à environ 5,3 m en arrière du centre de la passerelle. La flèche indique une liaison entre arrêts. Le seuil réel est à bâbord, hors de l’axe médian. La trajectoire et le volume de la gaine restent à établir.
 
 [Écran de la série reproduit par EAS](https://www.ex-astris-scientia.org/articles/scaling/msd-vallesmarineris.jpg) · [Analyse des ponts de la soucoupe](https://www.ex-astris-scientia.org/articles/scaling-issues.htm) · [Profil extérieur et méthode de repérage](repere-passerelle-coque.svg) · [Raccord en plan](raccord-passerelle-v02.svg).
+
+## Implantation du palier au pont 2 — 18 novembre 2026
+
+[Voir le plan des deux ponts](pont-2-palier-v01.svg). Les vues ont les mêmes axes, la proue vers le haut et une échelle horizontale commune. Le seuil de la cabine est à environ 4,4 m bâbord et 5,3 m arrière du centre de la passerelle v02. Le pont 2 reprend ces coordonnées et la même orientation de cabine. L’essai suppose donc une gaine verticale, avec un arrêt à −4 m par rapport au plancher du pont 1.
+
+Le palier se confond avec le départ du couloir témoin. Le tronçon de 5 m sur 3,8 m part perpendiculairement au seuil de 1,2 m, en direction de l’intérieur du vaisseau. Son extrémité en pointillés indique la limite du tronçon dessiné. La gaine sera à dimensionner et la suite du couloir à relier à une circulation du pont 2. L’altitude de ce pont et la géométrie du raccord sont des choix pour AdAstra.
