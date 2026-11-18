@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Livraison des fichiers à télécharger — 2026-11-18
+
+- Règle pour chaque livrable : vérifier que le fichier s’ouvre localement, que la publication a abouti et que le lien pointe vers la bonne version. Donner dès le premier message le lien durable et, si possible, un lien de secours vers une autre copie ou un autre format. Ajouter un aperçu dans le chat quand le format s’y prête. Un lien temporaire seul ne suffit pas.
+- Passerelle v0.1 : l’ouverture du premier lien a échoué sur le téléphone de Fréd. [PNG republié](https://chatgpt.com/library?file_id=libfile_7881d70c2ed88191bb31a6ea4e027f12&account_id=personal), publication confirmée (405 454 octets). [SVG de secours relu dans GitHub](plans/snw/passerelle-v01.svg). L’ouverture du nouveau lien dans l’app Android reste à confirmer.
+- Prochaine action : reprendre la validation du plan à partir de ces deux accès.
+
 ## Vue détaillée de la passerelle SNW v0.1 — 2026-11-18
 
 - [Vue 2D](plans/snw/passerelle-v01.svg) et [sources](plans/snw/README.md). Écran, poste de navigation, barre, fauteuil du capitaine, consoles périphériques, escalier et seuils du turbolift et du bureau du capitaine.
