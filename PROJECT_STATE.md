@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Maquette de construction du pont 2 V05 — 2026-11-19
+
+- [Ouvrir la maquette interactive](https://chatgpt.com/library?file_id=libfile_955876f401248191977418981e05781c&account_id=personal). Le fichier HTML autonome reprend les emprises, les ouvertures et le turbolift de la V05. Il s’ouvre en vue de dessus orthographique, avec une vue 3D sans plafond, le contour d’étude en option et un trajet animé depuis le turbolift.
+- Les murs de 2,50 m représentent le gabarit visé. Les deux points orange repèrent les virages où la hauteur de coque reste à vérifier. La maquette sert à lire l’implantation et la circulation du pont.
+- Contrôles : quatre pièces, deux points critiques, départ et retour du trajet au turbolift, projection, commandes, zoom et redimensionnement exercés dans Node. Chromium local ne démarre pas dans cet environnement. Ouverture sur Android à confirmer.
+- Prochaine action : relire le plan en volume. La validation des virages attend toujours un maillage de référence.
+
 ## Recherche d’un maillage SNW saison 1 pour les virages V05 — 2026-11-19
 
 - Le [plan V05](plans/snw/pont-2-plan-d-ensemble-v05.svg) situe les deux points critiques au bord extérieur des virages, à 11,73 m devant le centre de la passerelle et à ±11,88 m de l’axe. La coupe existante B–B′ porte sur la V04 et sa station ne se reporte pas sur la V05.
