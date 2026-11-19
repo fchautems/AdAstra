@@ -19,6 +19,7 @@ Le meilleur gain est documentaire : le [dossier de production ADG](https://asset
 | [CODE_REUTILISABLE.md](CODE_REUTILISABLE.md) | Inspection des dépôts et sélection de modules précis |
 | [PIECES_ET_PLANS.md](PIECES_ET_PLANS.md) | Les 12 familles de pièces, plans, accès, dimensions connues ou inconnues et contradictions |
 | [INVENTAIRE-LOCAUX-ET-PONTS.md](INVENTAIRE-LOCAUX-ET-PONTS.md) | Inventaire des locaux des saisons 1 à 4, ponts documentés, sources et question du pont 2 |
+| [QUARTIERS-PIKE-PONT-5.md](QUARTIERS-PIKE-PONT-5.md) | Description du décor des quartiers de Pike, pièce par pièce, et limites documentaires |
 | [ARCHITECTURE_ET_PREMIERE_ZONE.md](ARCHITECTURE_ET_PREMIERE_ZONE.md) | Architecture proposée, comparaison des stratégies, charge et critères du premier témoin |
 | [METHODE_ET_VERIFICATIONS.md](METHODE_ET_VERIFICATIONS.md) | Couverture des recherches, limites et contrôles réellement effectués |
 | [verification.json](verification.json) | Résultats automatiques de cohérence et de préservation des fichiers |
