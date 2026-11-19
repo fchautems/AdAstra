@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Cabine de Pike au pont 5 — ébauche V01 — 2026-11-19
+
+- [Plan de la cabine en vue de dessus](https://chatgpt.com/library?file_id=libfile_701687653c9c81918b7fd971801a1bec&account_id=personal). L’emprise de travail reprend les 20,8 × 11,5 m du relevé approximatif. Façade courbe, entrée en retrait, cuisine ouverte avec îlot, coin repas, salon, bureau attenant et chambre séparée par une arcade. Le contour détaillé, les cloisons et le mobilier sont des choix de dessin provisoires.
+- Contrôles de l’ébauche : la projection du contour dessiné mesure 20,8 × 11,5 m, le seuil dessiné mesure 1,35 m et les cinq zones sont à l’intérieur de l’emprise. Le rendu PNG a été ouvert et relu.
+- Prochaine action : relire la distribution avec Fréd. Pour l’intégration ultérieure, vérifier sur une coupe de coque les niveaux des ponts 3 et 4, leur hauteur libre et l’épaisseur des structures, puis la position et le gabarit vertical de la cabine au pont 5.
+
 ## Relevé dimensionnel des quartiers de Pike au pont 5 — 2026-11-19
 
 - [Relevé écrit](docs/research/snw-2026-11-17/QUARTIERS-PIKE-PONT-5.md#relevé-dimensionnel-du-décor--2026-11-19). S08 DP, p. 156 du dossier ADG vérifié par empreinte. Encombrement du décor d’environ 20,8 × 11,5 m en projection, dont la profondeur est estimée à partir de l’image. Seuil estimé à 1,3–1,4 m.
