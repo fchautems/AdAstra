@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Relevé dimensionnel des quartiers de Pike au pont 5 — 2026-11-19
+
+- [Relevé écrit](docs/research/snw-2026-11-17/QUARTIERS-PIKE-PONT-5.md#relevé-dimensionnel-du-décor--2026-11-19). S08 DP, p. 156 du dossier ADG vérifié par empreinte. Encombrement du décor d’environ 20,8 × 11,5 m en projection, dont la profondeur est estimée à partir de l’image. Seuil estimé à 1,3–1,4 m.
+- Les feuilles 153–155 recoupent l’organisation, les élévations et les niveaux locaux. Les pouces de la cote de profondeur, le gabarit vertical complet et l’implantation sur le pont restent inconnus.
+- Prochaine action : dessiner le plan local à partir de ce relevé lorsque Fréd reprendra le tracé.
+
 ## Description des quartiers de Pike au pont 5 — 2026-11-19
 
 - Fréd a choisi Pike comme premier local à documenter au pont 5. Le pont 2 reste orienté vers le soutien aux missions, avec la coordination à l’arrière et la préparation à l’avant.
