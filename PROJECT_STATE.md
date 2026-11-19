@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Cabine de Pike au pont 5 — contour V02 — 2026-11-19
+
+- [Plan V02 en vue de dessus](https://chatgpt.com/library?file_id=libfile_6d6a682d0bc48191b533123d6a6d38e6&account_id=personal). La [feuille de tournage S08 DP, p. 156](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=156) guide le pan droit et les deux retours de l’entrée. Le seuil a été décalé sur ce pan et les deux angles ont été légèrement arrondis pour AdAstra. La façade courbe et l’aménagement intérieur reprennent la V01.
+- Contrôles. Rendu PNG relu à 2 210 × 1 530 pixels. Les pixels de la façade et des zones aménagées sont identiques à la V01. Seuil dessiné à environ 1,35 m, avec une emprise de travail de 20,8 × 11,5 m.
+- Prochaine action. Vérifier la position de la cabine, son raccord au couloir et la hauteur disponible sous la coque lors de l’intégration au pont 5.
+
 ## Cabine de Pike au pont 5 — ébauche V01 — 2026-11-19
 
 - [Plan de la cabine en vue de dessus](https://chatgpt.com/library?file_id=libfile_701687653c9c81918b7fd971801a1bec&account_id=personal). L’emprise de travail reprend les 20,8 × 11,5 m du relevé approximatif. Façade courbe, entrée en retrait, cuisine ouverte avec îlot, coin repas, salon, bureau attenant et chambre séparée par une arcade. Le contour détaillé, les cloisons et le mobilier sont des choix de dessin provisoires.
