@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 5 — intégration V02 de la façade de Pike — 2026-11-19
+
+- [Plan vectoriel](plans/snw/pont-5-integration-pike-v02.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_102de4d6fdd88191b25da41783f5508b&account_id=personal). La [coupe A–A′ V02](plans/snw/pont-5-coupe-pike-v02.svg) est reportée en plan à tribord avant. La façade et les trois tracés de coque prennent un centre commun. Rayon intérieur de façade au sol de 93,97 m. Rayons de coque de 95,07 m au sol, 95,50 m au pied du vitrage (+0,75 m) et 96,86 m en haut du vitrage (+3,10 m). La pente de 30° depuis la verticale et l’écart radial de 1,10 m reprennent la coupe.
+- La façade a été redessinée, les flancs sont prolongés jusqu’au nouvel arc et les trois bandes vitrées reprennent les emplacements indicatifs de la V03. Le gabarit en plan reste 20,8 × 11,5 m. La surface brute de la silhouette passe d’environ 171 à 192 m². Le seuil de 1,35 m est conservé sur le couloir de 3,80 m.
+- Contrôles. L’emprise est à l’intérieur du bord du plancher. Les trois rayons, la pente et l’écart radial concordent avec la coupe. Le contact du seuil avec le couloir, le rendu PNG et le SVG du dépôt ont été vérifiés.
+- Prochaine action. Reporter l’aménagement intérieur sur l’emprise intégrée puis définir les limites des cabines voisines le long du couloir.
+
 ## Pont 5 — coupe de référence AdAstra V02 — 2026-11-19
 
 - Fréd a choisi de créer une coupe de conception AdAstra pour la coque et les ponts. [Coupe vectorielle A–A′](plans/snw/pont-5-coupe-pike-v02.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_3a9023ed96788191b99e00d3a2acad33&account_id=personal). Elle remplace la coupe simulée V01 comme référence verticale locale à tribord avant. La [coupe du décor ADG, p. 155](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=155) sert de repère visuel pour les baies inclinées.
