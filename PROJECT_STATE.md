@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Recherche d’un maillage SNW saison 1 pour les virages V05 — 2026-11-19
+
+- Le [plan V05](plans/snw/pont-2-plan-d-ensemble-v05.svg) situe les deux points critiques au bord extérieur des virages, à 11,73 m devant le centre de la passerelle et à ±11,88 m de l’axe. La coupe existante B–B′ porte sur la V04 et sa station ne se reporte pas sur la V05.
+- [Sketchfab](https://sketchfab.com/3d-models/strange-new-worlds-enterprise-wip-498dfb219f5348f28a0453f6bffce17b) référence une ébauche de l’Enterprise SNW. Le fichier n’a pas pu être récupéré pour contrôler la courbure locale. [VZStudios sur Cults](https://cults3d.com/en/3d-model/game/star-trek-constitution-class-snw) propose un STL de la saison 1 dont l’auteur annonce une conversion modifiée du 3D de Dávid Metlesits. Les vues de Metlesits servent déjà au repérage AdAstra. Le STL est payant et sa fidélité locale n’a pas été contrôlée.
+- La hauteur de la coque aux deux virages reste inconnue. Pour mesurer les 3,00 m bruts visés, obtenir un maillage SNW saison 1, le recaler sur le dôme, le profil retenu et le plancher provisoire, puis relever le minimum sur toute la largeur des deux virages. Conserver la V05 comme implantation de travail.
+
 ## Vérification de la coque aux virages avant du pont 2 V05 — 2026-11-19
 
 - La [coupe de « Valles Marineris »](https://www.ex-astris-scientia.org/articles/scaling/msd-vallesmarineris.jpg) est longitudinale et ne permet pas de mesurer la hauteur au bord des virages. Le [Roddenberry Archive](https://roddenberry.x.io/2259-uss-enterprise-ncc-1701/?view=Main) décrit la parenté des modèles Discovery et SNW. Le [modèle extérieur Discovery de Chris Kuhn](https://www.vanishingpoint.biz/freeitemdetail.asp?FreeItemID=890) est répertorié en OBJ. L’accès au téléchargement a été bloqué dans cet environnement, donc aucune mesure du maillage n’a été faite. Le modèle est une référence secondaire et demanderait un recalage avant comparaison.
