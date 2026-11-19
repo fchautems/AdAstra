@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000" role="img" aria-labelledby="title description">
+<title id="title">AdAstra · Pont 5 · Coupe de conception de la cabine de Pike</title>
+<desc id="description">Coupe radiale locale à tribord avant. Sol du pont 5 au zéro, niveaux 4 et 3 à quatre et huit mètres, hauteur libre de la cabine trois mètres cinquante. Les fenêtres suivent le pan de coque dessiné à trente degrés vers l’extérieur à partir de la verticale.</desc>
+<style>
+text{font-family:"DejaVu Sans",sans-serif;fill:#edf4f6}
+.title{font-size:52px;font-weight:700;letter-spacing:-1.1px}
+.kicker{font-size:17px;font-weight:700;letter-spacing:2.6px;fill:#85e4d5}
+.sub{font-size:22px;fill:#bacbd7}
+.text{font-size:19px;fill:#cedeE4}
+.small{font-size:17px;fill:#bacbd7}
+.h{font-size:24px;font-weight:700}
+.accent{font-size:21px;font-weight:700;fill:#85e4d5}
+.dim{font-size:20px;font-weight:700;fill:#f1bf86}
+</style>
+<defs>
+  <marker id="arrow" viewBox="0 0 7 7" refX="3.5" refY="3.5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7Z" fill="#f1bf86"/></marker>
+</defs>
+<rect width="1440" height="1000" fill="#101b27"/>
+<rect x="44" y="170" width="1352" height="654" rx="16" fill="#162636" stroke="#365267"/>
+
+<text x="48" y="53" class="kicker" >ADASTRA / PONT 5</text>
+<text x="45" y="112" class="title" >Coupe de référence du projet</text>
+<text x="48" y="149" class="sub" >Cabine de Pike · Coupe A–A′ V02 · Tribord avant · Échelle identique sur les deux axes</text>
+<path d="M91.00 214.90 C326.00 226.65 420.00 250.15 546.90 276.00 C739.60 315.95 1082.70 389.74 1130.64 458.36 Q1139.57 471.52 1132.03 485.15 L1035.70 652.00 Q1020.19 683.02 965.20 699.94 C744.30 771.38 373.00 794.88 91.00 797.70 Z" fill="#1b3345"/>
+<path d="M91.00 214.90 C326.00 226.65 420.00 250.15 546.90 276.00 C739.60 315.95 1082.70 389.74 1130.64 458.36 Q1139.57 471.52 1132.03 485.15 L1035.70 652.00 Q1020.19 683.02 965.20 699.94 C744.30 771.38 373.00 794.88 91.00 797.70" fill="none" stroke="#a5becb" stroke-width="2.8"/>
+<polygon points="264.90,652.00 443.50,652.00 443.50,534.50 264.90,534.50" fill="#315466" stroke="#6c91a4" stroke-width="1.4"/>
+<polygon points="443.50,652.00 984.00,652.00 1078.97,487.50 443.50,487.50" fill="#2b716b" stroke="#70b7a8" stroke-width="1.5"/>
+<polygon points="443.50,487.50 1078.97,487.50 1120.77,464.00 443.50,464.00" fill="#9c784a" fill-opacity=".62"/>
+<polygon points="1004.35,616.75 1056.05,616.75 1119.82,506.30 1068.12,506.30" fill="#63c9c1" fill-opacity=".35"/>
+<path d="M1004.35 616.75 L1056.05 616.75" stroke="#85e4d5" stroke-width="1.4"/>
+<path d="M1068.12 506.30 L1119.82 506.30" stroke="#85e4d5" stroke-width="1.4"/>
+<path d="M1056.05 616.75 L1119.82 506.30" stroke="#85e4d5" stroke-width="5" stroke-linecap="round"/>
+<path d="M91.00 276.00 L546.90 276.00" stroke="#a5becb" stroke-width="2.4"/>
+<path d="M91.00 464.00 L1120.77 464.00" stroke="#a5becb" stroke-width="2.4"/>
+<path d="M91.00 652.00 L1035.70 652.00" stroke="#eff3f2" stroke-width="2.6"/>
+<text x="107.45000000000005" y="260.96" class="h" >Pont 3  +8,00 m</text>
+<text x="107.45000000000005" y="448.96" class="h" >Pont 4  +4,00 m</text>
+<text x="107.45000000000005" y="680.2" class="h" >Pont 5  ±0,00 m</text>
+<text x="277.12" y="598.42" class="text" >Couloir</text>
+<text x="471.69999999999993" y="577.74" class="h" >Cabine de Pike</text>
+<path d="M1056.05 616.75 L1056.05 540.14" stroke="#f1bf86" stroke-width="1.5" stroke-dasharray="5 5"/>
+<path d="M1056.05 574.45 A42.3 42.3 0 0 1 1077.20 580.12" fill="none" stroke="#f1bf86" stroke-width="1.9"/>
+<path d="M1067.80 569.75 L1136 537 L1183 537" fill="none" stroke="#f1bf86" stroke-width="1.3"/>
+<text x="1193" y="542" class="dim" >30° de la verticale</text>
+<path d="M1108.15 526.51 L1156 485 L1183 485" fill="none" stroke="#85e4d5" stroke-width="1.4"/>
+<text x="1193" y="490" class="accent" >Vitrage incliné</text>
+<path d="M1099.15 431.10 L1151 398 L1183 398" fill="none" stroke="#a5becb" stroke-width="1.3"/>
+<text x="1193" y="403" class="text" >Coque locale</text>
+<path d="M885.30 475.75 L885.30 426.40 L777.20 426.40" fill="none" stroke="#f1bf86" stroke-width="1.3"/>
+<text x="769.6800000000001" y="431.1" class="dim" text-anchor="end">0,50 m de réserve au plafond</text>
+<path d="M817.15 647.77 L817.15 491.73" stroke="#f1bf86" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="831.72" y="560.35" class="dim" >3,50 m</text>
+<text x="831.72" y="588.08" class="small" >libres</text>
+<path d="M984.00 676.91 L1035.70 676.91" stroke="#f1bf86" stroke-width="1.4" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<path d="M984.00 655.29 L984.00 683.02" stroke="#f1bf86" stroke-width="1"/>
+<path d="M1035.70 655.29 L1035.70 683.02" stroke="#f1bf86" stroke-width="1"/>
+<text x="1064" y="686" class="small" >1,10 m au bord du plancher</text>
+<path d="M119.20 771.85 L213.20 771.85" stroke="#cedeE4" stroke-width="2.1"/>
+<text x="232.93999999999994" y="777.49" class="small" >2 m</text>
+<text x="48" y="877" class="text" >Cotes retenues pour AdAstra. La coupe du décor de tournage sert de repère pour l’inclinaison des baies.</text>
+<text x="48" y="917" class="sub" >La coupe fixe le profil vertical local. Le raccord de la façade à la soucoupe en vue de dessus reste à tracer.</text>
+</svg>
