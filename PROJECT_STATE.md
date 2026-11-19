@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+
+## Inventaire des locaux et des ponts de l’Enterprise SNW — 2026-11-19
+
+- [Inventaire sourcé de 33 entrées](docs/research/snw-2026-11-17/INVENTAIRE-LOCAUX-ET-PONTS.md). Les archives de production, Roddenberry et les transcriptions des quatre saisons ont été recoupées. S2E6 donne un indice fort vers le pont 4 pour l’infirmerie et S2E4 identifie la cabine d’Ortegas au pont 6.
+- Aucun local n’a été confirmé au pont 2 pour SNW dans les sources consultées. Pour la configuration de 2254, le Roddenberry Archive y place les quartiers de Pike et la salle de briefing.
+- L’inventaire propose un pont 2 de soutien aux missions, avec la coordination à l’arrière. Définir les fonctions par écrit avant de revenir aux plans.
+
 ## Salle de coordination, pièce arrière du pont 2 — 2026-11-19
 
 - Fréd a retenu comme base de travail l’implantation de la [salle de coordination](plans/snw/pont-2-salle-coordination-v01.svg) dans la pièce arrière V05. [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_518ed00462fc81918c8007dbc1a64e8f&account_id=personal). Les quatre pièces disposent déjà d’un accès sur la circulation du pont depuis le turbolift.
