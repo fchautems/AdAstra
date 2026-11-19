@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Salle de coordination, pièce arrière du pont 2 — 2026-11-19
+
+- Fréd a retenu comme base de travail l’implantation de la [salle de coordination](plans/snw/pont-2-salle-coordination-v01.svg) dans la pièce arrière V05. [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_518ed00462fc81918c8007dbc1a64e8f&account_id=personal). Les quatre pièces disposent déjà d’un accès sur la circulation du pont depuis le turbolift.
+- Implantation contrôlée en plan sur l’emprise de 12,50 × 7,80 m, avec le seuil V05 de 2,16 m. Huit places autour de la table, deux postes latéraux et un mur d’information. Le passage autour de l’emprise du mobilier conserve 1,20 m au point le plus étroit dans cette configuration.
+- La hauteur disponible sous la coque et le dégagement avec les sièges tirés restent à vérifier. Prochaine action possible : proposer les usages des trois autres pièces du pont.
+
 ## Maquette de construction du pont 2 V05 — 2026-11-19
 
 - [Ouvrir la maquette interactive](https://chatgpt.com/library?file_id=libfile_955876f401248191977418981e05781c&account_id=personal). Le fichier HTML autonome reprend les emprises, les ouvertures et le turbolift de la V05. Il s’ouvre en vue de dessus orthographique, avec une vue 3D sans plafond, le contour d’étude en option et un trajet animé depuis le turbolift.
