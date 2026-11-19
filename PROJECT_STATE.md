@@ -1,5 +1,10 @@
 # AdAstra — habillage intérieur 06
 
+## Description des quartiers de Pike au pont 5 — 2026-11-19
+
+- Fréd a choisi Pike comme premier local à documenter au pont 5. Le pont 2 reste orienté vers le soutien aux missions, avec la coordination à l’arrière et la préparation à l’avant.
+- [Description sourcée](docs/research/snw-2026-11-17/QUARTIERS-PIKE-PONT-5.md). L’empreinte du dossier ADG correspond à la référence déjà cataloguée. La feuille S08 DP, p. 156, et les photos du décor p. 135–149 ont été examinées. Entrée sur l’arc intérieur, espace ouvert cuisine et réception, chambre à une extrémité et petit poste de travail attenant.
+- L’archive Roddenberry indique le pont 5. L’implantation sur le pont et les dimensions restent à établir. Prochaine action après validation de la description : relever les cotes du décor avant tout dessin de coque ou de circulation.
 
 ## Inventaire des locaux et des ponts de l’Enterprise SNW — 2026-11-19
 
