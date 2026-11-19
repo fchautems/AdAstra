@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 5 — implantation d’essai V01 de la cabine de Pike — 2026-11-19
+
+- [Plan et coupe A–A′](plans/snw/pont-5-implantation-pike-v01.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_e63c92ded42c8191a3c3fca1c66f2885&account_id=personal). Fréd a retenu la V03 comme base. Elle est posée à l’échelle de 20,8 × 11,5 m dans un secteur d’essai à 35° tribord avant. Le seuil rejoint l’arc local d’un couloir d’essai de 3,8 m. Les surfaces latérales restent sans affectation.
+- Hypothèses. Repère du [profil AdAstra](plans/snw/repere-passerelle-coque.svg) avec 1 132 unités pour 442 m et plancher du pont 1 à y=185. Plancher du pont 5 proposé 16 m plus bas. Le profil de proue est prolongé par rotation autour de l’axe vertical passant par la passerelle. Le bord de plancher simulé est à r=95,08 m, le seuil à r=82,47 m et le point le plus externe de la cabine à r=94,00 m. Repère haut local du décor de 3,50 m d’après le relevé ADG p. 155.
+- Contrôles. Emprise de la V03 comprise dans le plancher du scénario à 4,00 m entre niveaux, avec 1,08 m de marge radiale. Hauteur minimale 4,50 m brute, soit 4,00 m avec une réserve d’essai de 0,50 m. Relever le pont 5 de 1 m ramène cette hauteur libre à 3,00 m. L’abaisser de 1 m réduit le rayon du plancher à 93,67 m et la cabine dépasse d’environ 0,33 m. SVG et PNG relus.
+- Prochaine action. Recaler les planchers des ponts 3 à 5 et chercher une coupe ou un maillage au droit du secteur avant de figer l’implantation et les pièces latérales.
+
 ## Cabine de Pike au pont 5 — contour V03 — 2026-11-19
 
 - [Plan V03 en vue de dessus](https://chatgpt.com/library?file_id=libfile_27250529f09c819195acafc9b4953e0a&account_id=personal). Les deux pointes du tracé V02 ont été supprimées. Les flancs rejoignent directement les deux retours de mur qui encadrent le pan droit de l’entrée, d’après le [plan de tournage S08 DP, p. 156](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=156). Les traits turquoise figurent les baies vitrées de façon schématique.
