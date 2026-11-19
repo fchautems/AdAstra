@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 5 — coupe de référence AdAstra V02 — 2026-11-19
+
+- Fréd a choisi de créer une coupe de conception AdAstra pour la coque et les ponts. [Coupe vectorielle A–A′](plans/snw/pont-5-coupe-pike-v02.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_3a9023ed96788191b99e00d3a2acad33&account_id=personal). Elle remplace la coupe simulée V01 comme référence verticale locale à tribord avant. La [coupe du décor ADG, p. 155](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=155) sert de repère visuel pour les baies inclinées.
+- Cotes de conception. Sol de la cabine et du couloir au zéro du pont 5. Planchers des ponts 4 et 3 à +4,00 et +8,00 m. Cabine haute de 3,50 m avec 0,50 m de réserve. Pan de coque et vitrage à 30° vers l’extérieur depuis la verticale. Écart radial de 1,10 m au plancher entre le parement intérieur et la coque. Vitrage de +0,75 à +3,10 m dans cette coupe.
+- Contrôles. L’angle calculé, l’écart constant des deux pans et la somme hauteur libre + réserve ont été vérifiés. Le PNG a été relu et le SVG du dépôt comparé au fichier local.
+- Prochaine action. Raccorder en plan l’arrondi de la façade de Pike et le bord de la soucoupe à plusieurs hauteurs, avec cette coupe comme référence verticale.
+
 ## Pont 5 — implantation d’essai V01 de la cabine de Pike — 2026-11-19
 
 - [Plan et coupe A–A′](plans/snw/pont-5-implantation-pike-v01.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_e63c92ded42c8191a3c3fca1c66f2885&account_id=personal). Fréd a retenu la V03 comme base. Elle est posée à l’échelle de 20,8 × 11,5 m dans un secteur d’essai à 35° tribord avant. Le seuil rejoint l’arc local d’un couloir d’essai de 3,8 m. Les surfaces latérales restent sans affectation.
