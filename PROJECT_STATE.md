@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Vérification de la coque aux virages avant du pont 2 V05 — 2026-11-19
+
+- La [coupe de « Valles Marineris »](https://www.ex-astris-scientia.org/articles/scaling/msd-vallesmarineris.jpg) est longitudinale et ne permet pas de mesurer la hauteur au bord des virages. Le [Roddenberry Archive](https://roddenberry.x.io/2259-uss-enterprise-ncc-1701/?view=Main) décrit la parenté des modèles Discovery et SNW. Le [modèle extérieur Discovery de Chris Kuhn](https://www.vanishingpoint.biz/freeitemdetail.asp?FreeItemID=890) est répertorié en OBJ. L’accès au téléchargement a été bloqué dans cet environnement, donc aucune mesure du maillage n’a été faite. Le modèle est une référence secondaire et demanderait un recalage avant comparaison.
+- Recalcul sur les bords extérieurs des deux virages et sur le bord avant droit de la galerie. Les deux tracés longitudinaux et les deux courbures transversales d’essai donnent des minima de 2,62 à 3,73 m libres. Le cas le plus serré est à +11,73 m devant le centre de la passerelle et ±11,88 m de l’axe. Il laisse environ 12 cm sur les 2,50 m visés.
+- Sensibilité du scénario le plus serré, toutes les autres hypothèses constantes. Avec une largeur maximale de 45 m au lieu de 48 m, la hauteur minimale simulée descend à 2,42 m. Le point de bascule est proche de 46,1 m dans la même famille d’ellipses. Ces valeurs ne mesurent pas la coque de référence.
+- État du plan. V05 utilisable comme implantation de travail. La hauteur libre reste à valider avec un maillage ou une coupe transversale cotée. Avec le plancher d’essai et la réserve de 0,50 m, la coque extérieure doit se trouver à au moins 3,00 m au-dessus du plancher le long du bord extérieur des deux virages.
+
 ## Plan d’ensemble du pont 2 V05 — 2026-11-18
 
 - [Plan V05](plans/snw/pont-2-plan-d-ensemble-v05.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_55c183bf5a388191add69f6f0fd874c4&account_id=personal). Galerie et pièce avant reculées ensemble de 2 m par rapport à la V04. Le bord avant de la galerie est à +13 m du centre de la passerelle. Pièce de 17 × 4,4 m avec accès centré. L’ellipse d’étude et le raccord du turbolift sont repris de la V04.
