@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Ponts 3 et 4 — contrôle du passage du turbolift — 2026-11-20
+
+- La réservation provisoire de **3,15 × 2,90 m** (9,14 m²) du [plan local du pont 2](plans/snw/pont-2-ebauche-v01.svg) est reportée aux deux niveaux intermédiaires sur l’axe du [raccord V02](plans/snw/pont-5-plan-ensemble-v02.svg). Le rectangle est tourné de 38,29° et part du seuil arrière bâbord déjà repris au pont 5.
+- Contrôle dans l’enveloppe d’étude. Le coin le plus éloigné reste à 9,96 m du centre de la passerelle. Dans le [profil de travail](plans/snw/coupe-soucoupe-v01.svg), prolongé par rotation comme pour le pont 5, la réservation se projette sur x=947 à 972,51. Les niveaux des ponts 3 et 4 se trouvent respectivement à y=205,49 et y=215,73. Le contour du profil contient le rectangle projeté à ces deux niveaux et entre eux.
+- Limite. Les documents consultés ne donnent ni la structure ni l’implantation locale aux ponts 3 et 4. Les collisions avec une cloison, un renfort ou une pièce et les dimensions mécaniques de la gaine restent à contrôler.
+- Proposition de travail. Réserver l’emprise sur les deux ponts. Garder le pont 3 en simple traversée à ce stade et prévoir l’option d’un arrêt au pont 4 pour desservir l’infirmerie, que l’[inventaire](docs/research/snw-2026-11-17/INVENTAIRE-LOCAUX-ET-PONTS.md) situe probablement à ce niveau. Prochaine action. Reporter la réservation dans les futurs plans locaux et vérifier le chemin entre le palier du pont 4 et l’infirmerie.
+
 ## Pont 5 — raccord au turbolift V02 — 2026-11-20
 
 - Le [plan V02](plans/snw/pont-5-plan-ensemble-v02.svg) et son [aperçu PNG](https://chatgpt.com/library?file_id=libfile_40b817b4c2d08191bf7464f8f4863249&account_id=personal) prolongent la branche V01 jusqu’au turbolift. Le parcours depuis le seuil de Pike mesure 110,46 m sur l’axe du couloir. Palier proposé de 5 × 3,80 m, repris du pont 2.
