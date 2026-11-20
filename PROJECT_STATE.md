@@ -230,6 +230,7 @@
 
 ## Mission documentaire Enterprise SNW — 2026-11-17
 
+- **Extracteur local de références visuelles.** AdAstra Reference Extractor V1.3 se trouve sur le PC dans `F:\_Projets\AdAstra_Reference_Extractor_v1_3`. Il échantillonne des images par plan à partir de vidéos locales, propose un classement et permet d’exporter les références sélectionnées pour les différents décors. Lancement par `run.bat`. Voir les fichiers locaux `README.md` et `PROJECT_STATE.md` pour le fonctionnement et l’état des essais.
 - Objectif courant demandé : préparer la reconstruction immersive de l’Enterprise NCC-1701 de Strange New Worlds. Cette mission reste limitée à l’audit et à la recherche ; aucun début de reconstruction.
 - Audit : dépôt principal au commit `fd2760c298ccfd4c0906420e6bdd73c6d74fe61e`, 203 fichiers suivis. Application Godot existante, Compatibility, Blender/GLB, portes, FPS, UI et audio confirmés. Le vaisseau original de 62 m reste distinct de l’Enterprise.
 - Écart Brain : ancien résumé Three.js sans tranche Godot dépassé. Plans sources 58 m, extension active +4 m, hauteur intérieure 3 m. Les plans, modèles et sources fonctionnelles sont préservés.
