@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 5 — cabine de Pike et voisines V03 — 2026-11-20
+
+- Fréd a validé le plan d’intégration V02 et demandé de reporter l’intérieur en même temps que les cabines voisines. Le [plan V03](plans/snw/pont-5-integration-pike-v03.svg) et son [aperçu PNG](https://chatgpt.com/library?file_id=libfile_e8590eadab1c8191a458daa3e25a7390&account_id=personal) reprennent le contour V02, les trois baies et le seuil de 1,35 m. La cuisine, le coin repas, le salon, le bureau et la chambre reprennent l’organisation de l’ébauche intérieure V03. Le mobilier et la cloison de la chambre ont été ajustés à la géométrie intégrée.
+- Les deux cabines voisines constituent une proposition AdAstra. Elles épousent les cloisons latérales de Pike et ouvrent chacune sur le couloir courbe de 3,80 m.
+- Contrôles. Le mobilier et les trajets représentés sont dans l’emprise de Pike. Les trois seuils rejoignent le couloir et les emprises des voisines sont disjointes de celle de Pike. Le rendu PNG a été relu.
+- Prochaine action. Recueillir l’avis de Fréd sur l’aménagement et l’implantation des deux voisines avant de prolonger le couloir.
+
 ## Pont 5 — intégration V02 de la façade de Pike — 2026-11-19
 
 - [Plan vectoriel](plans/snw/pont-5-integration-pike-v02.svg) · [Aperçu PNG](https://chatgpt.com/library?file_id=libfile_102de4d6fdd88191b25da41783f5508b&account_id=personal). La [coupe A–A′ V02](plans/snw/pont-5-coupe-pike-v02.svg) est reportée en plan à tribord avant. La façade et les trois tracés de coque prennent un centre commun. Rayon intérieur de façade au sol de 93,97 m. Rayons de coque de 95,07 m au sol, 95,50 m au pied du vitrage (+0,75 m) et 96,86 m en haut du vitrage (+3,10 m). La pente de 30° depuis la verticale et l’écart radial de 1,10 m reprennent la coupe.
