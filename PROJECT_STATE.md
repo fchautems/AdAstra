@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 5 — raccord au turbolift V02 — 2026-11-20
+
+- Le [plan V02](plans/snw/pont-5-plan-ensemble-v02.svg) et son [aperçu PNG](https://chatgpt.com/library?file_id=libfile_40b817b4c2d08191bf7464f8f4863249&account_id=personal) prolongent la branche V01 jusqu’au turbolift. Le parcours depuis le seuil de Pike mesure 110,46 m sur l’axe du couloir. Palier proposé de 5 × 3,80 m, repris du pont 2.
+- Recalage en plan sur le [seuil arrière bâbord des ponts 1 et 2](plans/snw/pont-2-palier-v01.svg), à 4,425 m bâbord et 5,30 m arrière du centre de la passerelle, même orientation de porte. Prolongement vertical proposé de 12 m entre les ponts 2 et 5, d’après l’hypothèse de 4 m entre planchers.
+- Contrôles. Coordonnées et orientation reprises du plan V05 du pont 2. Jonction avec la V01 vérifiée en plan et rendu relu.
+- Prochaine action. Vérifier l’emprise et le passage de la gaine aux ponts 3 et 4, puis décider si elle doit y desservir un palier.
+
 ## Pont 5 — plan d’ensemble et raccord vers le centre V01 — 2026-11-20
 
 - Fréd a accepté le secteur V03 comme base de travail et demandé son report dans la soucoupe. Le [plan d’ensemble V01](plans/snw/pont-5-plan-ensemble-v01.svg) et son [aperçu PNG](https://chatgpt.com/library?file_id=libfile_57b123bd064c819193a3b387603d2f51&account_id=personal) situent les trois cabines à tribord avant et reprennent leurs seuils.
