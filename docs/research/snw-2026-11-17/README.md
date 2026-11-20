@@ -28,6 +28,20 @@ Le meilleur gain est documentaire : le [dossier de production ADG](https://asset
 
 Ouvrir `catalogue.html` par double-clic après récupération du dépôt. Le texte, les filtres et les index fonctionnent sans serveur et hors ligne. Les aperçus distants nécessitent Internet ; une source refusant l’affichage affiche un remplacement explicite et reste accessible par son lien. GitHub affiche le code HTML : il faut ouvrir le fichier local pour le consulter comme page.
 
+## Références visuelles par décor
+
+Dans *What Is Starfleet?* (saison 3, épisode 7), le reportage tourné à bord fournit plusieurs points de vue sur un même décor. Les vues ci-dessous servent à comparer les volumes aux plans de production et à choisir les détails à vérifier. [Récapitulatif officiel de l’épisode](https://www.startrek.com/news/recap-307-what-is-starfleet-strange-new-worlds)
+
+| Décor | Vue à repérer | Usage pour le plan |
+|---|---|---|
+| Infirmerie | Plongée portant le libellé *Sickbay* | Repérer la disposition des lits, des îlots et des allées. Recouper l’emprise avec les feuilles S04. |
+| Infirmerie | Chapel et M’Benga autour d’un biolit, puis M’Benga vu le long de la salle | Comparer les travées, les dégagements et les retombées de plafond sous deux angles. |
+| Couloir | Vue dans l’axe vers une porte rouge, au début du reportage | Comparer les encadrements, la section du couloir et les portes. Pour le raccord au pont 4, suivre les séquences dédiées de S1E7 et S2E6. |
+| Passerelle | Vue large du poste de commandement et des consoles | Relire l’organisation autour de l’espace central et confronter les circulations au plan de passerelle. |
+| Coque | Vue extérieure oblique et schéma du vaisseau sur un écran de bord | Comparer la silhouette de la soucoupe et la position relative de la coque secondaire et des nacelles. Relever les cotes dans une vue orthographique calée. |
+
+Pour l’infirmerie, commencer par les trois angles intérieurs et les feuilles S04. Les questions encore ouvertes concernent l’échelle du décor et la continuité du trajet entre le palier et la porte. [Fiche de l’infirmerie et sources des accès](INFIRMERIE-PONT-4.md)
+
 ## Sélection prioritaire
 
 | Besoin | Choix | Conséquence |
