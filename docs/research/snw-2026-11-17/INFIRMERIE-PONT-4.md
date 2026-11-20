@@ -32,6 +32,13 @@ Les horodatages sont ceux des pistes françaises examinées, à la seconde près
 
 Le dépouillement couvre 40 épisodes, dont 28 pistes françaises représentant 22 454 répliques ou indications horodatées. La recherche a ciblé les mentions de l’infirmerie et des soins, du pont 4, de l’astrométrie et des ascenseurs ou turbolifts. L’[index des transcriptions](https://www.springfieldspringfield.co.uk/episode_scripts.php?tv-show=star-trek-strange-new-worlds-2022) couvre les quatre saisons. Les scènes du *Peregrine* en S1E9 et du *Cayuga* en S2E10 servent uniquement à identifier les mentions de l’infirmerie sur ces autres vaisseaux. Les trajets et la signalétique qui existent uniquement à l’image restent à vérifier.
 
+## Sources complémentaires
+
+- **Planches du décor et des circulations.** L’index de Frogland répertorie les rubriques *Sickbay*, *Corridor* et *Turbolift*. Les feuilles restent à comparer aux dessins du dossier ADG pour établir leur provenance et leur résolution. [Index Frogland](https://frogland.co.uk/set-archive/Set%20Blueprints/Enterprise%20-%20Strange%20New%20Worlds/) · [Dossier de production ADG, feuilles S04](https://assets.adg.org/media/submissions/2022-10-17_14-08-24/Strange_New_Worlds_s1_ep101_ADG_Awards_Submission_20221017_v01.pdf#page=192)
+- **Captures Blu-ray, S1E7.** Les vues 343 à 353 de *The Serene Squall* montrent Spock et Aspen dans les circulations du vaisseau. [Galerie TrekCore](https://snw.trekcore.com/gallery/thumbnails.php?album=64&page=15) · [Récapitulatif officiel](https://www.startrek.com/news/recap-star-trek-strange-new-worlds-the-serene-squall)
+- **Captures Blu-ray, S2E6.** Les vues 463 à 469 de *Lost in Translation* montrent la sortie de l’infirmerie. Les vues 476 à 479 montrent ensuite la circulation dans le couloir. [Galerie TrekCore](https://snw.trekcore.com/gallery/thumbnails.php?album=89&page=20) · [Récapitulatif officiel](https://www.startrek.com/news/recap-206-lost-in-translation-strange-new-worlds)
+- **Décors de la saison 2.** Visite avec Wil Wheaton et le chef décorateur Jonathan Lee. [Paramount+](https://www.paramountplus.com/shows/video/9cTalwnmOlIfEZpvdApMWt4_ERa_GHOk/)
+
 ## Raccord à étudier dans AdAstra
 
 1. Partir de l’axe du [turbolift V02](../../../plans/snw/pont-5-plan-ensemble-v02.svg) et de la réservation de 3,15 × 2,90 m déjà vérifiée dans l’enveloppe d’étude du pont 4. La structure locale et les dimensions mécaniques de la gaine restent à vérifier.
