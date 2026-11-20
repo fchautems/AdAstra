@@ -1,5 +1,12 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 5 — plan d’ensemble et raccord vers le centre V01 — 2026-11-20
+
+- Fréd a accepté le secteur V03 comme base de travail et demandé son report dans la soucoupe. Le [plan d’ensemble V01](plans/snw/pont-5-plan-ensemble-v01.svg) et son [aperçu PNG](https://chatgpt.com/library?file_id=libfile_57b123bd064c819193a3b387603d2f51&account_id=personal) situent les trois cabines à tribord avant et reprennent leurs seuils.
+- Proposition AdAstra. Prolonger le couloir de 3,80 m et placer un raccord en T à 15° en direction de tribord depuis l’axe de Pike, après la cabine B. La branche de 3,80 m descend jusqu’au rayon de 58 m. À partir de la porte de Pike, le trajet mesure environ 23 m jusqu’au T et 46 m jusqu’à la fin du tracé. La distribution centrale reste à définir.
+- Contrôles. Reprise des polygones V03, trois ouvertures sur le couloir, raccord géométrique des parois au T, distances calculées sur l’axe et rendu PNG relu.
+- Prochaine action. Choisir le point à desservir côté centre avant de prolonger la branche.
+
 ## Pont 5 — cabine de Pike et voisines V03 — 2026-11-20
 
 - Fréd a validé le plan d’intégration V02 et demandé de reporter l’intérieur en même temps que les cabines voisines. Le [plan V03](plans/snw/pont-5-integration-pike-v03.svg) et son [aperçu PNG](https://chatgpt.com/library?file_id=libfile_e8590eadab1c8191a458daa3e25a7390&account_id=personal) reprennent le contour V02, les trois baies et le seuil de 1,35 m. La cuisine, le coin repas, le salon, le bureau et la chambre reprennent l’organisation de l’ébauche intérieure V03. Le mobilier et la cloison de la chambre ont été ajustés à la géométrie intégrée.
