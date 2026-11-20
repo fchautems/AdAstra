@@ -1,5 +1,11 @@
 # AdAstra — habillage intérieur 06
 
+## Pont 4 — infirmerie et accès par turbolift — 2026-11-20
+
+- Le [relevé de l’infirmerie](docs/research/snw-2026-11-17/INFIRMERIE-PONT-4.md) couvre 28 pistes françaises horodatées et 12 transcriptions interrogées. En S1E7, Spock part de la passerelle, demande le pont 4 au turbolift, puis annonce qu’ils approchent de l’infirmerie. En S2E6, Pike appelle la sécurité à ce niveau dès que Ramon quitte l’infirmerie.
+- Le pont 4 est désormais la base de travail pour le palier et l’infirmerie principale. L’astrométrie est un voisin possible. L’infirmerie auxiliaire et les réserves médicales sont mentionnées, avec une implantation encore inconnue.
+- Prochaine action. Relever l’emprise et la hauteur du décor S04, puis comparer les accès visibles dans les deux scènes avec le palier proposé. Le secteur exact, la distance et le tracé du couloir restent à définir.
+
 ## Ponts 3 et 4 — contrôle du passage du turbolift — 2026-11-20
 
 - La réservation provisoire de **3,15 × 2,90 m** (9,14 m²) du [plan local du pont 2](plans/snw/pont-2-ebauche-v01.svg) est reportée aux deux niveaux intermédiaires sur l’axe du [raccord V02](plans/snw/pont-5-plan-ensemble-v02.svg). Le rectangle est tourné de 38,29° et part du seuil arrière bâbord déjà repris au pont 5.
